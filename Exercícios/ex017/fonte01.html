@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial;
+            /*Medidas Absolutas
+            cm, mm, in, px (recomendado), pt, pc
+
+            Medidas Relativas
+            em (recomendado), ex, rem, vw, vh, %
+
+            1em = 16px
+            */
+            font-size: 16px;
+            font-weight: bolder;
+            /*lighter, normal, bold, bolder */
+
+            font-style: italic;
+        }
+        
+        h1 {
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            font: italic bolder 3em 'Work Sans', sans-serif /* shorthand font = font-style -> font-weight -> font-size -> font-style*/
+        }
+
+        h2, h3 {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus omnis placeat! Incidunt ipsa aperiam nemo sapiente eligendi architecto quos beatae deserunt, non, delectus cumque in. Fugiat maxime optio a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde reprehenderit, impedit dolorum aspernatur sapiente esse laudantium officiis, inventore hic deserunt atque eligendi, ad accusamus expedita dolor magnam cum? Debitis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati, beatae voluptates dolorem minima mollitia optio, odio voluptatum inventore, excepturi ut neque eveniet ipsa laudantium nulla ea illo quos aut?</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quam inventore fugiat nobis minus magnam voluptatibus error rerum dolorem deserunt. Earum distinctio voluptatibus recusandae quae nostrum porro enim soluta sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga at laboriosam doloremque molestias voluptates excepturi beatae dolore iure delectus. Mollitia consectetur quia asperiores voluptatibus nulla tempore, explicabo aliquam blanditiis.
+    <h3>Subtitulo</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel deserunt? Corporis, fugiat dolores animi adipisci architecto cum dolorem, reiciendis, tenetur ipsum eligendi voluptatem velit nobis asperiores beatae assumenda vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi totam hic quia mollitia, quae, accusamus sit unde labore commodi amet fugit voluptatibus molestiae corporis nobis, non sed animi minus?</p>
+    </p>
+</body>
+</html>

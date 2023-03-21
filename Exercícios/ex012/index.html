@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video controls poster="midia/capa.jpeg" width="500" loop>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/Meu-Video (2).mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade para reprodução de videos.</p>
+    </video>
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e9dZQelULDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo videos do Odysee</h1>
+    <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@Akitando:3/meu-começo-de-carreira-durante-a-bolha:f?r=5ZGER85G1mW7GR1Dcgn9vfUvgoH3PSnF" allowfullscreen></iframe>
+</body>
+</html>

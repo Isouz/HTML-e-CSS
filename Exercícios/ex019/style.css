@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    O que em HTML é "id" em CSS representamos com #
+    O que em HTML é "class" em CSS representamos com .
+*/
+
+/*Vale lembrar que em cada documento HTML só pode haver 1 id, contrario do class*/
+
+body {
+    background-color: rgb(175, 175, 221);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(12, 12, 160);
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(12, 12, 160);
+    color: white;
+}
+
+h2 {
+    color: rgb(12, 12, 160);
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: rgb(197, 144, 45);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: yellow;
+}
