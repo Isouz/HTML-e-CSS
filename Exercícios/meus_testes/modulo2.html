@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Testes</title>
+    <title>Módulo 2</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylestyle.css">
 </head>
@@ -94,20 +94,26 @@
             <div class="box_exemplo">
         <pre>
             <code>
-        <strong>
-        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Indie+Flower&display=swap');
-        </strong>
-        body {
-        <strong>font-family: 'Indie Flower', Arial, Verdana, cursive;</strong>
-        font-size: 20px;
-        color: black;
-                }
-                h1 {
-        <strong>font-family: 'Fredericka the Great', cursive;</strong>
-        font-style: normal;
-        font-weight: lighter;
-                }
+    <strong>
+    @import url('https://fonts.googleapis.com/
+    css2?family=Indie+Flower&display=swap');
+
+    @import url('https://fonts.googleapis.com/
+    css2?family=Fredericka+the+Great&family=Indie
+    +Flower&display=swap');
+    </strong>
+    body {
+    <strong>font-family: 'Indie Flower', Arial, 
+    Verdana, cursive;</strong>
+    font-size: 20px;
+    color: black;
+    }
+
+    h1 {
+    <strong>font-family: 'Fredericka the Great', cursive;</strong>
+    font-style: normal;
+    font-weight: lighter;
+    }
             </code>
         </pre>
             </div>
@@ -125,22 +131,23 @@
             <div class="box_exemplo">
             <pre>
                 <code>
-                    body {
-            font: normal 16px Arial, Verdana, serif;
-            text-align: left;
-                    }
-                
-                    h1 {
-            text-align: center;
-                    }
-                
-                    h2 {
-            text-align: right;
-                    }
-                    p {
-            text-align: justify;
-            text-indent: 30px;
-            }
+    body {
+    font: normal 16px Arial, Verdana, serif;
+    text-align: left;
+    }
+        
+    h1 {
+    text-align: center;
+    }
+        
+    h2 {
+    text-align: right;
+    }
+
+    p {
+    text-align: justify;
+    text-indent: 30px;
+    }
                 </code>
             </pre>
             </div>
@@ -156,17 +163,17 @@
         <div class="box_exemplo">
             <pre>
                 <code>
-                div {
-            background-color: aqua;
-            text-align: center;
-            height: 150px;
-            width: 150px;
-                }
-            
-                div<strong>:hover</strong> {
-            background-color: blue;
-            color: white;
-                }
+        div {
+        background-color: aqua;
+        text-align: center;
+        height: 150px;
+        width: 150px;
+        }
+        
+        div<strong>:hover</strong> {
+        background-color: blue;
+        color: white;
+        }
                 </code>
             </pre>
         </div>
@@ -181,14 +188,14 @@
             <div class="box_exemplo">
             <pre>
                 <code>
-                    <strong>div &gt; p</strong> {
-            display: none;
-                    }
-                
-                    <strong>div:hover &gt; p</strong> {
-            display: block;
-            color: red;
-                    }
+        <strong>div &gt; p</strong> {
+        display: none;
+        }
+            
+        <strong>div:hover &gt; p</strong> {
+        display: block;
+        color: red;
+        }
                 </code>
             </pre>
             </div>
@@ -200,7 +207,6 @@
                 <li><strong>display: block</strong> - Significa que aquele trecho aparecerá na tela.</li>
             </ul>
             
-                <!----------------------------------------------------------->
             <h3>Aula 04 – Pseudo-elementos em CSS.</h3>
             <p>Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado. Eles definem estados de elementos dentro da HTML.</p>
             <p>Abaixo criamos um link, os atributos deste link foram modificados apartir de um psseudo elemento. Os pseudo-elementos são representados com <strong>::</strong> (dois pontos, dois pontos), e nesse exemplo ele adiciona uma seta antes e depois do nosso link.</p>
@@ -210,36 +216,36 @@
             <div class="box_exemplo">
             <pre>
                 <code>
-                    a {
-            color: red;
-            <abbr title="remove a linha abaixo do link">text-decoration: none</abbr>;
-            font-weight: bold;
-                    }
-                
-                    a:visited {
-            color: darkred;
-                    }
-                
-                    a:hover {
-            color: black;
-            <abbr title="adiciona a linha abaixo do link">text-decoration: underline</abbr>;
-                    }
-                
-                    a:active {
-            color: yellow;
-                    }
-                
-                    <strong>a::before</strong> {
-            <abbr title="adiciona o conteúdo">content: '⇒ '</abbr>;
-            text-decoration: none;
-            font-weight: normal;
-                    }
-                
-                    <strong>a::after</strong> {
-            content: ' ⇐';
-            text-decoration: none;
-            font-weight: normal;
-                    }
+        a {
+        color: red;
+        <abbr title="remove a linha abaixo do link">text-decoration: none</abbr>;
+        font-weight: bold;
+        }
+            
+        a:visited {
+        color: darkred;
+        }
+            
+        a:hover {
+        color: black;
+        <abbr title="adiciona a linha abaixo do link">text-decoration: underline</abbr>;
+        }
+            
+        a:active {
+        color: yellow;
+            }
+            
+        <strong>a::before</strong> {
+        <abbr title="adiciona o conteúdo">content: '⇒ '</abbr>;
+        text-decoration: none;
+        font-weight: normal;
+        }
+            
+        <strong>a::after</strong> {
+        content: ' ⇐';
+        text-decoration: none;
+        font-weight: normal;
+        }
                 </code>
             </pre>
             </div>
@@ -342,20 +348,24 @@
                     largura total do elemento onde ele está contido. Se não estiver contido em nenhuma
                     outra caixa, ele vai ocupar 100% da largura do &lt;body&gt;. O elemento block-level mais conhecido é o &lt;div&gt; e suas variações semânticas
                         modernas da HTML5, como &lt;main&gt;, &lt;section&gt;, &lt;aside&gt;, etc. <br>Exemplos:</li>
-                    <div class="box_exemplo">
-                        <p>&lt;address&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;blockquote&gt;, &lt;canvas&gt;, &lt;dd&gt;,
-                            &lt;div&gt;, &lt;dl> &lt;dt&gt;, &lt;fieldset&gt;, &lt;figcaption&gt;, &lt;figure&gt;,
-                            &lt;footer&gt;, &lt;form&gt;, &lt;h1&gt;,  &lt;h6> &lt;header&gt;, &lt;hr&gt;, &lt;li&gt;,
-                            &lt;main&gt;, &lt;nav&gt;, &lt;noscript&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;pre&gt;,
-                            &lt;section&gt;, &lt;table&gt;, &lt;tfoot&gt;, &lt;ul&gt;, &lt;video&gt;
-                    </div></p>
+            </ul>
+                <div class="box_exemplo">
+                    <p>
+                        &lt;address&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;blockquote&gt;, &lt;canvas&gt;, &lt;dd&gt;,
+                        &lt;div&gt;, &lt;dl> &lt;dt&gt;, &lt;fieldset&gt;, &lt;figcaption&gt;, &lt;figure&gt;,
+                        &lt;footer&gt;, &lt;form&gt;, &lt;h1&gt;,  &lt;h6> &lt;header&gt;, &lt;hr&gt;, &lt;li&gt;,
+                        &lt;main&gt;, &lt;nav&gt;, &lt;noscript&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;pre&gt;,
+                        &lt;section&gt;, &lt;table&gt;, &lt;tfoot&gt;, &lt;ul&gt;, &lt;video&gt;
+                    </p>
+                </div>
+            <ul>
                 <li> <strong>Caixa do tipo inline-level</strong> - não vai começar em uma nova linha, e sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo. <br>Exemplo:
+            </ul>
                 <div class="box_exemplo">&lt;a&gt;, &lt;abbr>  &lt;b&gt;, &lt;bdo&gt;, &lt;br&gt;,
                     &lt;button&gt;, &lt;cite&gt;, &lt;code&gt;, &lt;dfn&gt;, &lt;em&gt;, &lt;i&gt;,
                     &lt;img&gt;, &lt;input&gt;, &lt;kbd&gt;, &lt;label&gt;, &lt;map&gt;, &lt;object&gt;,
                     &lt;output&gt;, &lt;q&gt;, &lt;samp&gt;, &lt;script&gt;, &lt;select&gt;, &lt;small&gt;,
                     &lt;span&gt;, &lt;strong&gt;, &lt;sub&gt; &lt;textarea&gt;, &lt;tt&gt;, &lt;var&gt;</div>
-            </ul>
             <h4>Grouping Tags e Semantic Tags</h4>
             <p>A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a &lt;div&gt; e a &lt;span&gt;. A diferença básica entre elas é que a primeira é um elemento agrupador do tipo block-level e o segundo é inline-level.</p>
             <p>Com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso não significa que as &lt;div&gt; e &lt;span&gt; (agora chamadas de não-semânticas) deixaram de existir ou ficaram obsoletas, mas seu uso agora faz menos sentido, pois temos tags para dividir as partes do nosso documento HTML.</p>
