@@ -162,7 +162,8 @@ div.box_exemplo {
 .tabcenter {
     margin: auto;
     display: block;
-    min-width: 370px;
+    min-width: 350px;
+    padding: 5px;
 }
 
 div.exemplo-sombra {
