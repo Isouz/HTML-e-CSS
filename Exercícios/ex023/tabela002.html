@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             background-color: greenyellow;
@@ -30,6 +31,16 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th { /*usado para fixar o th na tela quando rolamos a pagina para baixo*/
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
+
+        tbody > tr:nth-child(2n) { /*"executa de duas em duas. Também pode usar como parametro 3n "de tres em tres', 4n, 5n, etc*/
+            background-color: lightgray;
+        }  /*também pode usar odd (impar) ou even (par) como parametro*/
 
         .num {
             text-align: right;
@@ -84,14 +95,51 @@
                 <td class="num">10.444.526</td>
                 <td>5,7%</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.088.065</td>
+                <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.051.113</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.936.431</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.442.962</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.762.154</td>
+                <td>3,7%</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total</th>
-                <td class="num"><strong>99.076.672</strong></td>
-                <td><strong>47%</strong></td>
+                <td class="num"><strong>45.280.725</strong></td>
+                <td><strong>68,8%</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo ipsam illum! Porro suscipit aliquam delectus quae alias harum. Quo tempora commodi, rem inventore quia saepe sequi ab blanditiis fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, fuga earum harum consequatur impedit id libero magnam minus aut nesciunt, doloribus quidem deserunt, eum dolorum. Officiis voluptate molestiae repudiandae harum!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, magni at? Facilis eius nisi deleniti quas qui voluptates nesciunt laborum? Atque vero aperiam totam voluptas voluptates, ipsum voluptatem architecto deserunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quibusdam consequatur quae amet minus error nesciunt soluta velit. Numquam eum accusantium dolorem, deserunt ullam asperiores quod nulla facere culpa iure.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo ipsam illum! Porro suscipit aliquam delectus quae alias harum. Quo tempora commodi, rem inventore quia saepe sequi ab blanditiis fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, fuga earum harum consequatur impedit id libero magnam minus aut nesciunt, doloribus quidem deserunt, eum dolorum. Officiis voluptate molestiae repudiandae harum!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, magni at? Facilis eius nisi deleniti quas qui voluptates nesciunt laborum? Atque vero aperiam totam voluptas voluptates, ipsum voluptatem architecto deserunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quibusdam consequatur quae amet minus error nesciunt soluta velit. Numquam eum accusantium dolorem, deserunt ullam asperiores quod nulla facere culpa iure.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo ipsam illum! Porro suscipit aliquam delectus quae alias harum. Quo tempora commodi, rem inventore quia saepe sequi ab blanditiis fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, fuga earum harum consequatur impedit id libero magnam minus aut nesciunt, doloribus quidem deserunt, eum dolorum. Officiis voluptate molestiae repudiandae harum!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, magni at? Facilis eius nisi deleniti quas qui voluptates nesciunt laborum? Atque vero aperiam totam voluptas voluptates, ipsum voluptatem architecto deserunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quibusdam consequatur quae amet minus error nesciunt soluta velit. Numquam eum accusantium dolorem, deserunt ullam asperiores quod nulla facere culpa iure.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo ipsam illum! Porro suscipit aliquam delectus quae alias harum. Quo tempora commodi, rem inventore quia saepe sequi ab blanditiis fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, fuga earum harum consequatur impedit id libero magnam minus aut nesciunt, doloribus quidem deserunt, eum dolorum. Officiis voluptate molestiae repudiandae harum!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, magni at? Facilis eius nisi deleniti quas qui voluptates nesciunt laborum? Atque vero aperiam totam voluptas voluptates, ipsum voluptatem architecto deserunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quibusdam consequatur quae amet minus error nesciunt soluta velit. Numquam eum accusantium dolorem, deserunt ullam asperiores quod nulla facere culpa iure.
+    </p>
 </body>
 </html>
