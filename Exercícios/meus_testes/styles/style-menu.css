@@ -4,6 +4,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cor_m1a:#0303F3;
+    --cor_m1b:#0200BB;
+    --cor_m2a:#883DF2;
+    --cor_m2b:#620DD9;
+    --cor_m3a:#02E2FB;
+    --cor_m3b:#03A5BC;
+    --cor_m4a:#FC6A02;
+    --cor_m4b:#C25500;
+}
+
 header {
     text-align: center;
     max-width: 700px;
@@ -36,8 +47,8 @@ div {
     text-align: center;
     font-weight: bold;
     max-width: 600px;
-    min-width: 390px;
-    width: 90%;
+    min-width: 350px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -45,35 +56,43 @@ div {
 }
 
 .m1 {
-    background-color: #0303F3;
+    background-color: var(--cor_m1a);
 }
 
 .m1:hover {
-
+    color: white;
+    background-color: var(--cor_m1b);
+    transition-duration: 0.5s;
 }
 
 .m2 {
-    background-color: #883DF2;
+    background-color: var(--cor_m2a);
 }
 
 .m2:hover {
-    
+    color: white;
+    background-color: var(--cor_m2b);
+    transition-duration: 0.5s;
 }
 
 .m3 {
-    background-color: #02E2FB;
+    background-color: var(--cor_m3a);
 }
 
 .m3:hover {
-    
+    color: white;
+    background-color: var(--cor_m3b);
+    transition-duration: 0.5s;
 }
 
 .m4 {
-    background-color: #FC6A02;
+    background-color: var(--cor_m4a);
 }
 
 .m4:hover {
-    
+    color: white;
+    background-color: var(--cor_m4b);
+    transition-duration: 0.5s;
 }
 
 footer {
