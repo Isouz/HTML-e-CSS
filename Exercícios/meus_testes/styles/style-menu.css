@@ -9,6 +9,7 @@ header {
     max-width: 700px;
     min-width: 390px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 main{
@@ -21,6 +22,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+a > div {
+    text-decoration: none;
+    color: black;
 }
 
 div {
@@ -39,19 +45,35 @@ div {
 }
 
 .m1 {
-    background-color: blue;
+    background-color: #0303F3;
+}
+
+.m1:hover {
+
 }
 
 .m2 {
-    background-color: rgb(189, 42, 189);
+    background-color: #883DF2;
+}
+
+.m2:hover {
+    
 }
 
 .m3 {
-    background-color: aqua;
+    background-color: #02E2FB;
+}
+
+.m3:hover {
+    
 }
 
 .m4 {
-    background-color: orange;
+    background-color: #FC6A02;
+}
+
+.m4:hover {
+    
 }
 
 footer {
