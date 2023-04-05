@@ -15,6 +15,62 @@
             <h2>Capítulo 22</h2>
             <h3>Aula 1 – O iframe ainda pode ser usado?</h3>
             <p>A palavra iFrame é uma abreviação usada para se referir a “quadro embutido”, uma tag HTML usada para incorporar o conteúdo de uma página em outra. Vamos entender melhor o que é iFrame? A princípio, cada site consiste em um único documento HTML. Caso queira inserir outros elementos, é necessário usar um frame. Isso torna possível integrar documentos, imagens ou vídeos adicionais no documento HTML</p>
+            <p>Por exemplo, abaixo temos um iframe que nosmostra a pagina do curso em video.</p>
+            <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+            <p>é quase como se houvesse uma nova guia dentro da pagina.</p>
+            <p>Vale ressaltar que alguns sites possuem proteção contra iframe e não conseguimos usar esse metodo com eles. É o caso do site do Google. Veja o exemplo abaixo:</p>
+            <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+            <p>para criar um iframe basta usar a tag &lt;iframe&gt; &lt;/iframe&gt;</p> e dentro do src colocamos o link do conteúdo.
+            <div class="box_exemplo">
+                <code>
+                    &lt;iframe src="https://www.cursoemvideo.com" frameborder="0"&gt; &lt;/iframe&gt;
+                </code>
+            </div>
+
+            <h3>Aula 2 – Configurando iframes.</h3>
+            <p>Alguns navegadores de celular não possuem suporte para iframe. Então, tudo que colocarmos entre as tags vai aparecer para o usuario apenas se o dispositivo não tiver suporte para iframe. Nesse caso, podemos colocar uma mensagem de erro:</p>
+            <div class="box_exemplo">
+                <code>
+                    &lt;iframe src="https://www.cursoemvideo.com" frameborder="0"&gt;
+                        [Seu navegador não é compativel]
+                    &lt;/iframe&gt;
+                </code>
+            </div>
+            <p>Ou melhor, podemos simplesmente colocar o link.</p>
+            <div class="box_exemplo">
+                <code>
+                    &lt;iframe src="https://www.cursoemvideo.com" frameborder="0"&gt;
+                        &lt;a href="https://www.cursoemvideo.com"&gt;CursoemVideo&lt;/a&gt;
+                    &lt;/iframe&gt;
+                </code>
+            </div>
+            <h4>Tamanhos.</h4>
+            <p>Também podemos alterar o tamanho do iframe. Por padrão ele possui 300 x 150 (px), mas podemos adicionar um paramentro <em>height</em> e <em>width</em> dentro da tag:</p>
+            <div class="box_exemplo">
+                <code>
+                    &lt;iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" widht="500"&gt;
+                    
+                &lt;/iframe&gt; 
+                </code>
+            </div>
+            <p>Também podemos redimensiona-las com o uso do CSS. Caso exista a configuração na CSS e na tag, sempre prevalecerá a CSS.</p>
+
+            <h4>Parametro scrolling.</h4>
+            Esse árametro serve para habilitar ou desabilitar a barra de rolagem no elemento iframe. O atributo possui os seguintes valores:
+            <ul>
+                <li><strong>auto</strong>: é o valor padrão, se o conteúdo exceder o tamanho do iframe ele cria uma barra de relagem.</li>
+                <li><strong>yes</strong>: serve para exibir a barra de rolagem;</li>
+                <li><strong>no</strong>: serve para esconder a barra de rolagem;</li>
+                <li><strong>auto</strong>: a barra de rolagem é exibida conforme a necessidade do elemento.</li>
+            </ul>
+            <div class="box_exemplo">
+                <code>
+                    &lt;iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling=""&gt; &lt;/iframe&gt; 
+                </code>
+            </div>
+            <h4>frameborder.</h4>
+            <p>Esse atributo é utilizado para modificar a borda padrão do elemento. Ele só aceita duas possibilidades como valor: 0 e 1. 0 ele tira a borda e 1 ele coloca a bordade 1px em volta do iframe (podemos personaliza-la na CSS usando o <em>border</em>).</p>
+
         </section>
     </main>
 </body>
