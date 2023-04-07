@@ -76,7 +76,31 @@
             <h3>Aula 3 – Conteúdo local no iframe.</h3>
             <p>A tag iframe também pode ser útil para colocarmos paginas que estão dentro do mesmo site dentro da pagina atual.  Veja o exemplo abaixo:</p>
             <iframe src="menu.html" frameborder="1" width="377" height="400">[Infelizmente seu navegador não é compatível :( ]</iframe>
+
             <h3>Aula 4 – Navegação no iframe</h3>
+            <p>O uso do iframe também pode permitir a navegação de outras paginas (internas ou externas) dentro do nosso site com o uso de links.</p>
+            <p>No exemplo abaixo temos dois links de dois projetos diferentes. Clicando nos links a pagina é aberta dentro do iframe.</p>
+            <ul>
+                <li><a href="https://isouz.github.io/projeto-android/android.html.html" target="frame">Projeto Android</a></li>
+                <li><a href="https://isouz.github.io/projeto-cordel/index.html" target="frame">Projeto Cordel</a></li>
+            </ul>
+            <iframe src="" frameborder="1" width="360" height="300" name="frame">
+                [Infelizmente seu navegador não é compatíve :( ]
+            </iframe>
+            <p>Para criar essa navegação devemos criar o iframe como já aprendemos anteriormente e dar um <strong>name="</strong> para o iframe. na hora de configurar o link vamos usar um target direcionando para o iframe que nomeamos. Veja o codigo abaixo para entender melhor:</p>
+            <div class="box_exemplo">
+                <pre>
+        &lt;a href="https://isouz.github.io/projeto-cordel/
+        index.html" <strong>target="frame"</strong>>Projeto Android&lt;/a&gt;
+
+        &lt;a href="https://isouz.github.io/projeto-android/
+        android.html" <strong>target="frame"</strong>>Projeto Cordel&lt;/a&gt;
+
+
+        &lt;iframe src="" <strong>name="frame"</strong>&gt;
+        &lt;/iframe&gt;
+                </pre>
+            </div>
         </section>
     </main>
 </body>

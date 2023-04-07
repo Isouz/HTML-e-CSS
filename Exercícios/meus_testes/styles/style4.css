@@ -44,6 +44,10 @@ p {
     text-indent: 25px;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 .box_exemplo {
     max-width: 400px;
     border: 1px solid black;
