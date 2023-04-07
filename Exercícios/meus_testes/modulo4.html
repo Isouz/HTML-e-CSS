@@ -97,10 +97,32 @@
         android.html" <strong>target="frame"</strong>>Projeto Cordel&lt;/a&gt;
 
 
-        &lt;iframe src="" <strong>name="frame"</strong>&gt;
+        &lt;iframe src=" " <strong>name= "frame"</strong>&gt;
         &lt;/iframe&gt;
                 </pre>
             </div>
+
+            <h3>Aula 5 – Conteúdo no iframe por código.</h3>
+            <p>Como vimos no primeiro exemplo da aula 4 ao usar o iframe para Navegação notamos que inicialmente temos apenas um quadrado branco na tela.</p>
+            <p>Podemos corrigir esse problema de duas maneiras diferentes. É possivel colocar uma pagina ou até mesmo uma imagens dentro do parametro <strong>scr</strong> da tag. A segunda maneira é, ao invés de usar o src, usar o parametro <strong>scrdoc</strong> que vai nos permitir usar tags HTML dentro da tag. Veja os exemplos:</p>
+            <p>Exemplo de imagem com o uso do <strong>src</strong>:</p>
+            <div class="box_exemplo">
+                <pre>
+            &lt;iframe name="frame" src="imagem.png">
+
+            &lt;/iframe>
+                </pre>
+            </div>
+            <p>Exemplo de aplicação de codigos usando o <strong>srcdoc</strong>:</p>
+            <div class="box_exemplo">
+                <pre>
+            &lt;iframe name="frame" srcdoc=" &lt;h1&gt;
+            Escolha uma das opções acima. &lt;/h1&gt;"
+
+            &lt;/iframe&gt;
+                </pre>
+            </div>
+
         </section>
     </main>
 </body>
