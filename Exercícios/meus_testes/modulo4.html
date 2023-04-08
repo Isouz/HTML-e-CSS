@@ -75,7 +75,8 @@
 
             <h3>Aula 3 – Conteúdo local no iframe.</h3>
             <p>A tag iframe também pode ser útil para colocarmos paginas que estão dentro do mesmo site dentro da pagina atual.  Veja o exemplo abaixo:</p>
-            <iframe src="menu.html" frameborder="1" width="377" height="400">[Infelizmente seu navegador não é compatível :( ]</iframe>
+            <iframe src="menu.html" frameborder="1" width="377" height="400">   [Infelizmente seu navegador não é compatível :( ]
+            </iframe>
 
             <h3>Aula 4 – Navegação no iframe</h3>
             <p>O uso do iframe também pode permitir a navegação de outras paginas (internas ou externas) dentro do nosso site com o uso de links.</p>
@@ -128,9 +129,33 @@
             <p>Se um motor de busca começa a "ler" sua página e chega a um iFrame, ele pula esse conteúdo. Ele não consegue entrar na URL e indexar aquela outra página, ele vai indexar separadamente. Então se uma pessoa busca o termo no site de pesquisa, pode cair direto naquele frame e não na página inteira.</p>
             <p>Também vale ressaltar que se um leitor de tela passa lendo o conteúdo para o cego, ele também não vai conseguir ler o conteúdo de dentro do iFrame.</p>
             <p>Existem também algumas incompatibilidades por parte dos navegadores. Por exemplo, na hora de voltar na pagina anterior, o navegador pode ficar confuso se é para voltar com a pagina principal ou com o frame.</p>
-            <p>Pode haver a possibilidade de ataque hackers também.</p>
+            <p>Pode haver a possibilidade de ataque hackers pois os scripts do site usado pode ser executado dentro de nosso site. Para evitar isso vamos aprender como tornar-los mais seguros na próxima aula.</p>
             <p>Por isso, o ideal é não abusar do uso dos iframes em nossas paginas, usando com moderação e principalmente da maneira correta, não haverá problemas.</p>
             <h3>Aula 7 – Tornando iframes mais seguros.</h3>
+            <p>Para evitar problemas com ataques em nosso site através de recursos de site de terceiros, vamos aprender alguns parametros que devem ser usados dentro da nossa tag</p>
+            <p>No exemplo abaixo, temos um exemplo de um formulario de outro site.</p>
+            <iframe src="midia/pag004.html" frameborder="1" sandbox="sandbox">
+                Seu navegador não é compatível
+            </iframe>
+            <p>Perceba que ao clicar em "Cadastrar", nada acontece. Isso porque usamos o parametro <strong>sandbox="sandbox"</strong> dentro da nossa tag.</p>
+            <p>Usar o parametro sandbox="sandbox" vai bloquear as ações do site dentro do iframe. Isso torna seu uso mais seguro.</p>
+            <p>O sandbox também possui outros valores:</p>
+            <ul>
+                <li><strong>sandbox="allow-same-origin"</strong>: vai permitir que o pagina execute as ações desde que sejam da mesma origem de nosso site</li>
+                <li><strong>sandbox="allow-forms"</strong>: permitir apenas formularios.</li>
+                <li><strong>sandbox="allow-scripts"</strong>: permitir scripts. Como os formularios possem scripts, esse valor deve ser usado juntamente com o "allow-forms" para exibir formularios</li>
+            </ul>
+            <p>Caso o conteúdo de do iframe precise esecutar algum script podemos usar sandbox="allow-scripts como vimos acima. Mas é muito importante não usarmos qulquer conteúdo em nosso site. No exemplo abaixo vemos um exemplo simples do uso desse parametro.</p>
+            <iframe src="midia/pag005.html" frameborder="1" sandbox="allow-scripts"></iframe>
+            <div class="box_exemplo">
+                &lt;iframe src="site.hyml" <strong>sandbox="allow-scripts"</strong>&gt; <br>&lt;/iframe&gt;
+            </div>
+            <p>Outro parametro interessante é o <strong>referrerpolicy="no-referrer"</strong>. Os sites em geral usam nossos dados de navegação para exibir anúncios. O uso dessa parametro impede que o site usado colete dados de navegação do nosso usuário.</p>
+            <div class="box_exemplo">
+                &lt;iframe src="site.hyml" sandbox="allow-scripts" <strong>referrerpolicy="no-referrer"</strong>&gt; <br>&lt;/iframe&gt;
+            </div>
+            <p>O uso do sandbox e do referrerpolicy nos dará o maximo de segurança com o uso de outros sites dentro de nossas paginas</p>
+            
         </section>
     </main>
 </body>
