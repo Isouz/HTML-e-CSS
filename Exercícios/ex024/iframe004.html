@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis magni laudantium amet nesciunt praesentium inventore sint id impedit, earum consequuntur illo corporis quidem tempore saepe sit doloribus ratione minus ipsa!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex suscipit. Officia, esse aut. Distinctio laboriosam tempora quae, minus natus ut vero saepe mollitia velit consectetur nam quas officiis esse.</p>
+    <iframe src="paginas extras/pag004.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer"> <!--Usar o parametro sandbox="sandbox" vai bloquear as ações do site dentro do iframe. Isso torna seu uso mais seguro.-->
+    
+    <!--O sandbox também aceita outros valores, por exemplo:
+        - sandbox="allow-same-origin": vai permitir que o pagina execute as ações desde que sejam da mesma origem de nosso site
+
+        -sandbox="allow-forms": permitir apenas formularios.
+
+        -sandbox="allow-scripts": permitir scripts. Como os formularios possem scripts, esse valor deve ser usado juntamente com o "allow-forms" para exibir formularios
+    -->
+
+        <!--Usar o parametro referrerpolicy="no-referrer" impede que o site usado colete dados de navegação do nosso usuário-->
+    
+    <!--O uso desses dois parametros nos dará o maximo de segurança com o uso de outros sites dentro de nossas paginas-->
+    </iframe>
+</body>
+</html>
