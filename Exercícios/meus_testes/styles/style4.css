@@ -48,6 +48,14 @@ ul {
     list-style-position: inside;
 }
 
+.box {
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 5px 30px 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.445);
+}
+
 .box_exemplo {
     max-width: 400px;
     border: 1px solid black;
