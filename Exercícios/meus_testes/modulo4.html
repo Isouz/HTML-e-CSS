@@ -181,6 +181,31 @@
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSW6WgirW1BUTC87yhfB1k7Ls79Iw6jsUYZBMzXnH6gGtxc1uizFGSsXe88z8syjxouDHfl8hmzLMDk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="390" height="237 " allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
         </section>
+        <section>
+            <h2>Capítulo 24</h2>
+            <h3>Aula 1 – Como criar formulários com HTML5</h3>
+            <p>Formulários HTML são um dos principais pontos de interação entre um usuário e um web site ou aplicativo. Eles permitem que os usuários enviem dados para o web site.</p>
+            <p>Um formulário HTML é feito de um ou mais widgets. Esses widgets podem ser campos de texto (linha única ou de várias linhas), caixas de seleção, botões, etc.</p>
+            <p>Todo formulario deve estar entre as tag <strong>&lt;form&gt;</strong> e <strong>&lt;/form&gt;</strong>. Para começar vamos fazer um exemplo de um site simples que pede nome e sobrenome do usuário. Ao lado de "Nome:" e "Sobrenome:" vamos colocar uma caixa que vai receber os dados usando a tag <strong>&lt;input&gt;</strong> (input:text) e nela vamos usar os parametros <em>type</em>, <em>name</em> e <em>id</em>. Abaixo deles vamos usar um input:submit com o <em>value=</em>"Enviar" para criar um botão.</p>
+            Veja o exemplo abaixo:
+            <div class="box">
+                <p>Nome: <input type="text" name="nome" id="nome"></p>
+                <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+                <p><input type="submit" value="Enviar"></p>
+            </div>
+            <p>Abaixo temos o código usado para criar este formulário:</p>
+            <div class="box_exemplo">
+                <pre>
+            &lt;p&gt;
+                Nome: &lt;input type="text" name="nome" id="nome"&gt;
+            &lt;/p&gt;
+            &lt;/p&gt;
+            Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"&gt;
+            &lt;/p&gt;
+            &lt;p&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/p&gt;
+                </pre>
+            </div>
+        </section>
     </main>
 </body>
 </html>
