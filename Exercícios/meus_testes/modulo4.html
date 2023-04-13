@@ -197,17 +197,43 @@
             <p>Abaixo temos o código usado para criar este formulário:</p>
             <div class="box_exemplo">
                 <pre>
-            &lt;p&gt;
-                Nome: &lt;input type="text" name="nome" id="nome"&gt;
-            &lt;/p&gt;
-            &lt;/p&gt;
-            Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"&gt;
-            &lt;/p&gt;
-            &lt;p&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/p&gt;
+            &lt;form&gt;
+                &lt;p&gt;
+                    Nome: &lt;input type="text" name="nome" id="nome"&gt;
+                &lt;/p&gt;
+                &lt;/p&gt;
+                Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"&gt;
+                &lt;/p&gt;
+                &lt;p&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/p&gt;
+            &lt;/form&gt;
                 </pre>
             </div>
+            <p>A tag form ainda aceita alguns parametros que melhoram sua experiência. Abaixo temos alguns deles</p>
+            <h4>action</h4>
+            <p>Esse parametro define a ação que será executada quando o usuário clicar no input <em>submit</em>. como valor vamos colocar o nome de algum arquivo de alguma linguagem de programação como PHP, JavaScript etc.</p>
+            <div class="box_exemplo">
+                &lt;form <strong>action="cadastro.php"</strong>&gt;
+            </div>
+            <h4>autocomplete</h4>
+            <p>o parametro <em>autocomplete</em> serve para ligar ou desligar a sugestão de autopreenchimento que vem no input quando o usuário já utilizou essa campo anteriormente. Ele aceita dois valores, o <strong>on</strong> e o <strong>off</strong></p>
+            <div class="box_exemplo">
+                &lt;form <strong>autocomplete="off"</strong>&gt;
+            </div>
+            <h4>method</h4>
+            <p>É o método que o navegador usa para enviar o formulário. Os valores possíveis são:</p>
+            <ul>
+                <li><strong>post</strong></li>
+                <li><strong>get</strong></li>
+            </ul>
+            <p>Veremos mais sobre esse metodo nas proximas aulas.</p>
             <h3>Aula 2 – Usar Label vai melhorar seus formulários</h3>
-            <p></p>
+            <p>A tag &lt;label&gt; é um elemento HTML que representa uma legenda para melhorar a acessibilidade de um item de interface do usuário. Este elemento também é conhecido como controle ou rótulo e pode ser associado a outro elemento de controle através de um atributo. Basicamente eles servem para "ligar" a descrição ao objeto. No nosso exemplo anterior, podemos dizer que o sobrenome é a descrição e a caixa (input) é o objeto, precisamos liga-los para que o navegador saiba que estão associados. Para fazer essa ligação, basta colocar a descrição dentro da tag &lt;label&gt; e no parametro <strong>form</strong> vamos colocar o nome ou id do input que faz referencia a ele:</p>
+            <div class="box_exemplo">
+                &lt;label for="sobrenome"&gt;Sobrenome: &lt;/label&gt<br>
+                &lt;input type="text" id="sobrenome"&gt;
+            </div>
+            <p><strong>Sempre use label</strong> nos formulários, ela é importante pois especifica qual o "rótulo" do input e ainda ajuda na experiência do usuário durante a utilização e preenchimento do formulário.</p>
+            
         </section>
     </main>
 </body>
