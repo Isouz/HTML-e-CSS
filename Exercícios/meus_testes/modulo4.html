@@ -245,6 +245,22 @@
                 &lt;form <strong>method="POST"</strong>&gt;
             </div>
             <h3>Aula 04 – Criando caixas de texto e de senha</h3>
+            <p>Como vimos anteriormente, existem varios tipos de inputs, se você estiver ceiando um formulário que vai receber a senha do seu visitante podemos utilizar o <strong>input:password</strong>. O argumento password faz com que a senha digitada não seja exibida na tela, ao invés de exibir os caracteres o navegador exibe bolinhas pretas, alguns navegadores exibem asteríscos (*):</p>
+            <div class="box">
+                <img src="midia/Senha.png" alt="senha">
+            </div>
+            <div class="box_exemplo">
+                &lt;input type="<strong>password</strong>" id="senha"&gt;
+            </div>
+            <p>Outro botão que pode ser muito útil é o <strong>input:reset</strong> que basicamente limpa os campos quando o usuário clica.</p>
+            <p>Se tratando de login com usuário e senha, sabemos que inserir os dados é obrigatório para que o usuário possa acessar sua conta. Para sinalizar ao usuário que determinado compo é obrigatório para prosseguir, devemos usar o parametro <strong>required</strong>, ele vai exibir um "balão" automaticamente quando o usuário tentar prosseguir sem preencher os dados solicitados:</p>
+            <div class="box">
+                <img src="midia/required.png" alt="required">
+            </div>
+            <div class="box_exemplo">
+                &lt;input type="text" id="usuario" <strong>required</strong>&gt;<br>
+                &lt;input type="password" id="senha" <strong>required</strong>&gt;
+            </div>
         </section>
     </main>
 </body>
