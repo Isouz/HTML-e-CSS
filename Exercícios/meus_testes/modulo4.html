@@ -18,10 +18,12 @@
             <h3>Aula 1 – O iframe ainda pode ser usado?</h3>
             <p>A palavra iFrame é uma abreviação usada para se referir a “quadro embutido”, uma tag HTML usada para incorporar o conteúdo de uma página em outra. Vamos entender melhor o que é iFrame? A princípio, cada site consiste em um único documento HTML. Caso queira inserir outros elementos, é necessário usar um frame. Isso torna possível integrar documentos, imagens ou vídeos adicionais no documento HTML</p>
             <p>Por exemplo, abaixo temos um iframe que nosmostra a pagina do curso em video.</p>
-            <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+            <iframe src="https://www.cursoemvideo.com" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+                Seu navegador não é compatível.
+            </iframe>
             <p>É quase como se houvesse uma nova guia dentro da pagina.</p>
             <p>Vale ressaltar que alguns sites possuem proteção contra iframe e não conseguimos usar esse metodo com eles. É o caso do site do Google. Veja o exemplo abaixo:</p>
-            <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+            <iframe src="https://www.google.com.br" frameborder="0" sandbox="sandbox"></iframe>
             <p>para criar um iframe basta usar a tag &lt;iframe&gt; &lt;/iframe&gt;</p> e dentro do src colocamos o link do conteúdo.
             <div class="box_exemplo">
                 <code>
@@ -85,7 +87,7 @@
                 <li><a href="https://isouz.github.io/projeto-android/android.html.html" target="frame">Projeto Android</a></li>
                 <li><a href="https://isouz.github.io/projeto-cordel/index.html" target="frame">Projeto Cordel</a></li>
             </ul>
-            <iframe src="" frameborder="1" width="360" height="300" name="frame">
+            <iframe src="" frameborder="1" width="360" height="300" name="frame" sandbox="sandbox">
                 [Infelizmente seu navegador não é compatíve :( ]
             </iframe>
             <p>Para criar essa navegação devemos criar o iframe como já aprendemos anteriormente e dar um <strong>name="</strong> para o iframe. na hora de configurar o link vamos usar um target direcionando para o iframe que nomeamos. Veja o codigo abaixo para entender melhor:</p>
@@ -242,6 +244,7 @@
                 &lt;form <strong>method="GET"</strong>&gt;<br>
                 &lt;form <strong>method="POST"</strong>&gt;
             </div>
+            <h3>Aula 04 – Criando caixas de texto e de senha</h3>
         </section>
     </main>
 </body>
