@@ -238,6 +238,10 @@
             <p>Quando você utiliza <strong>GET</strong>, os dados são enviados na URL, existe um limite de 2048 caracteres para a requisição. Quando você utiliza o <strong>POST</strong>, os dados não ficam expostos na URL, é desta forma que se faz o envio de dados de formulário ou arquivos. Mas existe uma observação, o post não resolve os problemas de segurança, apesar dos dados não serem exibidos na URL com o seu uso, eles ainda são visiveis.</p>
             <p>Por exemplo, se acessarmos o <em>devtools</em>, na aba Network, clicarmos no nome do arquivo em <em>Payload</em> podemos ver que os dados enviados estão descritos lá</p>
             <p>Para proteger 100% esses dados devemos usar o protocolo HTTPS, mas esse já é um assunto bem mais avançado.</p>
+            <div class="box_exemplo">
+                &lt;form <strong>method="GET"</strong>&gt;<br>
+                &lt;form <strong>method="POST"</strong>&gt;
+            </div>
         </section>
     </main>
 </body>
