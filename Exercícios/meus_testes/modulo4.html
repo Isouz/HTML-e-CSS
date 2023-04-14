@@ -233,7 +233,11 @@
                 &lt;input type="text" id="sobrenome"&gt;
             </div>
             <p><strong>Sempre use label</strong> nos formulários, ela é importante pois especifica qual o "rótulo" do input e ainda ajuda na experiência do usuário durante a utilização e preenchimento do formulário.</p>
-            
+            <h3>Aula 3 – Métodos GET e POST para formulários</h3>
+            <p>Como vimos anteriormente, a o parametro <strong>method</strong> é método que o navegador usa para enviar o formulário. Para isso são aceitos dois valores, o get e o post.</p>
+            <p>Quando você utiliza <strong>GET</strong>, os dados são enviados na URL, existe um limite de 2048 caracteres para a requisição. Quando você utiliza o <strong>POST</strong>, os dados não ficam expostos na URL, é desta forma que se faz o envio de dados de formulário ou arquivos. Mas existe uma observação, o post não resolve os problemas de segurança, apesar dos dados não serem exibidos na URL com o seu uso, eles ainda são visiveis.</p>
+            <p>Por exemplo, se acessarmos o <em>devtools</em>, na aba Network, clicarmos no nome do arquivo em <em>Payload</em> podemos ver que os dados enviados estão descritos lá</p>
+            <p>Para proteger 100% esses dados devemos usar o protocolo HTTPS, mas esse já é um assunto bem mais avançado.</p>
         </section>
     </main>
 </body>
