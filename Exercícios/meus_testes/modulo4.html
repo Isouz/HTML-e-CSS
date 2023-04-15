@@ -281,6 +281,45 @@
             <div class="box_exemplo">
                 &lt;input type="text" id="usuario" <strong>placeholder="11"</strong>&gt;
             </div>
+            <h3>Aula 05 – Elementos number, month, date e time.</h3>
+            <p>Como podemos perceber, existem varios elementos para formulários em HTML, mas nesse curso não será possivel ver todos, devido ao grande numero de elementos e possibilidades, mas separamos aqui alguns mais udados além daqueles que já vimos nas aulas anteriores:</p>
+            <ul>
+                <li>
+                    <strong>number</strong>: (input:number) Só aceita números ou pontos e traçõs, letras não são aceitas. Esse elemento possuem dois elementos importantes que podem ser úteis, o <strong>min</strong>, o <strong>max</strong> e o <strong>step</strong> que definem o número minimo, maximo que poderá ser digitado e o passo ou "salto" entre as numerações.
+                    <div class="box">
+                        <img src="midia/number.png" alt="number">
+                    </div>
+                    <div class="box_exemplo">
+                        &lt;input type="number" id="media" <strong>min="0" max="10" step="0.5"</strong>&gt;
+                    </div>
+                </li>
+                <li>
+                    <strong>month</strong>: (input:month) Cria uma caixa especial que permite que o usuario selecione ou digite o mês e o ano.
+                    <div class="box">
+                        <img src="midia/month.png" alt="month">
+                    </div>
+                    <div class="box_exemplo">
+                        &lt;input type=<strong>"month"</strong>&gt;
+                    </div>
+                </li>
+                <li>
+                    <strong>date</strong>: (input:date) Cria uma caixa que permite que o usuário digite apenas o dia/mês/ano.
+                    <div class="box">
+                        <img src="midia/date.png" alt="data">
+                    </div>
+                    <div class="box_exemplo">
+                        &lt;input type=<strong>"date"</strong>&gt;
+                    </div>
+                </li>
+                <li>
+                    <strong>time</strong>: (input:time) Cria uma caixa que permite que o usuário digite apenas o o horário.
+                </li>
+            </ul>
+            <p>Em todos eles podemos usar o parametro <strong>value</strong> que vai preencher alguma informação por padrão. Por exemplo, se você precisar que a média do campo já venha com o número 5, podemos usar o <em>value=5</em> dentro da tag, dessa forma o placeholder não será exibido.</p>
+            <div class="box_exemplo">
+                &lt;input type="number" id="media" <strong>value="5"</strong>&gt;
+            </div>
+            <p>Vale ressaltar também que os navegadores podem funcionar de maneiras diferentes, as coisas podem mudar um pouco ou até mesmo não funcionar da mesma maneira. O importante é testar no maior número de namegadores e dispossitivos possiveis para garantir que se site não apresente problemas que possam te prejudicar.</p>
         </section>
     </main>
 </body>
