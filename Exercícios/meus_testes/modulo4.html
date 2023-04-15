@@ -221,6 +221,7 @@
             <div class="box_exemplo">
                 &lt;form <strong>autocomplete="off"</strong>&gt;
             </div>
+            <p>Esse parametro também pode ser usadno dentro do input, nesse caso, ele vai exibir uma serie de outras opções como valor além de "on" e "off", como senha, usuário, cep etc. Isso ajuda o navegador do usuário que utuliza gerenciadores de senhas por exemplo, assim o navegador vai sugerir o autopreenchimento de uma forma mais precisa.</p>
             <h4>method</h4>
             <p>É o método que o navegador usa para enviar o formulário. Os valores possíveis são:</p>
             <ul>
@@ -260,6 +261,25 @@
             <div class="box_exemplo">
                 &lt;input type="text" id="usuario" <strong>required</strong>&gt;<br>
                 &lt;input type="password" id="senha" <strong>required</strong>&gt;
+            </div>
+            <h4>Comprimento</h4>
+            <p>Podemos também colocar quantidade minima e maxima dos compimentos do campos, para isso basta usar os parametros <strong>minlenth</strong> e <strong>maxlenth</strong> seguidos da quantidade de caracteres</p>
+            <div class="box_exemplo">
+                &lt;input type="text" id="usuario" <strong>maxlenth="15"</strong>&gt;<br>
+                &lt;input type="password" id="senha" <strong>minlenth="8"</strong>&gt;
+            </div>
+            <h4>Tamanho da caixa.</h4>
+            <p>Você também pode mudar o tamanho da caixa usando o parametro <strong>size</strong> e no valor é só definir o tamanho baseado em quantos caracteres serão exibidos</p>
+            <div class="box_exemplo">
+                &lt;input type="text" id="usuario" <strong>size="10"</strong>&gt;
+            </div>
+            <h4>placeholder</h4>
+            <p>O placeholder é usado para inserir um texto dentro da caixa com um pouco de transparenica. Vale ressaltar que ele não preenche dados no campo, funciona mais como uma "dica" para o usuário.</p>
+            <div class="box">
+                <img src="midia/placeholder.png" alt="placeholder">
+            </div>
+            <div class="box_exemplo">
+                &lt;input type="text" id="usuario" <strong>placeholder="11"</strong>&gt;
             </div>
         </section>
     </main>
