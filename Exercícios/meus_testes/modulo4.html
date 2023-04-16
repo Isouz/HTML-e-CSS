@@ -320,6 +320,40 @@
                 &lt;input type="number" id="media" <strong>value="5"</strong>&gt;
             </div>
             <p>Vale ressaltar também que os navegadores podem funcionar de maneiras diferentes, as coisas podem mudar um pouco ou até mesmo não funcionar da mesma maneira. O importante é testar no maior número de namegadores e dispossitivos possiveis para garantir que se site não apresente problemas que possam te prejudicar.</p>
+            <h3>Aula 07 – Formulários com telefone e e-mail</h3>
+            <p>Se tratando de formulários, sabemos que muitos sites pedem contatos de e-mail ou telefone. Para inserir esses campos não é diferente dos outros inputs que fizemos.</p>
+            <div class="box">
+                <img src="midia/tel.png" alt="tel">
+            </div>
+            <div class="box_exemplo">
+                &lt;input <strong>type="email"</strong> id="email"&gt;<br>
+                &lt;input <strong>type="tel"</strong> id="fone"&gt;
+            </div>
+            <p>Vale ressaltar que o campo e-mail não faz uma verificação se o e-mail inserido é valido, ele basicamente verifica se possui o @ no campo.</p>
+            <h4>Agrupamento.</h4>
+            <p>Podemos também criar um agrupamento de campos para separar os dados por assunto usando a tag <strong>&lt;fieldset&gt;</strong>, isso torna o formulário mais orgaizado. Caso queira colocar uma legenda, basta usar a tag <strong>&lt;legend&gt;</strong>:</p>
+            <div class="box">
+                <img src="midia/fieldset.png" alt="fieldset">
+            </div>
+            <div class="box_exemplo">
+            <pre>
+            <strong>&lt;fieldset&gt;</strong>
+                <strong>&lt;legend&gt;</strong>Dados pessoais<strong>&lt;/legend&gt;</strong>
+                &lt;p&gt;
+                    &lt;label for="nome">Nome:&lt;/label&gt;
+                    &lt;input type="text" id="nome"&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+                    &lt;input type="email" id="email"d&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="tel">Fone: &lt;/label&gt;
+                    &lt;input type="tel" id="tel"&gt;
+                &lt;/p&gt;
+            <strong>&lt;/fieldset&gt;</strong>
+            </pre>
+            </div>
         </section>
     </main>
 </body>
