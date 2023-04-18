@@ -354,6 +354,39 @@
             <strong>&lt;/fieldset&gt;</strong>
             </pre>
             </div>
+            <h3>Aula 08 – Checkbox e Radio button em HTML</h3>
+            <p>Checkboxes e radio buttons são elementos que possibilitam ao usuário escolher uma ou várias opções oferecidas pelo formulário. Pode-se selecionar vários checkboxes ao mesmo tempo, mas apenas um radio button (quando um é selecionado, os outros são desmarcados).</p>
+            <h4>Checkbox</h4>
+            <p>Para usa-lo vamos inserir a tag input com o tipo checkbox (<em>input:checkbox</em>). Podemos inserir quantas opções forem necessárias.</p>
+            <div class="box">
+                <img src="midia/checkbox.png" alt="checkbox">
+            </div>
+            <div class="box_exemplo">
+                &lt;input <strong>type="checkbox"</strong> name="esbas" id="iesbas"&gt;<br> &lt;label for="iesbas"&gt;Basquete&lt;/label&gt;&lt;br&gt;<br>
+                &lt;input <strong>type="checkbox"</strong> name="esfut" id="iesfut"&gt;<br>
+                &lt;label for="iesfut"&gt;Futebol&lt;/label&gt;&lt;br&gt;<br>
+                &lt;input <strong>type="checkbox</strong>" name="esnat" id="iesnat"&gt; <br>&lt;label for="iesnat"&gt;Natação&lt;/label&gt;&lt;br&gt;<br>
+                &lt;input <strong>type="checkbox"</strong> name="esten" id="iesten"> <br>&lt;label for="iesten"&gt;Tênis&lt;/label&gt; &lt;br&gt;
+            </div>
+            <h4>Radio.</h4>
+            <p>Para usa-lo vamos inserir a tag input com o tipo radio (input:radio). Podemos inserir quantas opções forem necessárias.</p>
+            <p>O detalhe aqui é que o radio se diferencia do checkbox pois, como dito anteriormente, ele pertite selecionar apenas uma opção, caso tente selecionar outra caixa, a anterior será desmarcada automaticamente.</p>
+            <p>Para que isso funcione corretamente, devemos lembrar de comocar o mesmo valor no parametro <em>name</em>. </p>
+            <div class="box">
+                <img src="midia/radio.png" alt="radio">
+            </div>
+            <div class="box_exemplo">
+                &lt;input <strong>type="radio" name="sexo"</strong> id="ifem" value="F"&gt;<br> &lt;label for="ifem"&gt; Feminino &lt;/label&gt;&lt;br&gt;<br>
+                &lt;input <strong>type="radio" name="sexo"</strong> id="imas" value="M"&gt; <br>&lt;label for="imas" &gt; Masculino &lt;/label&gt;&lt;br&gt;
+            </div>
+            <h4>Observações importantes.</h4>
+            <li>Lembre-se sempre de usar labels para todas as opções para relacionar a checkbox com a sua descrição.
+
+            <li>Outra coisa que pode ser útil é o parametro <strong>checked</strong> que faz com que uma opção já venha marcada por padrão. Mas se tradando de <em>radio</em> podemos usar o checked em apenas uma das opções.
+            <div class="box_exemplo">
+                &lt;input type="checkbox" name="esfut" id="iesfut" <strong>checked</strong>&gt;
+            </div>
+            
         </section>
     </main>
 </body>
