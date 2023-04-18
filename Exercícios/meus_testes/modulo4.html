@@ -386,7 +386,40 @@
             <div class="box_exemplo">
                 &lt;input type="checkbox" name="esfut" id="iesfut" <strong>checked</strong>&gt;
             </div>
-            
+            <h3>24 Aula 09 – Elementos color, range e file em HTML.</h3>
+            <p>Nessa aula vamos ver mais três elementos para o input</p>
+            <h4>color</h4>
+            <p>Permite que o usuário selecione uma cor, sem a necessidade de digitar o código. Por padrão, a cor que vem é preta, mas também podemos mudar para que o navegador exiba outra cor por padrão. usando o parametro <em>value</em> usando o código hexadecimal da cor desejada.</p>
+            <div class="box">
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </div>
+            <div class="box_exemplo">
+                &lt;label for="icor"&gt;Cor:&lt;/label&gt;<br>
+                &lt;input type="color" name="cor" id="icor" value="#00ff00"&gt;
+            </div>
+            <h4>range</h4>
+            <p>Este elemento que é representado por um controle deslizante que permite o usuario selecionar um "nível". O detalhe aqui é que, como este tipo de elemento é impreciso, ele não vai especificar um número ao usuário, a seleção é apenas visual.</p>
+            <p>Por padrão ele vem o o valor minimo de 0 e maximo de 100, mas podemos personalizar isso usando os parametros <strong>min</strong> e <strong>max</strong>. Caso necessário, também é possivel usar o <em>value</em> para definir um valor padrão.</p>
+            <div class="box">
+                <label for="inivel">Nível de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="0" max="30">     
+            </div>
+            <div class="box_exemplo">
+                &lt;label for="inivel"&gt;Nível de Satisfação&lt;/label&gt;<br>
+                &lt;input <strong>type="range"</strong> name="nivel" id="inivel" <strong>min="0" max="30"</strong>&gt;
+            </div>
+            <h4>file</h4>
+            <p>permitem que o usuário escolha um ou mais arquivos do armazenamento do dispositivo. Depois de escolhidos, os arquivos podem ser carregados em um servidor usando o envio de formulário ou manipulados usando o código JavaScript ou PHP por exemplo.</p>
+            <p>Importante frizar que, para envio de arquivos, é importante usar sempre o método "POST" na nossa tag &lt;form&gt;.</p>
+            <div class="box">
+                <label for="ifoto">Foto de Perfil:</label><br>
+                <input type="file" name="foto" id="ifoto">
+            </div>
+            <div class="box_exemplo">
+                &lt;label for="ifoto"&gt;Foto de Perfil:&lt;/label&gt;<br>
+                &lt;input type="file" name="foto" id="ifoto"&gt;
+            </div>
         </section>
     </main>
 </body>
