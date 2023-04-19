@@ -248,7 +248,8 @@
             <h3>Aula 04 – Criando caixas de texto e de senha</h3>
             <p>Como vimos anteriormente, existem varios tipos de inputs, se você estiver ceiando um formulário que vai receber a senha do seu visitante podemos utilizar o <strong>input:password</strong>. O argumento password faz com que a senha digitada não seja exibida na tela, ao invés de exibir os caracteres o navegador exibe bolinhas pretas, alguns navegadores exibem asteríscos (*):</p>
             <div class="box">
-                <img src="midia/Senha.png" alt="senha">
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen">
             </div>
             <div class="box_exemplo">
                 &lt;input type="<strong>password</strong>" id="senha"&gt;
@@ -276,7 +277,8 @@
             <h4>placeholder</h4>
             <p>O placeholder é usado para inserir um texto dentro da caixa com um pouco de transparenica. Vale ressaltar que ele não preenche dados no campo, funciona mais como uma "dica" para o usuário.</p>
             <div class="box">
-                <img src="midia/placeholder.png" alt="placeholder">
+                <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu"  size="11" placeholder="nome do usuário">
             </div>
             <div class="box_exemplo">
                 &lt;input type="text" id="usuario" <strong>placeholder="11"</strong>&gt;
@@ -287,7 +289,8 @@
                 <li>
                     <strong>number</strong>: (input:number) Só aceita números ou pontos e traçõs, letras não são aceitas. Esse elemento possuem dois elementos importantes que podem ser úteis, o <strong>min</strong>, o <strong>max</strong> e o <strong>step</strong> que definem o número minimo, maximo que poderá ser digitado e o passo ou "salto" entre as numerações.
                     <div class="box">
-                        <img src="midia/number.png" alt="number">
+                        <label for="imedia">Média: </label>
+                        <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" value="5">
                     </div>
                     <div class="box_exemplo">
                         &lt;input type="number" id="media" <strong>min="0" max="10" step="0.5"</strong>&gt;
@@ -296,7 +299,8 @@
                 <li>
                     <strong>month</strong>: (input:month) Cria uma caixa especial que permite que o usuario selecione ou digite o mês e o ano.
                     <div class="box">
-                        <img src="midia/month.png" alt="month">
+                        <label for="imes">Período Letivo:</label>
+                        <input type="month" name="mes" id="imes" value="2023-04">
                     </div>
                     <div class="box_exemplo">
                         &lt;input type=<strong>"month"</strong>&gt;
@@ -305,7 +309,8 @@
                 <li>
                     <strong>date</strong>: (input:date) Cria uma caixa que permite que o usuário digite apenas o dia/mês/ano.
                     <div class="box">
-                        <img src="midia/date.png" alt="data">
+                        <label for="idia">Dia da Prova:</label>
+                        <input type="date" name="dia" id="idia">
                     </div>
                     <div class="box_exemplo">
                         &lt;input type=<strong>"date"</strong>&gt;
@@ -323,7 +328,10 @@
             <h3>Aula 07 – Formulários com telefone e e-mail</h3>
             <p>Se tratando de formulários, sabemos que muitos sites pedem contatos de e-mail ou telefone. Para inserir esses campos não é diferente dos outros inputs que fizemos.</p>
             <div class="box">
-                <img src="midia/tel.png" alt="tel">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="fone">Telefone: </label>
+                <input type="tel" name="fone" id="fone">
             </div>
             <div class="box_exemplo">
                 &lt;input <strong>type="email"</strong> id="email"&gt;<br>
@@ -333,7 +341,15 @@
             <h4>Agrupamento.</h4>
             <p>Podemos também criar um agrupamento de campos para separar os dados por assunto usando a tag <strong>&lt;fieldset&gt;</strong>, isso torna o formulário mais orgaizado. Caso queira colocar uma legenda, basta usar a tag <strong>&lt;legend&gt;</strong>:</p>
             <div class="box">
-                <img src="midia/fieldset.png" alt="fieldset">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="fone">Fone: </label>
+                    <input type="tel" name="fone" id="fone">
+                </fieldset>
             </div>
             <div class="box_exemplo">
             <pre>
@@ -359,7 +375,14 @@
             <h4>Checkbox</h4>
             <p>Para usa-lo vamos inserir a tag input com o tipo checkbox (<em>input:checkbox</em>). Podemos inserir quantas opções forem necessárias.</p>
             <div class="box">
-                <img src="midia/checkbox.png" alt="checkbox">
+                <input type="checkbox" name="bas" id="bas">
+                <label for="bas">Basquete</label> <br>
+                <input type="checkbox" name="fut" id="fut" checked>
+                <label for="fut">Futebol</label> <br>
+                <input type="checkbox" name="nat" id="nat">
+                <label for="nat">Natação</label> <br>
+                <input type="checkbox" name="ten" id="ten">
+                <label for="ten">Tênis</label>
             </div>
             <div class="box_exemplo">
                 &lt;input <strong>type="checkbox"</strong> name="esbas" id="iesbas"&gt;<br> &lt;label for="iesbas"&gt;Basquete&lt;/label&gt;&lt;br&gt;<br>
@@ -373,7 +396,10 @@
             <p>O detalhe aqui é que o radio se diferencia do checkbox pois, como dito anteriormente, ele pertite selecionar apenas uma opção, caso tente selecionar outra caixa, a anterior será desmarcada automaticamente.</p>
             <p>Para que isso funcione corretamente, devemos lembrar de comocar o mesmo valor no parametro <em>name</em>. </p>
             <div class="box">
-                <img src="midia/radio.png" alt="radio">
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label><br>
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
             </div>
             <div class="box_exemplo">
                 &lt;input <strong>type="radio" name="sexo"</strong> id="ifem" value="F"&gt;<br> &lt;label for="ifem"&gt; Feminino &lt;/label&gt;&lt;br&gt;<br>

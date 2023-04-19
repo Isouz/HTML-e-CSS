@@ -54,7 +54,7 @@ ul {
 .box {
     border: 1.5px solid black;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px 5px 30px 5px;
     box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.445);
 }
