@@ -446,6 +446,63 @@
                 &lt;label for="ifoto"&gt;Foto de Perfil:&lt;/label&gt;<br>
                 &lt;input type="file" name="foto" id="ifoto"&gt;
             </div>
+            <h3>Aula 10 – Select, datalist e textarea em HTML</h3>
+            <p>Existem também alguns elementos de formulários fora da tag input. Vamos falar de 3:</p>
+            <h4>Select</h4>
+            <p>O elemento HTML <strong>&lt;select&gt;</strong> representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <strong>&lt;option&gt;</strong>, que podem ser agrupados por elementos <strong>&lt;optgroup&gt;</strong>. Também é possível usar um valor padrão, para isso vamos criar uma tag &lt;option&gt; fora dos grupos e usar o parametro <em>selected</em>. No nosso exemplo abaixo, usamos o "-- Escolha --" como padrão: </p>
+            <div class="box">
+                <label for="iest">Estado: </label>
+
+                <select name="estado" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="box_exemplo">
+            <pre>
+            <strong>&lt;select</strong> name="estado" id="iest"<strong>&gt;</strong><br>
+                <strong>&lt;option</strong> value="" <strong>selected&gt;</strong>--- Escolha ---<strong>&lt;/option&gt; </strong><br>
+                <strong>&lt;optgroup</strong> label="Sudeste"<strong>&gt;</strong> <br>
+                    &lt;option value="SP"&gt;São Paulo&lt;/option&gt; <br>
+                    &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt; <br>
+                    &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt; <br>
+                <strong>&lt;/optgroup&gt;</strong> <br>
+                &lt;optgroup label="Nordeste"&gt; <br>
+                    &lt;option value="MA"&gt;Maranhão&lt;/option&gt; <br>
+                    &lt;option value="PE"&gt;Pernambuco&lt;/option&gt; <br>
+                    &lt;option value="RN"&gt;Rio Grande do Norte&lt;/option&gt; <br>
+                &lt;/optgroup&gt; <br>
+            <strong>&lt;/select&gt;</strong> <br>
+            </pre>
+            </div>
+            <h4>datalist</h4>
+            <p>O <strong>&lt;datalist&gt;</strong> contém um conjunto de elementos que representam as opções permitidas ou recomendadas disponíveis para escolha do usuário, mas também permite que o usuário digite uma opção caso deseje.</p>
+            <p>Para vincular o datalist ao controle, damos a ele um identificador exclusivo no <em>id</em> e, em seguida, adicionamos o parêmetro <strong><em>list</em></strong>  ao input elemento com o mesmo identificador como valor.</p>
+            <div class="box">
+
+            </div>
+            <div class="box_exemplo">
+
+            </div>
+            <h4>textarea</h4>
+            <p></p>
+            <div class="box">
+
+            </div>
+            <div class="box_exemplo">
+
+            </div>
+
         </section>
     </main>
 </body>
