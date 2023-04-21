@@ -355,18 +355,18 @@
             <pre>
             <strong>&lt;fieldset&gt;</strong>
                 <strong>&lt;legend&gt;</strong>Dados pessoais<strong>&lt;/legend&gt;</strong>
-                &lt;p&gt;
+                &lt;div&gt;
                     &lt;label for="nome">Nome:&lt;/label&gt;
                     &lt;input type="text" id="nome"&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
                     &lt;label for="email"&gt;E-mail:&lt;/label&gt;
                     &lt;input type="email" id="email"d&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
                     &lt;label for="tel">Fone: &lt;/label&gt;
                     &lt;input type="tel" id="tel"&gt;
-                &lt;/p&gt;
+                &lt;/div&gt;
             <strong>&lt;/fieldset&gt;</strong>
             </pre>
             </div>
@@ -412,7 +412,7 @@
             <div class="box_exemplo">
                 &lt;input type="checkbox" name="esfut" id="iesfut" <strong>checked</strong>&gt;
             </div>
-            <h3>24 Aula 09 – Elementos color, range e file em HTML.</h3>
+            <h3>Aula 09 – Elementos color, range e file em HTML.</h3>
             <p>Nessa aula vamos ver mais três elementos para o input</p>
             <h4>color</h4>
             <p>Permite que o usuário selecione uma cor, sem a necessidade de digitar o código. Por padrão, a cor que vem é preta, mas também podemos mudar para que o navegador exiba outra cor por padrão. usando o parametro <em>value</em> usando o código hexadecimal da cor desejada.</p>
@@ -422,7 +422,7 @@
             </div>
             <div class="box_exemplo">
                 &lt;label for="icor"&gt;Cor:&lt;/label&gt;<br>
-                &lt;input type="color" name="cor" id="icor" value="#00ff00"&gt;
+                &lt;input <strong>type="color"</strong> name="cor" id="icor" <strong>value="#00ff00"&gt;</strong>
             </div>
             <h4>range</h4>
             <p>Este elemento que é representado por um controle deslizante que permite o usuario selecionar um "nível". O detalhe aqui é que, como este tipo de elemento é impreciso, ele não vai especificar um número ao usuário, a seleção é apenas visual.</p>
@@ -444,7 +444,7 @@
             </div>
             <div class="box_exemplo">
                 &lt;label for="ifoto"&gt;Foto de Perfil:&lt;/label&gt;<br>
-                &lt;input type="file" name="foto" id="ifoto"&gt;
+                &lt;input <strong>type="file"</strong> name="foto" id="ifoto"&gt;
             </div>
             <h3>Aula 10 – Select, datalist e textarea em HTML</h3>
             <p>Existem também alguns elementos de formulários fora da tag input. Vamos falar de 3:</p>
@@ -522,7 +522,78 @@
                 &lt;label for="itext">Mensagem:&lt;/label&gt;<br>
                 <strong>&lt;textarea</strong> name="text" id="itext" <strong>cols="30" rows="10"&gt;&lt;/textarea&gt;</strong>
             </div>
+            <h3>Aula 11 – Elemento output em formulários HTML</h3>
+            <p>O elemento de saída (<strong>&lt;output&gt;</strong>) é um elemento no qual um site ou aplicativo pode injetar os resultados de um cálculo ou o resultado de uma ação do usuário. Para isso, vamos usar um pouquinho de JavaScript. Não vamos entrar a fundo em JavaScript aqui, vamos apenas mostrar alguns elementos basicos que nos auxiliam para exibir determinados resultados na tela.</p>
+            <p>No exemplo abaixo temos dois imputs do tipo "number", cada um recebe um número que são somados e o resultado é exibido na saída "Soma"</p>
+            <div class="box">
+                <label for="inum1">Número 1:</label>
+                <input type="number" name="num1" id="inum1" min="0" max="100" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"><br>
+                <label for="inum2">Número 2:</label>
+                <input type="number" name="num2" id="inum2" min="0" max="100" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"><br>
+                <label for="isoma">Soma:</label>
+                <output id="isoma">0</output>
+            </div>
+            <p>Para fazer isso, usamos a tag &lt;output&gt; com um <em>id</em> para exibir o resultado e dentro dos inputs vamos inserir o parametro <em>oninput</em> que vai receber o seguinte código no valor: <strong>"<abbr title="id do output">isoma</abbr>.innerHTML = Number(<abbr title="valor do id do primeiro número">inum1.value</abbr>) + Number(<abbr title="id do output"></abbr><abbr title="valor do id do segundo número">inum2.value</abbr>)"</strong></p>
+            <p>Veja o código abaixo para entener melhor:</p>
+            <div class="box_exemplo">
+                &lt;label for="inum1"&gt;Número 1:&lt;/label&gt; <br>
+                &lt;input type="number" name="num1" id="inum1" <strong>oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"</strong>&gt; <br>
+                &lt;label for="inum2"&gt;Número 2:&lt;/label&gt; <br>
+                &lt;input type="number" name="num2" id="inum2" <strong>oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"</strong>&gt;<br>
+                &lt;label for="isoma"&gt;Soma:&lt;/label&gt;<br>
+                <strong>&lt;output id="isoma"&gt;</strong>0<strong>&lt;/output&gt;</strong>
+            </div>
+            <p>O detalhe é que esse método <strong>não envia a soma</strong>, ele apenas calcula e exibe na tela.</p>
+            <h4>Usando o &lt;output&gt; para exibir valores dentro do input:range.</h4>
+            <p>Como vimos na aula 9, o input tipo range não exibe o "nível" selecionado pelo usuário. Mas isso muda quando usamos um output. Veja:</p>
+            <div class="box">
+                <label for="inivel">Nível:</label>
+                <input type="range" name="niv" id="iniv" min="0" max="10" value="5" oninput="ival.innerHTML = Number(iniv.value)">
+                <output id="ival">5</output>
+            </div>
+            <div class="box_exemplo">
+                &lt;label for="inivel"&gt;Nível:&lt;/label&gt; <br>
+                &lt;input type="range" name="niv" id="iniv" min="0" max="10" value="5" <strong>oninput="ival.innerHTML = Number(iniv.value)"</strong>&gt; <br>
+                <strong>&lt;output id="ival"&gt;</strong>5<strong>&lt;/output&gt;</strong>
+            </div>
+            <h3>Usando mais um pouco de JavaScript.</h3>
+            <p>Os exemplos que vimos ate agora, usamos JavaScript em apenas uma linha (oninput="ival.innerHTML = Number(iniv.value)) por exemplo, mas também podemos abrir uma tab <strong>&lt;script&gt; </strong></p>
+            <p>No exemplo abaixo, fizemos um script que calcula, de forma bem simples, a idade do usuario a partir de seu ano de nascimento:</p>
+            <div class="box">
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" oninput="calcIdade()"> <br>
+                <label for="iidade">Idade:</label>
+                <output id="iidade">0</output>
 
+                <script>
+                    function calcIdade() {
+                        let atual = new Date().getFullYear()
+                        iidade.innerHTML = Number(atual) - Number(iano.value)
+                    }
+                </script>
+            </div>
+            <p>Para criar esse script, criamos uma tag <strong>&lt;script&gt;</strong> e dentro dela criamos uma função simples em JavaScript que pega o ano atual, subtrai o ano digitado pelo usuário e exibe o resultado na saida.</p>
+            <p>Dentro da do input vamos usar o parâmetro <em>oninput</em> e nele vamos chamar a função criada (no nosso exemplo "calcIdade()")</p>
+            <div class="box_exemplo">
+            <pre>
+            &lt;label for="iano"&gt;Em que ano você nasceu?&lt;/label&gt;
+            &lt;input type="number" name="ano" id="iano" min="1900" oninput="<strong>calcIdade()</strong>"&gt; <br>
+            &lt;label for="iidade"&gt;Idade:&lt;/label&gt;
+            &lt;output id="iidade"&gt;0&lt;/output&gt;
+            
+            <strong>&lt;script&gt;
+                function calcIdade() {
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(iano.value)
+                }
+            &lt;/script&gt;</strong>
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Capítulo 25</h2>
+            <h3>Aula 01 – O que são Media Queries em CSS</h3>
         </section>
     </main>
 </body>
