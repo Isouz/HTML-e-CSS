@@ -449,7 +449,7 @@
             <h3>Aula 10 – Select, datalist e textarea em HTML</h3>
             <p>Existem também alguns elementos de formulários fora da tag input. Vamos falar de 3:</p>
             <h4>Select</h4>
-            <p>O elemento HTML <strong>&lt;select&gt;</strong> representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <strong>&lt;option&gt;</strong>, que podem ser agrupados por elementos <strong>&lt;optgroup&gt;</strong>. Também é possível usar um valor padrão, para isso vamos criar uma tag &lt;option&gt; fora dos grupos e usar o parametro <em>selected</em>. No nosso exemplo abaixo, usamos o "-- Escolha --" como padrão: </p>
+            <p>O elemento HTML <strong>&lt;select&gt;</strong> representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <strong>&lt;option&gt;</strong>, que podem ser agrupados por elementos <strong>&lt;optgroup&gt;</strong> dentro dele vamos usar atributo <em>label</em> para dar nome aquele grupo. Repare que o label usado dentro da tag é um <abbr title="parâmetro">atributo</abbr> e não o <abbr title="tag">elemento</abbr> que usamos antes. Também é possível usar um valor padrão (pré selecionado), para isso vamos criar uma tag &lt;option&gt; fora dos grupos e usar o parametro <em>selected</em>. No nosso exemplo abaixo, usamos o "-- Escolha --" como padrão: </p>
             <div class="box">
                 <label for="iest">Estado: </label>
 
@@ -472,7 +472,7 @@
             <pre>
             <strong>&lt;select</strong> name="estado" id="iest"<strong>&gt;</strong>
                 <strong>&lt;option</strong> value="" <strong>selected&gt;</strong>--- Escolha ---<strong>&lt;/option&gt; </strong>
-                <strong>&lt;optgroup</strong> label="Sudeste"<strong>&gt;</strong>
+                <strong>&lt;optgroup label="Sudeste"&gt;</strong>
                     &lt;option value="SP"&gt;São Paulo&lt;/option&gt;
                     &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt;
                     &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt;
@@ -511,12 +511,16 @@
             </pre>
             </div>
             <h4>textarea</h4>
-            <p></p>
+            <p>Através da caixa de texto podemos permitir ao usuário digitar textos maiores, útil quando você quer permitir ao usuário informar um texto extenso em formato livre, como um comentário por exemplo.</p> 
+            <p>Dentro da tag <strong>&lt;textarea&gt;</strong> podemos usar alguns atributos, os mais importantes são <em>rows</em> e <em>cols</em> que permitem especificar um tamanho exato para o textarea; além disso temos o <em>minlength</em> e o <em>maxlength</em> que vão limitar a quantidade minima e maxima de caracteres que podem ser digitados.</p>
+            <p>A observação aqui é que, ao utilizar o textarea, o ideal é usar o metodo POST no formulário pois esse método não tem limite de envio de caracteres.</p>
             <div class="box">
-
+                <label for="itext">Mensagem:</label><br>
+                <textarea name="text" id="itext" cols="30" rows="10" minlength="5" maxlength="100"></textarea>
             </div>
             <div class="box_exemplo">
-
+                &lt;label for="itext">Mensagem:&lt;/label&gt;<br>
+                <strong>&lt;textarea</strong> name="text" id="itext" <strong>cols="30" rows="10"&gt;&lt;/textarea&gt;</strong>
             </div>
 
         </section>
