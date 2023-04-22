@@ -18,7 +18,7 @@
             <h3>Aula 1 – O iframe ainda pode ser usado?</h3>
             <p>A palavra iFrame é uma abreviação usada para se referir a “quadro embutido”, uma tag HTML usada para incorporar o conteúdo de uma página em outra. Vamos entender melhor o que é iFrame? A princípio, cada site consiste em um único documento HTML. Caso queira inserir outros elementos, é necessário usar um frame. Isso torna possível integrar documentos, imagens ou vídeos adicionais no documento HTML</p>
             <p>Por exemplo, abaixo temos um iframe que nosmostra a pagina do curso em video.</p>
-            <iframe src="https://www.cursoemvideo.com" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+            <iframe src="https://www.cursoemvideo.com" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer" height="400">
                 Seu navegador não é compatível.
             </iframe>
             <p>É quase como se houvesse uma nova guia dentro da pagina.</p>
@@ -87,7 +87,7 @@
                 <li><a href="https://isouz.github.io/projeto-android/android.html.html" target="frame">Projeto Android</a></li>
                 <li><a href="https://isouz.github.io/projeto-cordel/index.html" target="frame">Projeto Cordel</a></li>
             </ul>
-            <iframe src="" frameborder="1" width="360" height="300" name="frame" sandbox="sandbox">
+            <iframe srcdoc="<h3>Clique em um link acima</h3>" frameborder="1" width="360" height="300" name="frame" sandbox="sandbox">
                 [Infelizmente seu navegador não é compatíve :( ]
             </iframe>
             <p>Para criar essa navegação devemos criar o iframe como já aprendemos anteriormente e dar um <strong>name="</strong> para o iframe. na hora de configurar o link vamos usar um target direcionando para o iframe que nomeamos. Veja o codigo abaixo para entender melhor:</p>
@@ -111,7 +111,7 @@
             <p>Exemplo de imagem com o uso do <strong>src</strong>:</p>
             <div class="box_exemplo">
                 <pre>
-            &lt;iframe name="frame" src="imagem.png">
+            &lt;iframe name="frame" <strong>src="imagem.png"</strong>>
 
             &lt;/iframe>
                 </pre>
@@ -119,9 +119,11 @@
             <p>Exemplo de aplicação de codigos usando o <strong>srcdoc</strong>:</p>
             <div class="box_exemplo">
                 <pre>
-            &lt;iframe name="frame" srcdoc=" &lt;h1&gt;
-            Escolha uma das opções acima. &lt;/h1&gt;"
-
+            &lt;iframe name="frame"<strong> srcdoc=" 
+                &lt;h1&gt;
+                    Escolha uma das opções acima. 
+                &lt;/h1&gt;"</strong>&gt;
+            
             &lt;/iframe&gt;
                 </pre>
             </div>
@@ -150,13 +152,14 @@
             <p>Caso o conteúdo de do iframe precise esecutar algum script podemos usar sandbox="allow-scripts como vimos acima. Mas é muito importante não usarmos qulquer conteúdo em nosso site. No exemplo abaixo vemos um exemplo simples do uso desse parametro.</p>
             <iframe src="midia/pag005.html" frameborder="1" sandbox="allow-scripts"></iframe>
             <div class="box_exemplo">
-                &lt;iframe src="site.hyml" <strong>sandbox="allow-scripts"</strong>&gt; <br>&lt;/iframe&gt;
+                &lt;iframe src="site.html" <strong>sandbox="allow-scripts"</strong>&gt; <br>&lt;/iframe&gt;
             </div>
             <p>Outro parametro interessante é o <strong>referrerpolicy="no-referrer"</strong>. Os sites em geral usam nossos dados de navegação para exibir anúncios. O uso dessa parametro impede que o site usado colete dados de navegação do nosso usuário.</p>
             <div class="box_exemplo">
-                &lt;iframe src="site.hyml" sandbox="allow-scripts" <strong>referrerpolicy="no-referrer"</strong>&gt; <br>&lt;/iframe&gt;
+                &lt;iframe src="site.html" sandbox="allow-scripts" <strong>referrerpolicy="no-referrer"</strong>&gt; <br>&lt;/iframe&gt;
             </div>
             <p>O uso do sandbox e do referrerpolicy nos dará o maximo de segurança com o uso de outros sites dentro de nossas paginas</p>
+
             <h3>Aula 8 – Dicas para iframes melhores</h3>
             <p>Como vimos nesse capítulo, os iframes são muito úteis. Apesar de seus inconvenientes, podemos notar no nosso dia a dia que ele é muito usado, sem ele não seria possivel ver um video do YouTube em nossa pagina por exemplo. Em alguns sites ainda notamos o uso de mapas com o uso do Google Maps ou até mesmo do Waze.</p>
 
@@ -596,14 +599,16 @@
             <h3>Aula 01 – O que são Media Queries em CSS</h3>
             <p>Uma <strong>media query</strong> consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo, tal como largura, altura e cor. Media queries, adicionadas no CSS3, deixam a apresentação do conteúdo adaptado a uma gama especifica de dispositivos não precisando mudar o conteúdo em si.</p>
             <p>Veja as imagens abaixo:</p>
-            <div class="yt">
-                <img src="midia/ytg.png" alt="ytgrande"></div>
-            <div class="yt">
-                <img src="midia/ytm.png" alt="ytmedio"></div>
-            <div class="yt">
-                <img src="midia/ytp.png" alt="ytpequeno">
-            </div>
+            <img src="midia/ytg.png" alt="ytgrande" class="yt">
+            <img src="midia/ytm.png" alt="ytmedio" class="yt" id="m">
+            <img src="midia/ytp.png" alt="ytpequeno" class="yt" id="p">
             <p>Perceba como o site do you tube muda de acordo com o tamanho da tela. A quantidade de videos que é exibido se adapta, assim como o formato do menu lateral e até a barra de pesquisa. Essa adaptação é possivel por conta das Media queries.</p>
+
+
+            <h3>Aula 06 – Mobile First</h3>
+            <p>Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis e em seguida para os desktops.</p>
+            <p>Em projetos web de uma forma geral o foco precisa ser no usuário para que ele tenha a melhor experiência possível e cumpra sua missão no website.</p>
+            <p>Quando projetamos primeiramente para mobile somos forçados a sermos sucintos e fazer uso da melhor maneira dos poucos espaços disponíveis nas telas dos dispositivos móveis e auxiliar os usuários a realizarem suas desejadas tarefas.</p>
         </section>
     </main>
 </body>

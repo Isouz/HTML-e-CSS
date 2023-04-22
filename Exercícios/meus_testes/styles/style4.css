@@ -67,14 +67,22 @@ ul {
 }
 
 .yt {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
-}
-
-.yt img {
+    display: inline-block;
     min-width: 200px;
     max-width: 950px;
     width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.473);
+}
+
+#m {
+    width: 80%;
+}
+
+#p {
+    min-width: 200px;
+    max-width: 400px;
+    width: 55%;
 }
