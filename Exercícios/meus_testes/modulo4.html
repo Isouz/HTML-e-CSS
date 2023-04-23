@@ -607,16 +607,34 @@
             <p>Perceba como o site do you tube muda de acordo com o tamanho da tela. A quantidade de videos que é exibido se adapta, assim como o formato do menu lateral e até a barra de pesquisa. Essa adaptação é possivel por conta das Media queries.</p>
 
             <h3>Aula 02 – Criando um site com versão para impressora</h3>
-            <p>Existe também media query para impressão, na aula anterior vimos que um bom site pode se adaptar a qualquer tamanhdo de tela, isso também deve ser aplicado para impressões.</p>
+            <p>Existe também media query para impressão, na aula anterior vimos que um bom site pode se adaptar a qualquer tamanho de tela, isso também deve ser aplicado para impressões.</p>
             <p>Para aplicar a media query vamos criar um arquivo separado em CSS dentro da nossa tag &lt;head&gt;. Começamos como um link normal para CSS, a diferença é que no final vamos usar o parametro <strong><em>media</em></strong> com o valor desejado, nesse caso, como o nosso exemplo é para impressoras, vamos usar o valor <strong><em>print</em></strong>.</p>
-            <p>Para as demais configurações de estilo no nosso site, podemos criar um link para o arquivo CSS mas com o valor <strong><em>all</em></strong></p>
+            <p>Para as demais configurações de tela no nosso site, podemos criar um link para o arquivo CSS mas com o valor <strong><em>screen</em></strong></p>
+            <p>E para as configurações gerais, ou seja, as configurações comuns entre tela e impressão, podemos usar o valo <strong><em>all</em></strong>.</p>
             <div class="box_exemplo">
                 &lt;link rel="stylesheet" href="style.css" <strong>media="all"</strong>&gt; <br>
+                &lt;link rel="stylesheet" href="style.css" <strong>media="screen"</strong>&gt; <br>
                 &lt;link rel="stylesheet" href="style.css" <strong>media="print"</strong>&gt;
             </div>
-            <p>Dessa forma, separamos e organizamos os estilos de nossa pagina em telas ou em impressões, facilitando até futuras manutenções em nossas paginas.</p>
-            <p>Lembrando que, como vimos no módulo 2, as serífas facilitam muito na hora de ler algo em papel e, portanto, pode ser interessante usarmos uma fonte serifada na hora de configurarmos a media query para impressão.</p>
+            <p>Dessa forma, separamos e organizamos os estilos de nossa pagina em telas ou em impressões, facilitando até futuras manutenções em nossas paginas.Não vamos notar a diferença durante a negação na pagina, mas quando nessessário imprimir a pagina, as configurações exibidas serão diferentes.</p>
+            <p>Lembrando que, como vimos no módulo 2, as serífas facilitam muito na hora de ler algo em papel e, portanto, pode ser interessante usarmos uma fonte serifada na hora de configurarmos a media query para impressão. Além disso, exibir o menu em uma impressão, pode não ser muito útil, por isso, podemos configurar nossa fora de eslilo para impressão de forma com que o menu seja retirado da exibição (display:none;)</p>
+            <p>São muitas possibilidades, o importante é pensar em criar um conteúdo que ficará bom para futuras e manutenções e principalmente para o consumo dos usuários.</p>
 
+            <h3>Aula 03 – Múltiplas Media Features com CSS.</h3>
+            <p>Na aula anterior vimos a <em>media="all"</em>, <em>media="screen"</em> e a <em>media="print"</em> todas são <strong>media types</strong> (tipos de média).</p>
+            <p>Falando de screen por exemplo, sabemos que, dentro dessa categoría, existem vários tipos de tela como celular, tablet, pc, etc; e é aí que entram as <strong>medias features</strong>.</p>
+            <p>Para usar as medias features escrevemos <strong>and</strong>(e) após a media type e a caracteristica (orientação da pagina) colocamos entre parenteses entre parênteses, veja o exemplo:</p>
+            <div class="box_exemplo">
+                &lt;link rel="stylesheet" href="style.css" media="screen" <strong>and (<abbr title="orientação: portrato">orientation:portrait</abbr>)</strong>&gt; <br>
+                &lt;link rel="stylesheet" href="style.css" media="screen" <strong>and (<abbr title="orientação: paisagem">orientation:landscape</abbr>)</strong>&gt;
+            </div>
+            <p>O primeiro link (orientation:portrait) é referente ao arquivo das configurações para as telas em modo retrato, ou seja, em pé. O segundo (orientation:landscape) é para as configuraçõespara telas em modo paisagem, ou seja, deitado.</p>
+
+
+
+
+
+            <p>Media query é basicamente a combinação de media type + media features (tipo de mídia + características de midia).</p>
 
             <h3>Aula 06 – Mobile First</h3>
             <p>Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis e em seguida para os desktops.</p>
