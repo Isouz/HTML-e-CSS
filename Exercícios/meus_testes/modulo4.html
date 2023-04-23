@@ -202,15 +202,17 @@
             <p>Abaixo temos o código usado para criar este formulário:</p>
             <div class="box_exemplo">
                 <pre>
-            &lt;form&gt;
-                &lt;p&gt;
-                    Nome: &lt;input type="text" name="nome" id="nome"&gt;
-                &lt;/p&gt;
-                &lt;/p&gt;
-                Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"&gt;
-                &lt;/p&gt;
-                &lt;p&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/p&gt;
-            &lt;/form&gt;
+            <strong>&lt;form&gt;</strong>
+                &lt;div&gt;
+                    Nome: <strong>&lt;input type="text"</strong> name="nome" id="nome"<strong>&gt;</strong>
+                &lt;/div&gt;
+                &lt;/div&gt;
+                    Sobrenome: &lt;input type="text" name="sobrenome" id="sobrenome"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    <strong>&lt;input type="submit" value="Enviar"&gt;</strong>
+                &lt;/div&gt;
+            <strong>&lt;/form&gt;</strong>
                 </pre>
             </div>
             <p>A tag form ainda aceita alguns parametros que melhoram sua experiência. Abaixo temos alguns deles</p>
@@ -233,9 +235,9 @@
             </ul>
             <p>Veremos mais sobre esse metodo nas proximas aulas.</p>
             <h3>Aula 2 – Usar Label vai melhorar seus formulários</h3>
-            <p>A tag &lt;label&gt; é um elemento HTML que representa uma legenda para melhorar a acessibilidade de um item de interface do usuário. Este elemento também é conhecido como controle ou rótulo e pode ser associado a outro elemento de controle através de um atributo. Basicamente eles servem para "ligar" a descrição ao objeto. No nosso exemplo anterior, podemos dizer que o sobrenome é a descrição e a caixa (input) é o objeto, precisamos liga-los para que o navegador saiba que estão associados. Para fazer essa ligação, basta colocar a descrição dentro da tag &lt;label&gt; e no parametro <strong>form</strong> vamos colocar o nome ou id do input que faz referencia a ele:</p>
+            <p>A tag &lt;label&gt; é um elemento HTML que representa uma legenda para melhorar a acessibilidade de um item de interface do usuário. Este elemento também é conhecido como controle ou rótulo e pode ser associado a outro elemento de controle através de um atributo. Basicamente eles servem para "ligar" a descrição ao objeto. No nosso exemplo anterior, podemos dizer que o sobrenome é a descrição e a caixa (input) é o objeto, precisamos liga-los para que o navegador saiba que estão associados. Para fazer essa ligação, basta colocar a descrição dentro da tag <strong>&lt;label&gt;</strong> e no parametro <em>for</em> vamos colocar o nome ou id do input que faz referência a ele:</p>
             <div class="box_exemplo">
-                &lt;label for="sobrenome"&gt;Sobrenome: &lt;/label&gt<br>
+                <strong>&lt;label for="sobrenome"&gt;</strong>Sobrenome: <strong>&lt;/label&gt;</strong><br>
                 &lt;input type="text" id="sobrenome"&gt;
             </div>
             <p><strong>Sempre use label</strong> nos formulários, ela é importante pois especifica qual o "rótulo" do input e ainda ajuda na experiência do usuário durante a utilização e preenchimento do formulário.</p>
