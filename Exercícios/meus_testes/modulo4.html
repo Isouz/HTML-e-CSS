@@ -632,11 +632,37 @@
             <p>Media query é basicamente a combinação de media type + media features (tipo de mídia + características de midia).</p>
 
             <h3>Aula 04 – Seguindo a orientação do dispositivo.</h3>
-
+            <p>Com o conteúdo que aprendemos neste capitulo, foi possivel criar essa caixa abaixo. Ela se muda de cor conforme a orientação da tela, se a tela estiver em pé (modo retrato) a caixa fica verde, se a tela estiver deitada (modo paisagem) a caixa fica roxa:</p>
             <div class="box-a">
                 Aumente sua tela ou deite o seu aparelho.
             </div>
+            Abaixo está o código usado para cirar essa "animação":
+            <div class="box_exemplo">
+                <pre>
+            <strong>@media screen and (orientation: portrait) {</strong>  
+                .box-a {
+                    border: 1.5px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 5px 5px 30px 5px;
+                    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.445);
+                    background-color: green;
+                    color: white;
+                }
+            <strong>}</strong>
             
+            <strong>@media screen and (orientation: landscape) {</strong>
+                .box-a {
+                    border: 1.5px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 5px 5px 30px 5px;
+                    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.445);
+                    background-color: purple;
+                    color: white;
+                <strong>}</strong>
+                </pre>
+            </div>
             <h3>Aula 06 – Mobile First</h3>
             <p>Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis e em seguida para os desktops.</p>
             <p>Em projetos web de uma forma geral o foco precisa ser no usuário para que ele tenha a melhor experiência possível e cumpra sua missão no website.</p>
