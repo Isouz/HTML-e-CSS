@@ -631,7 +631,7 @@
             <p>O primeiro link (orientation:portrait) é referente ao arquivo das configurações para as telas em modo retrato, ou seja, em pé. O segundo (orientation:landscape) é para as configuraçõespara telas em modo paisagem, ou seja, deitado.</p>
             <p>Media query é basicamente a combinação de media type + media features (tipo de mídia + características de midia).</p>
 
-            <h3>Aula 04 – Seguindo a orientação do dispositivo.</h3>
+            <h3>Aula 04 e 05 – Seguindo a orientação do dispositivo e Reunindo tudo em um único CSS.</h3>
             <p>Com o conteúdo que aprendemos neste capitulo, foi possivel criar essa caixa abaixo. Ela se muda de cor conforme a orientação da tela, se a tela estiver em pé (modo retrato) a caixa fica verde, se a tela estiver deitada (modo paisagem) a caixa fica roxa:</p>
             <div class="box-a">
                 Aumente sua tela ou deite o seu aparelho.
@@ -669,6 +669,24 @@
             <p>Mobile First é um conceito aplicado em projetos web onde o foco inicial da arquitetura e desenvolvimento é direcionado aos dispositivos móveis e em seguida para os desktops.</p>
             <p>Em projetos web de uma forma geral o foco precisa ser no usuário para que ele tenha a melhor experiência possível e cumpra sua missão no website.</p>
             <p>Quando projetamos primeiramente para mobile somos forçados a sermos sucintos e fazer uso da melhor maneira dos poucos espaços disponíveis nas telas dos dispositivos móveis e auxiliar os usuários a realizarem suas desejadas tarefas.</p>
+
+            <h3>Aula 08 – Device breakpoints.</h3>
+            <p>Abaixo um guia com os tamanhos comumente utilizados como breakpoints.</p>
+            <p>Os breakpoints, literalmente falando, são pontos de interrupção. Analisando pelo contexto da CSS, Media Query e Mobile First, são os pontos que a interface do usuário será adaptada para a nova realidade do tamanho de tela, ou densidade de pixels, por exemplo.</p>
+            <h4>Os breakpoints mais utilizados.</h4>
+            <p>
+                <ul>
+                    <li><strong>@media (min-width:320px) {}</strong>: smartphones modo portrato (resolução: 480x320);</li>
+                    <li><strong>@media (min-width:480px) {}</strong>: smartphones modo paisagem;</li>
+                    <li><strong>@media (min-width:600px) {}</strong>: tablets e e-readers  modo paisagem (resolução: 800x480);</li>
+                    <li><strong>@media (min-width:801px) {}</strong>: tablet modo paisagem e laptops ae desktops com baixa resolução de tela;</li>
+                    <li><strong>@media (min-width:1025px) {}</strong>: tablets de tela grande no modo paisagem, laptops, e desktops</li>
+                    <li><strong>@media (min-width:1281px) {}</strong>: laptops, desktops, tv.</li>
+                </ul>
+            </p>
+            <h4>A combinação dos Breakpoints e a Media Query</h4>
+            <p>Projetos Mobile First necessariamente usarão breakpoints e media query em sua composição.Desde o planejamento até a programação, esse dupla será uma grande aliada para conseguirmos um melhor êxito na experiência do usuário desejado e no trato com os diferentes tamanhos de tela.Através das Media Queries é possível combinar diferentes lógicas, e assim aplicar breakpoints de acordo com a regra estabelecida.</p>
+            <p>Os operadores lógicos são: <strong>and</strong>, <strong>or</strong> e <strong>not</strong></p>
         </section>
     </main>
 </body>
