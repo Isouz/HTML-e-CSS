@@ -78,6 +78,39 @@
             <h4>Já que falamos de Roteadores</h4>
             <p>As rotas são outro assunto muito importante para o funcionamento da Internet. Pense na rede como se fosse como se fosse um mapa com várias ruas, como no desenho a seguir. De quantas maneiras diferentes podemos chegar do ponto A até o ponto B? Eu imaginei três rotas diferentes e representei usando as linhas coloridas. Quem vai decidir a melhor rota é o Aplicativo de GPS, já que podem existir engarrafamentos e ruas fechadas.</p>
             <p>Na Internet também é assim. Para enviar um sinal de um dispositivo A para um dispositivo B, podemos ter várias rotas. Quem vai definir a melhor rota são os <strong>ROTEADORES</strong> que compõem a rede. Os pacotes de dados podem chegar em seu computador por diversas rotas diferentes, tudo vai depender do tráfego no momento da transmissão.</p>
+            <img src="midia/midias_modulo_1/map.png" alt="map">
+            <h4>Cliente e Servidor.</h4>
+            <p>Volte um pouco e olhe aquele mapa de novo. Imagine que o ponto A é você na escola pedindo uma pizza. O ponto B é a pizzaria, que vai te fornecer o pedido que vai matar sua fome. Quando o pedido for confirmado, o motoboy que vai fazer a
+            entrega é o pacote. Ele vai levar seu pedido até você por uma rota.</p>
+            <p>Nessa situação que descrevi acima, você no ponto A é o <strong>CLIENTE</strong>. A pizzaria no ponto B é o <strong>SERVIDOR</strong>. O motoboy é o <strong>PACOTE</strong> e sua pizza é o DADO. A Internet também vai funcionar dessa maneira.</p>
+            <p>Olhe agora o desenho ao lado. Ele é bem parecido com a história do mapa. Imagine que você está no seu celular tentando acessar um site. O seu celular é o <strong>CLIENTE</strong> e está pedindo algo pela Internet. Ao descobrir onde está o site, a máquina que está hospedando ele será o <strong>SERVIDOR</strong>, que vai fornecer os arquivos que compõem o site.
+            O caminho que vai criar uma ligação entre o servidor e você (cliente) vai ser decidido pelos roteadores da Internet.</p>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1GCJSWLki5xlt6IYTPKa8oK_7mfS8XgEbJINVSKAZIowsD6Wm" alt="server">
+            <p>Um servidor pode estar no seu bairro, na sua cidade, no seu país ou até mesmo do outro lado do mundo. Os pacotes podem girar o mundo todo em poucos segundos e o resultado será exibido na tela do seu celular/computador como se fosse magia, mas é pura TECNOLOGIA!</p>
+            <p>Na Internet existem vários servidores:</p>
+            <ul>
+                <li>Servidor de site (também chamado de WebHost)</li>
+                <li>Servidor de streaming</li>
+                <li>Servidor de arquivos</li>
+                <li>Servidor de e-mail</li>
+                <li>E muito mais…</li>
+            </ul>
+            <p>Mas como será que o mecanismo da Internet consegue descobrir o local exato de um site? Como ele descobre em que servidor ele está? E como ele consegue encontrar a posição exata do servidor no Globo? Aí entramos no próximo assunto.</p>
+            <h4>Identificando os nós.</h4>
+            <p>Como vimos anteriormente, a Internet funciona baseada em um conjunto de protocolos chamado <strong>TCP/IP</strong>. Um protocolo garante que todas as comunicações seguirão um mesmo padrão, permitindo que dispositivos que são diferentes, com tecnologias completamente distintas, possam se trocar mensagens.</p>
+            <p>Uma das funções do TCP/IP, mais especificamente do IP, é identificar os nós. Mas o
+            que seria esse nó? A resposta é simples: um nó é cada ponto que está conectado à rede. Quando você
+            “se conecta” à Internet, recebe uma identificação única. Essa identificação é um <strong>ENDEREÇO IP</strong>.</p>
+            <p>Os IPs mais antigos (IPv4) usam 4 octetos, que são conjuntos de 8 bits separados por pontos, totalizando 32 bits por identificador.</p>
+            <p>Ex: <strong>123.45.67.89</strong> = 01111011.00101101.01000011.01011001</p>
+            <p>Os IPs mais modernos (IPv6), usam 128 bits ao todo (o que é 4x mais bits que o IPv4).</p>
+            <p>Ex: <strong>2001:0db8:85a3:08d3:1319:8a2e:0370:7344</strong></p>
+            <p>Acessando um servidor.</p>
+            <p>Agora que você já sabe como os pontos são identificados, vamos criar um simples cenário aqui. Analise a imagem abaixo e veja que você estaria no ponto A, tentando acessar o site que está guardado no servidor que é o ponto D.</p>
+            <img src="midia/midias_modulo_1/dns.png" alt="dns">
+            <p>Você também deve ter notado que o ponto A tem um IP (201.17.81.243) e o ponto D também tem o seu (66.220.158.68). Agora imagine que você deva ter que decorar o IP do seu site favorito. Isso dificultaria todo o processo, não é?</p>
+            <p>E é para isso que existe o <strong>DOMAIN NAME SYSTEM</strong>, ou sistema de nomes de domínio. Eles são como grandes “listas telefônicas”, criando uma ligação entre o nome do site e o número de IP relacionado a ele.</p>
+            <p>Importante deixar bem claro: os números de IP mudam constantemente! Sempre que você desconecta o gateway da sua operadora (aquele aparelho que tem instalado na sua casa), o seu número de IP vai mudar.</p>
         </section>
     </main>
 </body>
