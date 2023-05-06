@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: collapse;
+    font-size: 2em;
+    margin: auto;
+}
+
+td {
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.col1 {
+    background-color: rgba(87, 86, 86, 0.993);
+    color: white;
+}
