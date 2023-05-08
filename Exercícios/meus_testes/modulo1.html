@@ -197,8 +197,37 @@
             <p>Além disso, as tags também podem ter atributos e valores, que vão configurar seu comportamento:</p>
             <img src="midia/midias_modulo_1/tag-a.png" alt="tag-a">
             <p>Uma mesma tag pode ter vários parâmetros, cada um com seu valor. Entretanto, algumas tags não possuem a necessidade de <strong>conteúdo</strong> interno e por isso não possuem fechamento. É o caso, por exemplo, das tags &lt;br&gt; e &lt;img&gt;. Isso é algo natural, não se preocupe com isso agora.</p>
-            <h4>Eu ainda uso &lt;font&gt;, &lt;center&gt;, &lt;s&gt;,
-                &lt;u&gt;, …</h4>
+            <h4>Eu ainda uso &lt;font&gt;, &lt;center&gt;, &lt;s&gt;, &lt;u&gt;, …</h4>
+            <p>Com o surgimento da versão 5 da HTML, algumas tags simplesmente deixaram de existir ou tornaram-se <string>obsoletas</string>. Uma tag obsoleta pode até estar funcionando no seu navegador hoje em dia, mas a própria <string>W3C</string> - consórcio responsável por manter as especificações da linguagem - recomenda que elas <string>não sejam mais usadas</string> pelos profissionais e aos poucos não serão mais suportadas pelos navegadores nas suas futuras versões.</p>
+            <p>De forma simples e direta (vou até escrever “gritando” aqui, pra dar ênfase): <strong> NÃO USE TAGS OBSOLETAS NO SEU SITE! </strong> Ufa! Que alívio colocar isso pra fora e desabafar 😅</p>
+            <h4>Chegou a vez dos seletores CSS.</h4>
+            <p>Como já vimos anteriormente, as <strong>CSS</strong> são as <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata). Elas são usadas para configurar um <strong>resultado visual</strong> dos elementos HTML.</p>
+            <p>As configurações das CSS são realizadas através dos seletores. Vamos ver a anatomia de um seletor.</p>
+            <img src="midia/midias_modulo_1/seletores.jpg" alt="seletores">
+            <p>O seletor apresentado anteriormente vai configurar o visual dos elementos de parágrafo do site corrente. O uso das chaves delimita todas as declarações relativas ao seletor atual. No seletor que eu te mostrei, serão feitas três configurações:</p>
+            <ul>
+                <li>A fonte escolhida foi Arial.</li>
+                <li>O tamanho da letra será 12pt (pontos).</li>
+                <li>A cor da letra será azul.</li>
+            </ul>
+            <p>Note que, ao final de cada <strong>declaração</strong>, temos que colocar ponto-e-vírgula para indicar que ela se encerrou.</p>
+            <p>Todas as <strong>propriedades</strong> devem ter seu <strong>valor</strong>, e eles devem ser separados por dois pontos. Você não é obrigado(a) a usar nenhuma declaração específica. Só utilize a propriedade que você realmente deseja alterar.</p>
+            <h4>Estrutura básica de um documento HTML</h4>
+            <p>Ao criar um novo documento HTML, devemos sempre escrever a estrutura básica de um documento desse formato. Vamos analisar cada uma das 11 linhas que compõem esse documento base.</p>
+            <img src="https://creativetechplus.zendesk.com/hc/article_attachments/9454341331853/unnamed__1_.png" alt="estruturaHTML">
+            <ul>
+                <li><strong>Linha 1</strong>: Indica que o documento atual será escrito na versão mais atualizada da linguagem (no caso, HTML5)</li>
+                <li><strong>Linhas 2 e 15</strong>: Delimitam o documento HTML, que é sempre dividido em duas partes: a cabeça e o corpo. Na linha 2, também estamos indicando que o conteúdo desse site será no idioma Português do Brasil.</li>
+                <li><strong>Linhas 4 e 9</strong>: Delimitam a cabeça da página, local onde são realizadas algumas configurações iniciais como formatos, estilos, ícone de favoritos, etc.</li>
+                <li><strong>Linha 5</strong>: adiciona ao documento atual o suporte a caracteres acentuados. Remover essa linha pode causar erros de renderização de algumas letras na tela.</li>
+                <li><strong>Linha 6</strong>: Indica que o conteúdo aparecerá, por padrão, ocupando todo o espaço disponível da tela e com uma escala de 1:1.</li>
+                <li><strong>Linha 8</strong>: Configura o título da página, que aparecerá como identificação da aba do navegador, ao lado do favicon.</li>
+                <li><strong>Linhas 11 e 13</strong>: Delimitam o corpo da página, a maior porção do site, que vai aparecer na tela. É aqui onde colocaremos todo o nosso conteúdo.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            
         </section>
     </main>
 </body>
