@@ -248,6 +248,31 @@
             <p>Além disso, manter essa opção sempre marcada evita problemas quando queremos ver os resultados no navegador, mas eles simplesmente não aparecem
             porque esquecemos de salvar.</p>
             <p>Deixe sempre essa opção com um check marcado, exatamente como está aparecendo ao lado.</p>
+            <p>Outra coisa muito importante para deixar sempre ligado é a opção de quebra automática de linhas (Word Wrap). Para fazer isso, clique sobre o botão de opções que fica no canto inferior esquerdo do VS code (veja o ícone à esquerda) e escolha a opção Configurações.</p>
+            <p>Quando abrir a tela de configurações, digite “word wrap” (sem as aspas) e modifique a opção <strong>Editor: Word Wrap</strong>, colocando o valor on na caixa suspensa de seleção (veja a imagem ao lado).</p>
+            <p>Habilitar essa opção, vai melhorar a visualização do seu código, já que você não vai precisar fazer a rolagem lateral da tela em situações onde a linha vai ficar muito comprida. Pode acreditar, escreveremos algumas linhas bem longas mesmo.</p>
+            <h4>Projetos em pastas</h4>
+            <p>Se eu puder te dar um conselho - e eu me sinto nesse direito - ele conselho seria: ORGANIZE-SE! Quem começa a desenvolver coisas e joga tudo na Área de Trabalho do Windows ou dentro da pasta Meus Documentos do seu computador, em pouco tempo fica simplesmente perdido(a).</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Capítulo 5</h2>
+            <h3>caracteres, Parágrafos e quebras de linhas</h3>
+            <h4>Vamos começar com os parágrafos</h4>
+            <p>No capítulo anterior já vimos como criar um parágrafo de forma simples, foi só colocar todo o conteúdo dentro da tag &lt;p&gt;&lt;/p&gt;. Mas o que eu não comentei na ocasião foi o comportamento do navegador em relação à posição das palavras.</p>
+            <p>Crie aí na sua casa uma pasta ex002 dentro da sua pasta que criamos em Documentos/html-css/exercicios para deixar tudo organizando. Lá dentro, crie um documento index.html e crie o código base do HTML5 (já ensinei isso anteriormente).</p>
+            <p>Dentro da tag &lt;body&gt;/body&gt; crie um parágrafo com a seguinte característica:</p>
+            <img src="midia/midias_modulo_1/paragrafos.jpg" alt="paragrafos">
+            <p>O que nós criamos no código aí acima foram dois parágrafos. Note que eu criei várias quebras de linha dentro de cada parágrafo. Salve o seu projeto e veja o resultado.</p>
+            <p>Na verdade, todas aquelas quebras que causamos não servem de ABSOLUTAMENTE NADA! Isso acontece porque quem comanda quebras de linhas/parágrafos não é o fato de apertar Enter. Quem manda são as tags HTML. A única quebra que REALMENTE aconteceu foi após a palavra “específico” no segundo parágrafo. Isso porque colocamos a tag <strong>&lt;br&gt;</strong> nesse local.</p>
+            <p>A tag <strong>&lt;br&gt;</strong> significa literalmente “quebre a linha” (break row) e agora que você sabe o significado, não precisa nem de explicação né?</p>
+            <p>Outra coisa que você deve ter notado é que tivemos problemas para fazer uma tag aparecer no seu navegador. Isso acontece porque, se você colocar &lt;br&gt; no seu código, o navegador vai entender como “quebre a linha” e não pra fazer ela aparecer.</p>
+            <p>Para isso, no lugar de usar os colchetes angulares <>, usamos caracteres especiais referentes ao código desses símbolos. No código anterior, quando usamos:</p>
+            <ul>
+                <li>Um &l t; estamos pedindo pra colocar o símbolo menor que (less than).</li>
+                <li>Um &g t; estamos pedindo para coloca o símbolo maior que (greater than).</li>
+            </ul>
+            <p>Existem alguns outros símbolos que podem ser exibidos usando códigos. Esses códigos são chamados de <strong>HTML Entities</strong>, basta uma breve consulta para descobrir quais são as opções, mas vou te dar uma moral e colocar uma tabela com outras opções.</p>
         </section>
     </main>
 </body>
