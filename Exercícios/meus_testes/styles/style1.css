@@ -1,18 +1,43 @@
 @charset "UTF-8";
 
-table {
+#tabela1 {
     border-collapse: collapse;
     font-size: 2em;
     margin: auto;
 }
 
-td {
+#tabela1 td {
     border: 3px solid black;
     text-align: center;
     padding: 10px 20px;
 }
 
-.col1 {
+#tabela1 .col1 {
     background-color: rgba(87, 86, 86, 0.993);
     color: white;
+}
+
+#tabela2 {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+#tabela2 th {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#tabela2 td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#tabela2 td.c-1 {
+    text-align: center;
+}
+
+#tabela2 .c-2 {
+    font-style: italic;
 }
