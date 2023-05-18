@@ -410,6 +410,34 @@
             <p>A regra de outro nesses casos é: <strong>use imagens do tamanho certo!</strong> Vai precisar de uma imagem que vai ter 200 pixels de largura? Gere um arquivo exatamente com esse tamanho! Nada de ficar salvando arquivos gigantes e diminuindo o tamanho da imagem com códigos.</p>
             <p>Uma imagem 1920x1080 de 3MB não vai ficar mais leve se você mudar a largura dela no seu CSS. Muito pelo contrário. Seu navegador vai levar um tempão pra carregar o arquivo do seu servidor e vai exibir a imagem minúscula na tela.</p>
             <p>E no que isso te prejudica? Os mecanismos de busca como o Google PENALIZAM sites lentos e pesados, retirando-os da primeira página de buscas. Quem aqui quer criar um site que não aparece nos resultados do Google?</p>
+            <h4>Como carregar uma imagem em HTML</h4>
+            <p>Agora que você está especialista em formatos e tamanhos de imagens, vamos gravar algum arquivo em uma pasta chamada ex003 que você vai criar no seu repositório local. Se você visitar meu repositório em <a href="http://gustavoguanabara.github.io/">http://gustavoguanabara.github.io/</a> e for até a parte de exercícios de HTML, vai ver que na pasta ex003 existem os arquivos logo-html.png e logo-css.png. Faça o download deles pra você ou salve outra imagem qualquer na sua pasta. Só fica de olho no formato dela: JPG ou PNG. Use o
+            VScode para criar também o arquivo index.html e coloque dentro da pasta ex003, conforme vou apresentar a seguir.</p>
+            <p>Eu só te faço um alerta: analise a foto a seguir, onde eu mostro que o arquivo logohtml. png estará na pasta raiz do projeto (mesmo local onde está o arquivo index.html), enquanto o arquivo logo-css.png está localizado dentro da pasta fotos que está na mesma pasta do projeto.</p>
+            <img src="midia/midias_modulo_1/exemplo-local-arquivo.jpg" alt="exemplo-local-arquivo">
+            <p>A posição dos seus arquivos vai fazer diferença e você deverá adaptar seu código para
+            poder carregar as imagens sem problemas. Agora vá até o Visual Studio Code e edite o arquivo index.html, criando o código base de sempre e atualizando conforme o que apresento a seguir:</p>
+            <img src="midia/midias_modulo_1/adicionando-imagens.jpg" alt="adicionando-imagens">
+            <p>Na linha 11, adicionamos a tag &lt;img&gt;, responsável por carregar imagens que estão
+            na pasta do projeto atual ou em links externos. Essa tag tem como parâmetros básicos o src (que vem de source, origem) e alt (que vem de alternative ou texto alternativo).</p>
+            <img src="midia/midias_modulo_1/tag-img.jpg" alt="tag-img">
+            <p>Depois do código aparecer magicamente, o cursor do teclado vai aparecer dentro das aspas
+            do parâmetro src. Pressione <strong>Ctrl+Espaço</strong> e mais uma mágica vai acontecer. Como a
+            imagem ao lado mostra, o editor vai te Mostar
+            uma listagem com todos os arquivo disponíveis
+            na pasta do seu projeto. Escolha o arquivo
+            clicando em logo-html.png para que você nem precise digitar o nome dele. Isso evita muitas falhas causadas por erros de digitação!</p>
+            <p>Agora volte para a página anterior e analise as linhas 13 e 15. A <strong>linha 13</strong> vai carregar a imagem logo-css.png que está dentro da pasta fotos, como vimos anteriormente.
+            Note que foi necessário colocar o nome da pasta seguido de uma barra antes de colocar o nome do arquivo. Se isso não for obedecido, simplesmente a imagem não vai carregar!</p>
+            <p>Por fim, na <strong>linha 15</strong> fizemos a carga de um arquivo que não estava na pasta do
+            projeto. A imagem js-small.gif está localizada em outro domínio, o jsdotgit.com. Nesse caso, precisamos indicar o caminho completo (<strong>URL</strong>) da imagem.</p>
+            <p>Você pode obter a URL completa de qualquer imagem, abra um site no Google Chrome, clique com o botão direito do mouse sobre a imagem e escolha a opção “Copiar endereço da imagem”. Aí é só voltar no seu código HTML, colocar o cursor do
+            teclado dentro das aspas da propriedade src da sua imagem e apertar Ctrl+V. Faça uma experiência em casa agora mesmo.</p>
+            <h4>Para que servem os textos alternativos?</h4>
+            <p>Toda imagem deve ter um texto alternativo, mesmo você achando que isso é muito chato de fazer. Textos alternativos ajudam muito na indexação do seu site em mecanismos de busca e também ajudam muito na Acessibilidade, pois se um
+            visitante for deficiente visual, seu navegador vai ser capaz de descrever que tipo de foto está sendo mostrada ali.</p>
+            <p>Tente ser objetivo na descrição da sua imagem, mas crie textos que fazem sentido. Tem um monte de gente que coloca o texto “foto” como descrição de uma imagem. Aí não dá!</p>
+            <p>Os textos alternativos também auxiliam o Google a saber o que tem dentro da sua foto e exibi-la nos resultados de busca do Google Imagens.</p>
         </section>
     </main>
 </body>
