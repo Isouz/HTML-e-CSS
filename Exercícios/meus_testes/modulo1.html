@@ -438,6 +438,22 @@
             visitante for deficiente visual, seu navegador vai ser capaz de descrever que tipo de foto está sendo mostrada ali.</p>
             <p>Tente ser objetivo na descrição da sua imagem, mas crie textos que fazem sentido. Tem um monte de gente que coloca o texto “foto” como descrição de uma imagem. Aí não dá!</p>
             <p>Os textos alternativos também auxiliam o Google a saber o que tem dentro da sua foto e exibi-la nos resultados de busca do Google Imagens.</p>
+            <h4>Usando Ícone de Favoritos (favicon)</h4>
+            <p>Você já ouviu falar em favicon? Talvez você não os identifique pelo nome esquisito, mas com certeza já viu aqueles pequenos ícones que aparecem ao lado dos sites que visitamos, na parte superior do seu navegador. É o mesmo local onde aparecem o texto que você colocou na tag &lt;title&gt; do seu site. Na imagem abaixo, você consegue ver os favicons do Google, YouTube e Facebook. A última guia não tem favicon, porque não tem site nenhum aberto nela.</p>
+            <img src="midia/midias_modulo_1/tela-favicon.jpg" alt="tela-favicon">
+            <p>Para usar um favicon no seu site, você precisa ter o arquivo do ícone, que geralmente está no formato <strong>ICO</strong>. Se quiser baixar alguns ícones prontos, recomendo o site <a href="https://www.iconarchive.com/">IconArchive</a>.</p>
+            <p>Se você tiver o dom e muita paciência, pode desenhar seu favicon no site <a href="https://favicon.io/">favicon.io</a>.</p>
+            <p>Agora, se seu objetivo é criar um ícone personalizado para seu site baseado em imagens que você já tem, recomendo o site favicon.io, onde você pode submeter qualquer imagem e baixar um pacote com vários formatos de favicon. Lá você também vai poder criar um ícone de favoritos a partir de um texto ou então baseado em um emoji.</p>
+            <p>Ao baixar o pacote com os ícones de favoritos, descompacte-os (geralmente é um arquivo ZIP), pegue o arquivo com extensão .ICO e coloque na pasta principal do seu projeto. Normalmente, colocamos o nome do arquivo como <em>favicon.ico</em>.</p>
+            <p>Agora que você já tem seu favicon salvo na pasta do seu projeto (recomendo criar o ex004 no seu repositório local), vamos nos focar no código HTML para carregá-lo.</p>
+            <p>Crie seu arquivo index.html dentro da pasta ex004, incluindo seu código base automaticamente. Depois faça uma simples alteração na sua área &lt;head&gt;, incluindo uma tag &lt;link&gt;, digitando apenas a palavra link em uma linha em branco e escolhendo a opção link:favicon.</p>
+            <img src="midia/midias_modulo_1/link-favicon.jpg" alt="link-favicon">
+            <p>Pronto! É só dar uma olhada no nosso código acima e prestar atenção na <strong>linha 6</strong>. Se você usou a dica que dei acima, não precisou digitar mais nada! Todo o código foi feito automaticamente!</p>
+            <p>OBS: se seu arquivo não se chamar favicon.ico, você deve adaptar a linha 6, colocando o nome do seu ícone.</p>
+            <h4>Quais são os formatos aceitos para Favicon?</h4>
+            <p>Apesar da minha indicação para usar o arquivo no formato <strong>ICO</strong>, existem outros formatos suportados para o seu favicon, como o próprio <strong>PNG</strong> que estudamos anteriormente e até o formato <strong>SVG</strong>, que é vetorizado e seria a melhor das opções.</p>
+            <p>Mas se o SVG é a melhor das opções, por que não usá-lo? Infelizmente nem todo navegador é compatível com esse formato e acaba causando algumas inconsistências na exibição do nosso site em outras plataformas.</p>
+            <p>Sendo assim, pelo menos por enquanto, continuo dando o meu conselho: use o formato ICO.</p>
         </section>
     </main>
 </body>
