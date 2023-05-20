@@ -455,6 +455,46 @@
             <p>Mas se o SVG é a melhor das opções, por que não usá-lo? Infelizmente nem todo navegador é compatível com esse formato e acaba causando algumas inconsistências na exibição do nosso site em outras plataformas.</p>
             <p>Sendo assim, pelo menos por enquanto, continuo dando o meu conselho: use o formato ICO.</p>
         </section>
+        <hr>
+        <section>
+            <h2>Capítulo 7</h2>
+            <h3>Hierarquia de Títulos</h3>
+            <h4>Entendendo a hierarquia de títulos</h4>
+            <p>Vamos começar com um exercício prático. Te convido a analisar uma matéria da revista VOCÊ S/A, de Fevereiro de 2015. Não precisa se focar em ler o conteúdo, apenas olhe para a imagem a seguir e tente identificar seus componentes visuais.</p>
+            <img src="midia/midias_modulo_1/voce.jpg" alt="voce">
+            <p>Agora que você já deu uma olhada na estrutura, vamos procurar identificar a sua hierarquia de títulos. Com toda certeza, se eu te perguntar qual é o título principal da matéria, a resposta vem imediatamente: “Falta de sintonia”. Isso acontece porque esse é o texto que está em destaque principal no texto.</p>
+            <p>Mas aí, te faço outra pergunta: existem outros títulos nessa página? Uma breve análise visual nos leva a um resultado:</p>
+            <ul>
+                <li><em>Pense antes de agir</em></li>
+                <li><em>Passe mais tempo com seu desafeto</em></li>
+                <li><em>Saiba com quem está lidando</em></li>
+                <li><em>Tenha objetividade</em></li>
+            </ul>
+            <p>Outra coisa que você também consegue identificar é um parágrafo destacado logo após o título principal, onde a fonte do texto é até maior e mais destacada, mas não chega a ser um título. Em seguida, existe um parágrafo introdutório, onde encontramos um texto que aponta a essência da matéria.</p>
+            <p>Depois disso, começamos com os sub-títulos, que com certeza são partes que falam sobre o assunto “Falta de sintonia”, mas separa o tema principal em sub-temas para
+            melhorar a organização dos “pensamentos" de quem escreveu a matéria. Isso facilita
+            muito na organização dos textos.</p>
+            <p>Dentro de cada um desses sub-títulos temos um parágrafo que desenvolve mais sobre cada assunto.</p>
+            <p>Acho que deu pra entender meu ponto aqui, não é? Organizar o nosso conteúdo quando criamos páginas é essencial para ter um bom site.</p>
+            <p>Títulos em HTML são conhecidos como headings (que, traduzindo do Inglês, significa título mesmo 😅 ). Os títulos possuem SEIS NÍVEIS de hierarquia, e esses níveis servem para organizar nosso conteúdo. Para isso, usamos as tags &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt; para demarcar nossos títulos.</p>
+            <h5>Mas cuidado! Tamanho não é documento!</h5>
+            <p>Tem muita gente por aí que acha que &lt;h1&gt; significa “texto com fonte grande” e &lt;h6&gt; significa “texto com fonte pequena”. Isso não tem fundamento algum! Por favor, se alguém te disse isso algum dia, essa pessoa estava completamente equivocada.</p>
+            <p>Um &lt;h1&gt; significa que esse é um assunto principal e é sobre ele que vamos escrever.
+            Já o &lt;h2&gt; significa que esse é um sub-assunto do &lt;h1&gt; que está imediatamente acima dele. O &lt;h3&gt; significa que esse é um sub-assunto do &lt;h2&gt; que está acima dele. E assim sucessivamente até o &lt;h6&gt;.</p>
+            <h5>Só um H1 em uma página: fato ou lenda?</h5>
+            <p>Rola por aí muita gente falando que um documento HTML só deve ter um título H1 e que todos os demais devem ser sub-títulos deles. Isso surgiu com a galera que falava sobre otimização de
+            páginas para mecanismos de busca (SEO - Search Engine Optimization).</p>
+            <p>Hoje em dia, o próprio Google (maior mecanismo de busca do mundo) já diz que isso é uma lenda. Para eles, o que mais importa é dar significado ao seu H1. Ele é um tema principal, e se a sua página tem vários temas principais, use vários
+            H1 sem medo.</p>
+            <h4>Vamos criar a hierarquia da matéria da revista</h4>
+            <p>A missão agora é transformar o conteúdo da matéria que te mostrei no início do capítulo em uma página HTML. Eu não vou me focar em digitar o texto dos parágrafos de cada seção e no lugar deles vou usar os famosos <em>Lorem Ipsum</em> genéricos. Vamos começar abrindo o Visual Studio Code e criando um documento teste.html em uma pasta qualquer. Dentro desse documento, crie o código base HTML usando a exclamação, como já ensinei algumas vezes durante esse material (consulte o
+            Capítulo 4, página 6). Dentro da tag &lt;body&gt;, criaremos a estrutura do conteúdo.</p>
+            <p>Você viu que a imagem acima começa na linha 8. As anteriores são o código HTML automático criado pelo VS Code.</p>
+            <img src="midia/midias_modulo_1/tags-h.jpg" alt="tags-h">
+            <p>Na <strong>linha 9</strong> temos nosso título principal. Nas <strong>linhas 12, 14, 16 e 18</strong> temos os subtítulos do principal, como analisamos anteriormente.</p>
+            <p>OBS: Na <strong>linha 10</strong>, tivemos uma novidade que foi a atribuição de uma classe ao parágrafo após o &lt;h1&gt;. Mais para frente falaremos mais sobre isso, mas basicamente é para conseguirmos criar uma configuração visual diferente para esse parágrafo
+            especial usando folhas de estilo CSS.</p>
+        </section>
     </main>
 </body>
 </html>
