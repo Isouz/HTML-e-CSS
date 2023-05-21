@@ -495,6 +495,70 @@
             <p>OBS: Na <strong>linha 10</strong>, tivemos uma novidade que foi a atribuição de uma classe ao parágrafo após o &lt;h1&gt;. Mais para frente falaremos mais sobre isso, mas basicamente é para conseguirmos criar uma configuração visual diferente para esse parágrafo
             especial usando folhas de estilo CSS.</p>
         </section>
+        <hr>
+        <section>
+            <h2>Capítulo 8</h2>
+            <h3>Formatação de textos</h3>
+            <h4>Você já ouviu falar de semântica?</h4>
+            <pre>
+            <code>
+            “Semântica é o significado dos
+            vocábulos, por oposição à sua
+            forma.”</code>
+            </pre>
+            <p>Analisando a frase acima percebemos que uma palavra pode ter <strong>forma</strong> e <strong>significado</strong>, e que a <strong>semântica</strong> dá mais valor ao significado.</p>
+            <p>Na HTML4, tínhamos tags como &lt;b&gt;    que colocava um texto em negrito, &lt;u&gt;    que
+            colocava o termo sublinhado e &lt;blink&gt;  que fazia o texto piscar. Essas eram tags que
+            representavam apenas uma forma. Você dizia que queria um texto sublinhado, mas qual era o motivo? Qual era o sentido de sublinhar alguma coisa? Vamos ver um exemplo:</p>
+            <pre>
+            <code>
+            Juvenal era um sujeito de muita sorte. E já
+            começou de pequeno, onde morou na &lt;u&gt Rua Marquês
+            de Lira Filho&lt;/u&gt;, um local de fácil acesso ao 
+            Centro da cidade.
+            </code>
+            </pre>
+            <p>Em HTML4, colocamos o par de tags &lt;u&gt; e &lt;/u&gt; para delimitar o termo Rua Marquês de Lira Filho. Isso seria uma maneira de determinar somente um formato visual para chamar atenção para o endereço onde o cara nasceu. O sublinhado é apenas uma <strong>forma</strong>, sem <strong>significado</strong> explícito. Sublinhamos só pra chamar atenção visualmente.</p>
+            <p>Já a HTML5 chegou com o conceito de valorizar a semântica, logo suas tags tentam levar um significado embutido muito forte. Logo, a frase acima ficaria assim:</p>
+            <pre>
+            <code>
+            Juvenal era um sujeito de muita sorte. E já
+            começou de pequeno onde morou na &lt;address$gt;Rua
+            Marquês de Lira Filho&lt;/address$gt;, um local de
+            fácil acesso ao Centro da cidade. </code>
+            </pre>
+            <p>Note que agora, usamos a tag &lt;address&gt; para dar um significado ao destaque que fizemos. Estamos chamando atenção para Rua Marquês de Lira Filho por se tratar do endereço da pessoa. No caso, um navegador de celular pode até sugerir que você veja o mapa do local e trace a rota para chegar lá. Viu? SIGNIFICADO!</p>
+            <p>Sendo assim, em HTML5, vemos de forma bastante evidente a presença do chamado <strong>HTML semântico</strong> ou <strong>tags semânticas</strong> ou ainda o <strong>conteúdo semântico</strong>. Você quer que um endereço apareça na forma de um texto sublinhado? Use CSS para configurar isso, a HTML serve para dar sentido ao conteúdo. É assim que tudo vai funcionar.</p>
+            <p>Desde a mudança de versões, a W3C - consórcio responsável por normatizar a HTML - tem dado muito valor por adicionar novas tags que tenham mais significado e a tirar algumas tags que só se focam no efeito visual (forma) de apresentação. O intuito é deixar a apresentação gráfica por conta das CSS.</p>
+            <h4>Tags morrem, você sabia?</h4>
+            <p>Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags &lt;font&gt; e &lt;center&gt;. E existem outras que simplesmente foram excluídas das versões mais
+            atuais da HTML5, como é o caso do &lt;applet&gt; e &lt;blink&gt;.</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFoiCWknfB0bFGAjc-43tJE4KJPTVgtIPXzFUrjOa3-EMRQ64n" alt="morte">
+            <p>Isso acontece porque a linguagem evolui, e nesse processo algumas tags param de fazer sentido pois existem outras bem melhores e que fazem mais sentido.</p>
+            <p>Sendo assim, a própria W3C sugere que no lugar de &lt;b&gt;, que significa <strong>bold</strong> ou <strong>negrito</strong> e que seria simplesmente uma forma de apresentar um dado, passemos a usar a tag &lt;strong&gt;, que tem um significado de <strong>força</strong> ou <strong>potência</strong> dentro da frase.</p>
+            <h4>Negrito e Itálico</h4>
+            <p>Vamos ver agora algumas formatações bem usadas das últimas versões da linguagem, começando pelos famosos <strong>negrito</strong> e <em>itálico</em>.</p>
+            <p>Como vimos anteriormente, existem as tags &lt;b&gt; e &lt;i&gt; para essa tarefa, mas elas não possuem significado e focam apenas na forma, sendo assim, são pouco semânticos. Sendo assim, recomendamos que você passe a usar as tags &lt;strong&gt; e &lt;em&gt; para
+            realizar essas mesmas formatações visuais, só que agora com sentido.</p>
+            <p>A tag <strong>&lt;strong&gt;</strong> significa que o termo delimitado possui força dentro da frase. Logo,
+            ele aparecerá em negrito.</p>
+            <p>Já a tag <strong>&lt;em&gt;</strong> significa que queremos dar ênfase (do Inglês emphasis) ao termo. Logo, ele aparecerá em itálico.</p>
+            <p>Note que, ao usar &lt;strong&gt; e &lt;em&gt; no lugar de &lt;b&gt; e &lt;i&gt;, damos mais significado aos nossos termos e conteúdos. Como eles vão ser representados visualmente (forma), vai depender das nossas folhas de estilo CSS.</p>
+            <h4>Você sabe usar marca texto?</h4>
+            <p>Provavelmente você já viu ou usou uma dessas canetas marca texto em seu dia-a-dia. Elas servem para você marcar uma parte do texto na qual
+            você quer dar uma ênfase descomunal, já que se trata de um <mark>trecho muito valioso</mark> para você, assim como acabamos de fazer.</p>
+            <p>Para fazer essas marcas em HTML5, usamos a tag <strong>&lt;mark&gt;</strong>…<strong>&lt;/mark&gt;</strong> para delimitar o texto que queremos demarcar, como se estivéssemos usando uma caneta marcador.</p>
+            <h4>&lt;big&gt; morreu, mas o &lt;small&gt; ainda
+            sobrevive</h4>
+            <p>Tem certas coisas que simplesmente não são fáceis de entender. A tag &lt;big&gt; (que deixava o texto maior) está depreciada pela HTML5, mas a tag &lt;small&gt; (que deixa o texto menor) segue firme e forte na vida da linguagem.</p>
+            <p>E não adianta ficar me olhando com essa cara de reprovação. Eu não tenho culpa nenhuma por conta dessa decisão, sou apenas um mero professor que se foca em mostrar os fatos, não em fazê-los ter um sentido claro. Tem certas coisas que a gente não questiona, só aceita que dói menos.</p>
+            <h4><del>Texto deletado</del></h4>
+            <p>Antigamente existia a tag &lt;strike&gt;, que hoje também está depreciada pela última versão da HTML. No lugar dela entrou a tag <strong>&lt;del&gt;</strong>, que significa que <del>o texto está ali, pode até ser lido, mas deve ser desconsiderado</del> pelo leitor. Exatamente como eu acabei de fazer.</p>
+            <h4><ins>Texto inserido</ins></h4>
+            <p>O texto inserido é o exato oposto do texto deletado que vimos anteriormente. Nesse caso, se colocarmos um texto qualquer dentro de <strong>&lt;ins&gt;</strong> e <strong>&lt;/ins&gt;</strong>, estamos dizendo que <ins>o texto está ali, deve ser lido e você deve prestar atenção nele</ins>. É o que fazíamos anteriormente ao utilizar a tag &lt;u&gt; para sublinhar um texto.</p>
+            <h4>Textos sobrescrito e subscrito</h4>
+            <p>Quantas vezes você tentou escrever um X<sup>2</sup> ou um H<sub>2</sub>O em um documento e ficou na dúvida de como fazer pra esses números ficarem pequeninos ali em cima ou embaixo. Pois a HTML tem as tags <strong>&lt;sub&gt;</strong> e <strong>&lt;sup&gt;</strong> justamente para essa finalidade. Ao analisar os exemplos de código que apontei no início desse documento, você vai perceber melhor a diferença entre eles.</p>
+        </section>
     </main>
 </body>
 </html>
