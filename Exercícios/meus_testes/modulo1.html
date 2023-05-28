@@ -592,6 +592,96 @@
             </ul>
             <img src="midia/midias_modulo_1/bdo.jpg" alt="bdo">
         </section>
+        <hr>
+        <section>
+            <h2>Capítulo 9.</h2>
+            <h3>Listas com html</h3>
+            <h4>Listas Ordenadas</h4>
+            <p>A HTML chama de <strong>ordered lists</strong> todas aquelas listas onde a ordem dos itens é algo
+            muito importante. Um passo-a-passo para criar um bolo, uma lista de aprovados no vestibular e uma lista com os carros mais caros do mundo são exemplos de listas ordenadas.</p>
+            <p>Para criar uma ordered list, vamos usar a tag <strong>&lt;ol&gt;</strong> para delimitar a lista e <strong>&lt;li&gt;</strong> (list item) para identificar cada item da lista.</p>
+            <div>
+            <pre>
+            <strong>&lt;ol&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 1<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 2<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 3<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 4<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 5<strong>&lt;li&gt;</strong>
+            <strong>&lt;ol&gt;</strong>
+            </pre>
+            </div>
+            <p>A tag <strong>&lt;ol&gt;</strong> possui um parâmetro type, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:</p>
+            <ul>
+                <li>1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …</li>
+                <li>A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …</li>
+                <li>a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …</li>
+                <li>I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …</li>
+                <li>i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, …</li>
+            </ul>
+            <p>Você também pode indicar o início da contagem usando o parâmetro start.</p>
+            <p>Por exemplo, a tag &lt;ol <strong>type=“I” start = “5”</strong>&gt; vai gerar itens numerados como V, VI, VII, VIII, IX, …</p>
+            <h4>Listas não Ordenadas</h4>
+            <p>Se você compreendeu a criação de listas ordenadas, com certeza vai entender as <strong>unordered lists</strong>, também chamadas de listas com marcadores, que são aquelas onde a ordem dos itens não influenciará no significado da lista. Ela é apenas uma ótima maneira para organizar os itens que não apresentam uma classificação necessariamente.</p>
+            <p>Para criar uma unordered list, vamos usar a tag &lt;ul&gt; para delimitar a lista e a tag
+            &lt;li&gt; para criar cada um dos seus itens internos.</p>
+            <div>
+            <pre>
+            <strong>&lt;ul&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 1<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 2<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 3<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 4<strong>&lt;li&gt;</strong>
+                <strong>&lt;li&gt;</strong>Item 5<strong>&lt;li&gt;</strong>
+            <strong>&lt;ul&gt;</strong>
+            </pre>
+            </div>
+            <p>O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag &lt;ul&gt; com os seguintes valores:</p>
+            <ul>
+                <li>disc - padrão. Uma bola preta totalmente pintada</li>
+                <li>circle - Uma bola com uma borda preta e sem preenchimento</li>
+                <li>square - Um pequeno quadrado preto totalmente pintado</li>
+            </ul>
+            <h4>Misturando as coisas</h4>
+            <p>Podemos também criar listas mistas configurando listas dentro de outras listas. Veja
+            o exemplo a seguir:</p>
+            <div class="box_exemplo">
+            <pre>
+            &lt;ol&gt;
+                &lt;li&gt;Item 1&lt;li&gt;
+                &lt;li&gt;Item 2&lt;li&gt;
+                &lt;ol type="a"&gt;
+                    &lt;li&gt;Item 2.1&lt;li&gt;
+                    &lt;li&gt;Item 2.2&lt;li&gt;
+                    &lt;li&gt;Item 2.3&lt;li&gt;
+                &lt;ol&gt;
+                &lt;li&gt;Item 3&lt;li&gt;
+                &lt;li&gt;Item 4&lt;li&gt;
+                &lt;li&gt;Item 5&lt;li&gt;
+            &lt;ol&gt;
+            </pre>
+            </div>
+            <p>O resultado visual do código que vimos anteriormente será semelhante ao que temos a seguir:</p>
+            <p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol type="a">
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                    <li>Item 2.3</li>
+                </ol>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+            </p>
+            <p>Note que os itens da lista interna (a, b, c, …) está deslocado para a direita em relação ao item 2, do qual essa sub-lista é filha.</p>
+        </section>
+        <hr>
+        <section>
+            
+        </section>
     </main>
 </body>
 </html>
