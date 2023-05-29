@@ -680,7 +680,41 @@
         </section>
         <hr>
         <section>
-            
+            <h2>Capítulo 10</h2>
+            <h3>Ligações em toda parte.</h3>
+            <h4>Joga a âncora, marujo ⚓</h4>
+            <p>Os hyperlinks são um dos conceitos mais antigos da história da linguagem HTML. Eles permitem que você ligue um ponto a outro na World Wide Web. Toda vez que você está acessando um site e clica em um local para ir para outra página, outro site ou até para baixar um arquivo, você está interagindo com um hyperlink.</p>
+            <p>Até os mecanismos de busca se utilizam dos hyperlinks de um site. O Google, por exemplo, para achar um determinado site, fica vasculhando
+            constantemente todos os outros sites da Internet procurando por links para descobrir novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites para o nosso próprio site.</p>
+            <p>Para criar um hyperlink, devemos criar âncoras através da tag <strong>&lt;a&gt;</strong>. O principal atributo dessa tag é o <strong>href</strong>, que cria uma referência hipertexto. Vamos ver um exemplo simples:</p>
+            <div class="box_exemplo">
+                &lt;h1&gt;Vamos criar um link&lt;/h1&gt;  
+                &lt;a href="https://gustavoguanabara.github.io"&gt;Acesse meu perfil no GitHub&lt;/a&gt;
+            </div>
+            <p>Note que dentro do atributo href, o que colocamos foi uma URL completa para outro site.</p>
+            <p>Outro atributo bem útil da tag de âncora é o <strong>hreflang</strong>, que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos.</p>
+            <div class="box_exemplo">
+                &lt;a href="https://www.w3schools.com/html/" <strong>hreflang</strong>="en"&gt;Site da W3Schools (em Inglês)&lt;/a&gt;
+            </div>
+            <h4>Mira no Alvo 🎯</h4>
+            <p>Por padrão, sempre que um visitante clique em um hyperlink, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteúdo anterior vai deixar de ser exibido para mostrar o novo conteúdo.</p>
+            <img src="https://cdn.pixabay.com/photo/2013/03/30/00/11/windows-97883_1280.png" alt="janelas">
+            <p>Esse é um comportamento desejado quando o visitante vai continuar a visitar o nosso site, apenas mudando de um documento para outro. Mas e quando um clique leva o visitante para outro site e provavelmente ele nunca mais voltará ao nosso?</p>
+            <p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <strong>target</strong>, que suporta os seguintes valores:</p>
+            <ul>
+                <li><strong>_blank</strong> vai abrir o link em uma nova janela em branco</li>
+                <li><strong>_self</strong> vai abrir o link na janela ou frame atual (padrão)</li>
+                <li><strong>_top</strong> vai desfazer todos os frames e abrir o destino no navegador completo</li>
+                <li><strong>_parent</strong> similar ao uso do _top em uma referência à janela mãe</li>
+                <li><strong>nome-do-frame</strong> caso esteja usando frames, indicar o nome da janela a abrir</li>
+            </ul>
+            <div class="box_exemplo">
+                &lt;a href="pagina2.html" <strong>target="_self"</strong>&gt;Continuar navegando no site&lt;/a&gt;
+            </div>
+            <div class="box_exemplo">
+                &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;Abrir perfil do GitHub em nova janela&lt;/a&gt;
+            </div>
+            <h4>Esse link é seu ou dos outros?</h4>
         </section>
     </main>
 </body>
