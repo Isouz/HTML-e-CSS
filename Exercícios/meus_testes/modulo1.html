@@ -715,6 +715,49 @@
                 &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;Abrir perfil do GitHub em nova janela&lt;/a&gt;
             </div>
             <h4>Esse link é seu ou dos outros?</h4>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIN1cXy-2odbNTMyoYvTumM5Q1G1nYA6UqSnd26Jh5Kw4QKuCL" alt="corrente">
+            <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários
+            valores, entre eles vou citar:</p>
+            <ul type="circle">
+                <li><strong>next</strong> indica que o link é para a próxima parte do documento atual</li>
+                <li><strong>prev</strong> indica que o link é para a parte anterior do documento atual</li>
+                <li><strong>author</strong> indica que é um link para o site do autor do artigo atual</li>
+                <li><strong>external</strong> indica que é um link para outro site que não faz parte do site atual</li>
+                <li><strong>nofollow</strong> indica que é um link para um site não endossado, como um link pago</li>
+            </ul>
+            <div class="box_exemplo">
+                &lt;a href="pagina2.html" target="_self"<strong>rel="next"</strong>&gt;Continuar navegando no site&lt;/a&gt;<br>
+
+                &lt;a href="https://gustavoguanabara.github.io" target="_blank"<strong>rel="external"</strong>&gt;Abrir perfil do GitHub em nova janela&lt;/a&gt;
+            </div>
+            <p>No código anterior, o primeiro link é o que chamamos de link local ou link interno, já que ele leva o visitante a outra página dentro do nosso próprio site. Note que não é necessário nem indicar a URL completa nesses casos.</p>
+            <p>Já o segundo link vai nos levar para um outro site, o que chamamos de link externo. Nestes casos, devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve à uma página específica, se for necessário.</p>
+            <h4>E para fazer Downloads?</h4>
+            <p>Outra coisa que aparece bastante em sites são os links para efetuar download de algum material em PDF, ou de um arquivo ZIP qualquer. A partir da versão HTML5, as âncoras receberam atributos especiais para isso. Basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo download com o valor configurado para o nome do arquivo a ser baixado e o atributo type para indicar ao
+            navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEtu1qvfAGaqMp9MtArb2bkfqAX8fW5nQlN3BEhg9eOaug1cb" alt="pasta-zip">
+            <div class="box_exemplo">
+                &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" type="aplication/pdf"</strong>&gt;Baixe aqui o PDF do meu livro&lt;/a&gt;
+            </div>
+            <p>Aqui vão alguns media types bem usados no nosso dia-a-dia:</p>
+            <ul type="square">
+                <li>application/zip</li>
+                <li>text/html</li>
+                <li>text/css</li>
+                <li>text/javascript</li>
+                <li>video/mp4</li>
+                <li>video/H264</li>
+                <li>video/JPEG</li>
+                <li>audio/aac</li>
+                <li>audio/mpeg</li>
+                <li>font/ttf</li>
+                <li>image/jpeg</li>
+                <li>image/png</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            
         </section>
     </main>
 </body>
