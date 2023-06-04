@@ -801,12 +801,18 @@
             <p>É importante que existe uma ordem entre os &lt;source&gt;, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão.</p>
             <h4>Vamos falar sobre áudio</h4>
             <p>Com a HTML5, veio também a facilidade em compartilhar áudio nos nossos sites e sem depender necessariamente de JavaScript ou plugins extras. A partir de agora, basta uma tag <strong>&lt;audio&gt;</strong> e alguns &lt;source&gt; para fazer seu site ser capaz de tocar qualquer áudio.</p>
+            <div class="box">
+                <audio preload="metadata" controls autoplay loop>
+                    <source src="midia/midias_modulo_1/guanacast-33.mp3" type="audio/mpeg">
+                    <p>Seu navegador não suporta áudio <a href="midia/midias_modulo_1/guanacast-33.mp3" download=guanacast-33" type="audio/mpeg"></a></p>
+                </audio>
+            </div>
             <div class="box_exemplo">
                 &lt;audio preload="metadata" controls autoplay loop&gt; <br> 
-                &lt;source src="midia/guanacast-33.mp3" type="audio/mped"&gt; <br>
+                &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt; <br>
                 &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt; <br>
                 &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt; <br>
-                &lt;p&gt;Seu navegador não suporta áudio &lt;href="midia/guanacast-33.mp3 download="guanacast-33" type="audio/mpeg"&gt;&lt;/a&gt;&lt;/p&gt; <br>
+                &lt;p&gt;Seu navegador não suporta áudio &lt;a href="midia/guanacast-33.mp3 download="guanacast-33" type="audio/mpeg"&gt;&lt;/a&gt;&lt;/p&gt; <br>
                 &lt;/audio&gt;
             </div>
             <p>Vamos analisar os principais atributos da tag &lt;audio&gt; antes de mais nada:</p>
@@ -825,7 +831,12 @@
             <p>Dentro da tag &lt;audio&gt;, adicionamos vários &lt;source&gt; com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.</p>
             <h4>E os vídeos?</h4>
             <p>Para inserir um vídeo em nosso site, podemos utilizar a nova tag &lt;source&gt; da HTML5, caso o arquivo esteja hospedado no nosso próprio servidor.</p>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnri8vK4z0OwEHEvpACUXVqcZgxLY0tmr_QQnO0aY-slCdiYSo" alt="pasta-verde">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnri8vK4z0OwEHEvpACUXVqcZgxLY0tmr_QQnO0aY-slCdiYSo" alt="pasta-verde"><br>
+            <video width="200" controls autoplay>
+                <source src="meu-video.webm" type="video/webm">
+                <source src="midia/midias_modulo_1/meu-video.mp4" type="video/mp4">
+                <p>Seu navegador não conseguiu carregar o vídeo.</p>
+            </video>
             <div class="box_exemplo">
                 &lt;video width="600" poster="thumb.jpg controls autoplay&gt; <br> 
                 &lt;source src="meu-video.webm" type="video/webm"&gt; <br>
@@ -843,6 +854,38 @@
                 controls na tag &lt;video&gt;.</li>
                 <li><strong>autoplay</strong> diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.</li>
             </ul>
+            <h4>Que formatos são esses?</h4>
+            <p>Arquivos de vídeo não são tão simples quanto imagens e áudios, onde o formato indica o padrão para abrir e reproduzir a mídia. Vídeos possuem formatos e codecs e isso pode tornar o vídeo inviável de ser reproduzido pela maioria dos navegadores na maioria dos dispositivos. É
+            preciso prestar muita atenção nesse pequeno detalhe.</p>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD6cDiBsRuMsngn-igLrw-37MYPEgDqoIwuTrzLXWQju8Gnm4L" alt="Handbrake">
+            <p>Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente.</p>
+            <table id="tabela3">
+                <thead>
+                    <th>Navegador</th>
+                    <th>Arquivos compatíveis</th>
+                </thead>
+                <tr>
+                    <td>Microsoft Edge</td>
+                    <td>.mp4 .m4v</td>
+                </tr>
+                <tr>
+                    <td>Apple Safari</td>
+                    <td>.mp4 .m4v</td>
+                </tr>
+                <tr>
+                    <td>Google Chrome</td>
+                    <td>.mp4 .m4v .webm .ogv</td>
+                </tr>
+                <tr>
+                    <td>Mozilla Firefox</td>
+                    <td>.webm .ogv</td>
+                </tr>
+                <tr>
+                    <td>Opera</td>
+                    <td>.webm .ogv</td>
+                </tr>
+            </table>
+            <p>UM ÓTIMO CONVERSOR: Para gerar arquivos em vários formatos e usando codecs padronizados, recomendo usar o programa open source chamado <strong><a href="https://handbrake.fr/downloads.php">Handbrake</a></strong>, disponível para várias plataformas.</p>
         </section>
     </main>
 </body>
