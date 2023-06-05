@@ -886,6 +886,34 @@
                 </tr>
             </table>
             <p>UM ÓTIMO CONVERSOR: Para gerar arquivos em vários formatos e usando codecs padronizados, recomendo usar o programa open source chamado <strong><a href="https://handbrake.fr/downloads.php">Handbrake</a></strong>, disponível para várias plataformas.</p>
+
+            <h4>Hospedar seus próprios vídeos pode ser caro</h4>
+            <p>Quando colocamos vídeos no nosso próprio servidor, podemos passar por problemas
+            com alto consumo de banda, site lento e incompatibilidades com alguns navegadores
+            por conta dos codecs. E geralmente só percebemos esses problemas quando colocamos nosso projeto no ar e lançamos oficialmente.</p>
+            <p>Vamos fazer uma conta simples: um vídeo simples, com poucos minutos, em formato mp4 com codec padrão deve ocupar uns 150MB com facilidade. Agora imagine que você lance seu site e 200 visitantes (um número super possível) acessem seu site e reproduzam o vídeo. Pronto, você acabou de utilizar 29GB de tráfego! Imagine o quanto isso pode deixar seu site lento ou consumir sua franquia de hospedagem, caso não seja ilimitada.</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkl6COCQ-2RXKzkkGx8idkhQFGa0ofFVRWZxjkDSI2kg5mXSk-" alt="dinheiro">
+            <p>E é claro que seu site possivelmente não vai ter apenas um vídeo, não vai ter apenas 200 visitantes em um dia e aí a conta só aumenta. É preciso tomar muito cuidado quando decidimos guardar nossos próprios vídeos.</p>
+            <h4>E agora, quem poderá nos defender?</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-veVbl_z1f79bRLFVMBgFZP10prfZMc7I-nVPGE3IWhJd94X" alt="YouTube">
+            <p>O YouTube é o serviço de hospedagem de vídeos mais popular do mundo e é gerenciado pelo Google. Sua principal vantagem é que seus servidores
+            são ultra rápidos. Por outro lado, a ideia do Google é deixar todos os vídeos públicos e disponíveis, o que pode ser uma dor de cabeça caso
+            você queira limitar quem vai ter acesso a determinado vídeo (uma escola online, por exemplo, onde queremos que apenas os alunos
+            matriculados possam assistir).</p>
+            <p>O Vimeo resolve o problema que apontamos anteriormente. Ele permite limitar quem vai poder ver o vídeo, o que é especialmente vantajoso para quem quer criar produtos em forma de vídeo, entregues por demanda dentro de um site personalizado. Como desvantagens desse serviço, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do YouTube, logo os vídeos apresentam pequenos travamentos às vezes.</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl_zA5yOidtdREFUJgTAP8xpwWWODbJuKnU5eH_eW5akJm0P6O" alt="Vimeo">
+            
+            <h4>E dá pra incorporar com esses aí em HTML?</h4>
+            <p>Para incorporar vídeos que você subiu no YouTube ou Vimeo, existem recursos que te dão o código pronto em HTML5.</p>
+            <p>No YouTube, abra o vídeo que você quer incorporar e clique no link <strong>COMPARTILHAR</strong> que fica abaixo do título (veja imagem a seguir).</p>
+            <img src="midia/midias_modulo_1/Compartilhar.jpg" alt="compartilhar">
+            <p>Ao clicar no link indicado anteriormente, uma janela vai aparecer, te dando as opções de compartilhamento. Escolha o item <strong>INCORPORAR</strong>.</p>
+            <img src="midia/midias_modulo_1/Incorporar.jpg" alt="incorporar">
+            <p>O código HTML personalizado vai aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do &lt;iframe&gt; que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo.</p>
+            <img src="midia/midias_modulo_1/video-incorporado.jpg" alt="video-incorporado">
+            <p>Quando você está usando o Vimeo, o procedimento é bastante semelhante. Abra seu painel de controle do serviço e vá para a sua lista de vídeos hospedados. Na lista de mídias
+            armazenadas, clique no botão com reticências e escolha a opção <strong>Incorporação</strong> (veja imagem abaixo). Na janela, você vai poder clicar no botão Código de incorporação e a tag &lt;iframe&gt; personalizada também vai aparecer.</p>
+            <img src="midia/midias_modulo_1/incorporacao.jpg" alt="incorporacao">
         </section>
     </main>
 </body>
