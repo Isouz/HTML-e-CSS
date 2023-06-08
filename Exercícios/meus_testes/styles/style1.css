@@ -60,6 +60,10 @@ ol, li {
     margin:0px 30px;
 }
 
+img {
+    max-width: 600px;
+}
+
 /*-----Estilos das caixas-----*/
 
 .box {
