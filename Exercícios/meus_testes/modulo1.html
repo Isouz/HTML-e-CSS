@@ -609,8 +609,7 @@
                 <strong>&lt;li&gt;</strong>Item 3<strong>&lt;li&gt;</strong>
                 <strong>&lt;li&gt;</strong>Item 4<strong>&lt;li&gt;</strong>
                 <strong>&lt;li&gt;</strong>Item 5<strong>&lt;li&gt;</strong>
-            <strong>&lt;ol&gt;</strong>
-            </pre>
+            <strong>&lt;ol&gt;</strong></pre>
             </div>
             <p>A tag <strong>&lt;ol&gt;</strong> possui um parâmetro type, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:</p>
             <ul>
@@ -634,8 +633,7 @@
                 <strong>&lt;li&gt;</strong>Item 3<strong>&lt;li&gt;</strong>
                 <strong>&lt;li&gt;</strong>Item 4<strong>&lt;li&gt;</strong>
                 <strong>&lt;li&gt;</strong>Item 5<strong>&lt;li&gt;</strong>
-            <strong>&lt;ul&gt;</strong>
-            </pre>
+            <strong>&lt;ul&gt;</strong></pre>
             </div>
             <p>O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag &lt;ul&gt; com os seguintes valores:</p>
             <ul>
@@ -659,8 +657,7 @@
                 &lt;li&gt;Item 3&lt;li&gt;
                 &lt;li&gt;Item 4&lt;li&gt;
                 &lt;li&gt;Item 5&lt;li&gt;
-            &lt;ol&gt;
-            </pre>
+            &lt;ol&gt;</pre>
             </div>
             <p>O resultado visual do código que vimos anteriormente será semelhante ao que temos a seguir:</p>
             <div class="box">
@@ -689,13 +686,19 @@
             constantemente todos os outros sites da Internet procurando por links para descobrir novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites para o nosso próprio site.</p>
             <p>Para criar um hyperlink, devemos criar âncoras através da tag <strong>&lt;a&gt;</strong>. O principal atributo dessa tag é o <strong>href</strong>, que cria uma referência hipertexto. Vamos ver um exemplo simples:</p>
             <div class="box_exemplo">
-                &lt;h1&gt;Vamos criar um link&lt;/h1&gt;  
-                &lt;a href="https://gustavoguanabara.github.io"&gt;Acesse meu perfil no GitHub&lt;/a&gt;
+                <pre>
+                &lt;h1&gt;Vamos criar um link&lt;/h1&gt;
+                <strong>&lt;a href="https://gustavoguanabara.github.io"&gt;</strong>
+                    Acesse meu perfil no GitHub
+                <strong>&lt;/a&gt;</strong></pre> 
             </div>
             <p>Note que dentro do atributo href, o que colocamos foi uma URL completa para outro site.</p>
             <p>Outro atributo bem útil da tag de âncora é o <strong>hreflang</strong>, que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos.</p>
             <div class="box_exemplo">
-                &lt;a href="https://www.w3schools.com/html/" <strong>hreflang</strong>="en"&gt;Site da W3Schools (em Inglês)&lt;/a&gt;
+                <pre>
+                &lt;a href="https://www.w3schools.com/html/" <strong>hreflang</strong>="en"&gt;
+                    Site da W3Schools (em Inglês)
+                &lt;/a&gt;</pre>   
             </div>
             <h4>Mira no Alvo 🎯</h4>
             <p>Por padrão, sempre que um visitante clique em um hyperlink, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteúdo anterior vai deixar de ser exibido para mostrar o novo conteúdo.</p>
@@ -710,10 +713,17 @@
                 <li><strong>nome-do-frame</strong> caso esteja usando frames, indicar o nome da janela a abrir</li>
             </ul>
             <div class="box_exemplo">
-                &lt;a href="pagina2.html" <strong>target="_self"</strong>&gt;Continuar navegando no site&lt;/a&gt;
+                <pre>
+                &lt;a href="pagina2.html" <strong>target="_self"</strong>&gt;
+                    Continuar navegando no site
+                &lt;/a&gt;</pre>
+                
             </div>
             <div class="box_exemplo">
-                &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;Abrir perfil do GitHub em nova janela&lt;/a&gt;
+                <pre>
+                &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;
+                    Abrir perfil do GitHub em nova janela
+                &lt;/a&gt;</pre>
             </div>
             <h4>Esse link é seu ou dos outros?</h4>
             <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIN1cXy-2odbNTMyoYvTumM5Q1G1nYA6UqSnd26Jh5Kw4QKuCL" alt="corrente">
@@ -727,9 +737,13 @@
                 <li><strong>nofollow</strong> indica que é um link para um site não endossado, como um link pago</li>
             </ul>
             <div class="box_exemplo">
-                &lt;a href="pagina2.html" target="_self"<strong>rel="next"</strong>&gt;Continuar navegando no site&lt;/a&gt;<br>
-
-                &lt;a href="https://gustavoguanabara.github.io" target="_blank"<strong>rel="external"</strong>&gt;Abrir perfil do GitHub em nova janela&lt;/a&gt;
+                <pre>
+                &lt;a href="pagina2.html" target="_self"<strong>rel="next"</strong>&gt;
+                    Continuar navegando no site
+                &lt;/a&gt;
+                &lt;a href="https://gustavoguanabara.github.io" target="_blank"<strong>rel="external"</strong>&gt;
+                    Abrir perfil do GitHub em nova janela
+                &lt;/a&gt;</pre>
             </div>
             <p>No código anterior, o primeiro link é o que chamamos de link local ou link interno, já que ele leva o visitante a outra página dentro do nosso próprio site. Note que não é necessário nem indicar a URL completa nesses casos.</p>
             <p>Já o segundo link vai nos levar para um outro site, o que chamamos de link externo. Nestes casos, devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve à uma página específica, se for necessário.</p>
@@ -738,7 +752,10 @@
             navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEtu1qvfAGaqMp9MtArb2bkfqAX8fW5nQlN3BEhg9eOaug1cb" alt="pasta-zip">
             <div class="box_exemplo">
-                &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" type="aplication/pdf"</strong>&gt;Baixe aqui o PDF do meu livro&lt;/a&gt;
+                <pre>
+                &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" type="aplication/pdf"</strong>&gt;
+                    Baixe aqui o PDF do meu livro
+                &lt;/a&gt;</pre>
             </div>
             <p>Aqui vão alguns media types bem usados no nosso dia-a-dia:</p>
             <ul type="square">
@@ -767,23 +784,25 @@
             <p>A mídia que mais sofre com esse problema de tamanho de exibição são as imagens. Uma TV pode exibir imagens gigantes, mas se usarmos essa mesma foto para ser apresentada em um celular, teremos que redimensionar forçadamente a imagem com CSS.</p>
             <p>Porém, essa prática não vai fazer com que o tamanho (em bytes) diminua também. Isso acaba aumentando o consumo de dados em dispositivos móveis e deixando seu site muito pesado, e ninguém tem paciência para acessar site lento.</p>
             <h4>Imagens Flexíveis</h4>
-            <p>Nosso primeiro passo no caminho de adaptar nosso conteúdo ao tamanho da tela vai ser aprender a gerar imagens de tamanho diferentes e a fazer o navegador carregar a imagem certa para cada situação. Para isso, devemos conhecer as tags &lt;picture&gt; e &lt;source&gt;.</p>
+            <p>Nosso primeiro passo no caminho de adaptar nosso conteúdo ao tamanho da tela vai ser aprender a gerar imagens de tamanho diferentes e a fazer o navegador carregar a imagem certa para cada situação. Para isso, devemos conhecer as tags <strong>&lt;picture&gt;</strong> e <strong>&lt;source&gt;</strong>.</p>
             <p>Para esse exemplo, criamos as três imagens ao lado: a menor tem 300x300px, a média tem 700x700px e a maior tem 1000x1000px. Usamos o programa <strong>GIMP</strong>, que é um editor de imagens 100%
             gratuito. Essas imagens serão carregadas pelo navegador de acordo com o tamanho da janela atual. Para isso, criamos o seguinte código base:</p>
             <div class="box_exemplo">
-                &lt;picture&gt; <br> 
-                &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt; <br>
-                &lt;/picture&gt;
+                <pre>
+                <strong>&lt;picture&gt;</strong>
+                    <strong>&lt;img</strong> src="foto-g.png" alt="A imagem  flexível funciona"<strong>&gt;</strong>
+                <strong>&lt;/picture&gt;</strong></pre>
             </div>
             <p>Note que colocamos a tag &lt;img&gt; exatamente como aprendemos no capítulo 06 do nosso material. A novidade aqui é que inserimos essa imagem dentro da tag &lt;picture&gt;, que vai concentrar as outras fontes de imagem. Por padrão, a imagem foto-g.png (1000x1000px) será carregada.</p>
             <p>O problema vai começar a surgir quando a janela do navegador chegar perto dos 1000 pixels de largura, pois a foto não vai mais caber lá. Vamos agora adicionar uma linha para resolver esse problema:</p>
             <div class="box_exemplo">
-                &lt;picture&gt;  <br>
-                &lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;<br>
-                &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt; <br>
-                &lt;/picture&gt;
+                <pre>
+                &lt;picture&gt;
+                    <strong>&lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;</strong>
+                    &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
+                &lt;/picture&gt;</pre>
             </div>
-            <p>Note que a tag &lt;source&gt; possui três atributos:</p>
+            <p>Note que a tag <strong>&lt;source&gt;</strong> possui três atributos:</p>
             <ul>
                 <li><strong>type</strong> vai indicar o media type da imagem que usamos (veja mais informações sobre media types no capítulo 10)</li>
                 <li><strong>srcset</strong> vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido</li>

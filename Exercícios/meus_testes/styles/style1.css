@@ -73,6 +73,13 @@ img {
     align-items: center;
 }
 
+.box_exemplo {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #6379f8bd;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 
 /*-----Estilos de tabelas-----*/
