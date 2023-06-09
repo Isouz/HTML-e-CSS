@@ -55,7 +55,7 @@ p {
     padding: 10px;
 }
 
-ol, li {
+ol, ul, li {
     list-style-position: inside;
     margin:0px 30px;
 }
@@ -79,6 +79,7 @@ img {
     background-color: #6379f8bd;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 

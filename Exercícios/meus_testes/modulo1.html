@@ -193,10 +193,12 @@
             <p>Finalmente, provavelmente existe o menu do site. Quando você clica nele, acontece uma animação. Ao mover o mouse sobre as sessões, é possível que aconteçam algumas interações interessantes. Isso foi desenvolvido com ajuda de <strong>JavaScript</strong>. Ela é uma linguagem focada nas <strong>interações</strong>.</p>
             <h4>Tags HTML, aí vamos nós.</h4>
             <p>Como eu já disse anteriormente, a HTML funciona baseada em marcações específicas chamadas <strong>tags</strong>. Uma tag é um conjunto de palavras entre sinais de <strong>colchete angular</strong>, conforme representado a seguir.</p>
-            <img src="midia/midias_modulo_1/tag-p.png" alt="tag-p">
+            <div class="box"><img src="midia/midias_modulo_1/tag-p.png" alt="tag-p"></div>
             <p>Na imagem anterior, você consegue perceber o uso da tag &lt;p&gt; para a criação de um parágrafo simples. A maioria das tags possuem uma abertura e um fechamento, e você identifica isso pela presença da barra no fechamento da tag.</p>
             <p>Além disso, as tags também podem ter atributos e valores, que vão configurar seu comportamento:</p>
-            <img src="midia/midias_modulo_1/tag-a.png" alt="tag-a">
+            <div class="box">
+                <img src="midia/midias_modulo_1/tag-a.png" alt="tag-a">
+            </div>
             <p>Uma mesma tag pode ter vários parâmetros, cada um com seu valor. Entretanto, algumas tags não possuem a necessidade de <strong>conteúdo</strong> interno e por isso não possuem fechamento. É o caso, por exemplo, das tags &lt;br&gt; e &lt;img&gt;. Isso é algo natural, não se preocupe com isso agora.</p>
             <h4>Eu ainda uso &lt;font&gt;, &lt;center&gt;, &lt;s&gt;, &lt;u&gt;, …</h4>
             <p>Com o surgimento da versão 5 da HTML, algumas tags simplesmente deixaram de existir ou tornaram-se <string>obsoletas</string>. Uma tag obsoleta pode até estar funcionando no seu navegador hoje em dia, mas a própria <string>W3C</string> - consórcio responsável por manter as especificações da linguagem - recomenda que elas <string>não sejam mais usadas</string> pelos profissionais e aos poucos não serão mais suportadas pelos navegadores nas suas futuras versões.</p>
@@ -204,7 +206,9 @@
             <h4>Chegou a vez dos seletores CSS.</h4>
             <p>Como já vimos anteriormente, as <strong>CSS</strong> são as <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata). Elas são usadas para configurar um <strong>resultado visual</strong> dos elementos HTML.</p>
             <p>As configurações das CSS são realizadas através dos seletores. Vamos ver a anatomia de um seletor.</p>
-            <img src="midia/midias_modulo_1/seletores.jpg" alt="seletores">
+            <div class="box">
+                <img src="midia/midias_modulo_1/seletores.jpg" alt="seletores">
+            </div>
             <p>O seletor apresentado anteriormente vai configurar o visual dos elementos de parágrafo do site corrente. O uso das chaves delimita todas as declarações relativas ao seletor atual. No seletor que eu te mostrei, serão feitas três configurações:</p>
             <ul>
                 <li>A fonte escolhida foi Arial.</li>
@@ -215,7 +219,9 @@
             <p>Todas as <strong>propriedades</strong> devem ter seu <strong>valor</strong>, e eles devem ser separados por dois pontos. Você não é obrigado(a) a usar nenhuma declaração específica. Só utilize a propriedade que você realmente deseja alterar.</p>
             <h4>Estrutura básica de um documento HTML</h4>
             <p>Ao criar um novo documento HTML, devemos sempre escrever a estrutura básica de um documento desse formato. Vamos analisar cada uma das 11 linhas que compõem esse documento base.</p>
-            <img src="https://creativetechplus.zendesk.com/hc/article_attachments/9454341331853/unnamed__1_.png" alt="estruturaHTML">
+            <div class="box">
+                <img src="https://creativetechplus.zendesk.com/hc/article_attachments/9454341331853/unnamed__1_.png" alt="estruturaHTML">
+            </div>
             <ul>
                 <li><strong>Linha 1</strong>: Indica que o documento atual será escrito na versão mais atualizada da linguagem (no caso, HTML5)</li>
                 <li><strong>Linhas 2 e 15</strong>: Delimitam o documento HTML, que é sempre dividido em duas partes: a cabeça e o corpo. Na linha 2, também estamos indicando que o conteúdo desse site será no idioma Português do Brasil.</li>
@@ -233,7 +239,9 @@
             <h4>Escolhendo um editor.</h4>
             <p>Se você começar a frequentar grupos e fóruns de desenvolvedores, vai ver que tem muita gente perdendo um tempo precioso com discussões inúteis. Uma delas é: “qual é o melhor editor de códigos?” .</p>
             <p>Na minha humilde opinião, o melhor editor de código é aquele que te atende! Geralmente as pessoas gostam mais do editor no qual elas começaram a desenvolver. Tem até gente que defende o uso de editores extremamente simples, como o Notepad (Windows) e o VIM (Linux). Se é o editor que você gosta e aprendeu a usar, continue nele!</p>
-            <img src="midia/midias_modulo_1/editores.jpg" alt="editores">
+            <div class="box">
+                <img src="midia/midias_modulo_1/editores.jpg" alt="editores">
+            </div>
             <p>Na imagem acima, coloquei alguns exemplos de editores de código bem famosos: na ordem, temos o <strong>Visual Studio Code</strong>, o <strong>Atom</strong>, o <strong>Sublime</strong>, o <strong>Brackets</strong> e o <strong>Notepad++</strong>. Todos são ÓTIMOS editores, cada um com suas vantagens e desvantagens. Nenhum deles é perfeito e todos podem travar.</p>
             <p>Para construir o curso de HTML5 que você encontra no YouTube, utilizei os editores Notepad++ e o WebStorm da JetBrains. Naquela época eu usava muito esses dois. Hoje em dia, me adaptei 100% ao Visual Studio Code. Por conta disso, usaremos esse editor, que foi criado pela Microsoft, é distribuído gratuitamente e funciona no Windows, Linux e Mac.</p>
             <h4>Dicas básicas para configurar seu VS Code</h4>
@@ -812,15 +820,16 @@
             diminuímos o tamanho da tela.</p>
             <p>Vamos continuar e acrescentar mais um <source> à nossa imagem:</p>
             <div class="box_exemplo">
-                &lt;picture&gt;  <br>
-                &lt;source media="(max-width: 750px)" scrset="foto-p.png" type="img/png"&gt;<br>
-                &lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;<br>
-                &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;<br>
-                &lt;/picture&gt;
+                <pre>
+                &lt;picture&gt;
+                    <strong>&lt;source media="(max-width: 750px)" scrset="foto-p.png" type="img/png"&gt;</strong>
+                    &lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;
+                    &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
+                &lt;/picture&gt;</pre>
             </div>
             <p>É importante que existe uma ordem entre os &lt;source&gt;, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão.</p>
             <h4>Vamos falar sobre áudio</h4>
-            <p>Com a HTML5, veio também a facilidade em compartilhar áudio nos nossos sites e sem depender necessariamente de JavaScript ou plugins extras. A partir de agora, basta uma tag <strong>&lt;audio&gt;</strong> e alguns &lt;source&gt; para fazer seu site ser capaz de tocar qualquer áudio.</p>
+            <p>Com a HTML5, veio também a facilidade em compartilhar áudio nos nossos sites e sem depender necessariamente de JavaScript ou plugins extras. A partir de agora, basta uma tag <strong>&lt;audio&gt;</strong> e alguns <strong>&lt;source&gt;</strong> para fazer seu site ser capaz de tocar qualquer áudio.</p>
             <div class="box">
                 <audio preload="metadata" controls autoplay loop>
                     <source src="midia/midias_modulo_1/guanacast-33.mp3" type="audio/mpeg">
@@ -828,20 +837,24 @@
                 </audio>
             </div>
             <div class="box_exemplo">
-                &lt;audio preload="metadata" controls autoplay loop&gt; <br> 
-                &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt; <br>
-                &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt; <br>
-                &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt; <br>
-                &lt;p&gt;Seu navegador não suporta áudio &lt;a href="midia/guanacast-33.mp3 download="guanacast-33" type="audio/mpeg"&gt;&lt;/a&gt;&lt;/p&gt; <br>
-                &lt;/audio&gt;
+            <pre>
+            <strong>&lt;audio preload="metadata" controls autoplay loop&gt;</strong>
+                &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt;
+                &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt;
+                &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt;
+                &lt;p&gt;
+                    Seu navegador não suporta áudio 
+                    &lt;a href="midia/guanacast-33.mp3 download="guanacast-33" type="audio/mpeg"&gt;&lt;/a&gt;
+                &lt;/p&gt;
+            <strong>&lt;/audio&gt;</strong></pre>
             </div>
             <p>Vamos analisar os principais atributos da tag &lt;audio&gt; antes de mais nada:</p>
             <ul>
                 <li>O atributo <strong>preload</strong> indica se o áudio será pré-carregado ou não e aceita três valores:</li>
                 <ul type="circle">
-                    <li><strong>metadata</strong> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)</li>
-                    <li><strong>none</strong> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução</li>
-                    <li><strong>auto</strong> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play</li>
+                    <li><strong>metadata</strong> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc).</li>
+                    <li><strong>none</strong> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução.</li>
+                    <li><strong>auto</strong> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.</li>
                 </ul>
                 <li>O atributo <strong>controls</strong> vai apresentar o player na tela. Caso não seja colocado na tag
                 &lt;audio&gt;, o controle será transparente e o usuário não poderá interagir com ele.</li>
@@ -860,12 +873,15 @@
                 </video>
             </div>
             <div class="box_exemplo">
-                &lt;video width="600" poster="thumb.jpg controls autoplay&gt; <br> 
-                &lt;source src="meu-video.webm" type="video/webm"&gt; <br>
-                &lt;source src="meu-video.mp4" type="video/mp4"&gt; <br>
-                &lt;source src="meu-video.ogv" type="audio/ogg"&gt; <br>
-                &lt;p&gt;Seu navegador não conseguiu carregar o vídeo.&lt; <br>
-                &lt;/video&gt;
+                <pre>
+                <strong>&lt;video width="600" poster="thumb.jpg controls autoplay&gt;</strong> 
+                    &lt;source src="meu-video.webm" type="video/webm"&gt; 
+                    &lt;source src="meu-video.mp4" type="video/mp4"&gt; 
+                    &lt;source smeu-video.ogv" type="audio/ogg"&gt; 
+                &lt;p&gt;
+                    Seu navegador não conseguiu carregar o vídeo.
+                &lt;/p&gt;
+                <strong>&lt;/video&gt;</strong></pre>
             </div>
             <p>Antes de mais nada, vamos criar a tag &lt;video&gt; e configurar alguns atributos importantes:</p>
             <ul>
