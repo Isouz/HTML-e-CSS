@@ -71,6 +71,8 @@ img {
     padding: 10px;
     border: 1px solid black;
     align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.253);
 }
 
 .box_exemplo {
@@ -80,6 +82,7 @@ img {
     margin: auto;
     margin-bottom: 20px;
     margin-top: 5px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.253);
 }
 
 
