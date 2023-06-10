@@ -721,17 +721,16 @@
                 <li><strong>nome-do-frame</strong> caso esteja usando frames, indicar o nome da janela a abrir</li>
             </ul>
             <div class="box_exemplo">
-                <pre>
-                &lt;a href="pagina2.html" <strong>target="_self"</strong>&gt;
-                    Continuar navegando no site
-                &lt;/a&gt;</pre>
-                
+            <pre>
+        &lt;a href="pagina2.html" <strong>target="_self"</strong>&gt;
+            Continuar navegando no site
+        &lt;/a&gt;</pre> 
             </div>
             <div class="box_exemplo">
-                <pre>
-                &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;
-                    Abrir perfil do GitHub em nova janela
-                &lt;/a&gt;</pre>
+            <pre>
+        &lt;a href="https://gustavoguanabara.github.io" <strong>target="_blank"</strong>&gt;
+            Abrir perfil do GitHub em nova janela
+        &lt;/a&gt;</pre>
             </div>
             <h4>Esse link é seu ou dos outros?</h4>
             <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIN1cXy-2odbNTMyoYvTumM5Q1G1nYA6UqSnd26Jh5Kw4QKuCL" alt="corrente">
@@ -745,13 +744,14 @@
                 <li><strong>nofollow</strong> indica que é um link para um site não endossado, como um link pago</li>
             </ul>
             <div class="box_exemplo">
-                <pre>
-                &lt;a href="pagina2.html" target="_self"<strong>rel="next"</strong>&gt;
-                    Continuar navegando no site
-                &lt;/a&gt;
-                &lt;a href="https://gustavoguanabara.github.io" target="_blank"<strong>rel="external"</strong>&gt;
-                    Abrir perfil do GitHub em nova janela
-                &lt;/a&gt;</pre>
+            <pre>
+        &lt;a href="pagina2.html" target="_self"<strong>rel="next"</strong>&gt;
+            Continuar navegando no site
+        &lt;/a&gt;
+        &lt;a href="https://gustavoguanabara.github.io" target="_blank"<strong>
+        rel="external"</strong>&gt;
+            Abrir perfil do GitHub em nova janela
+        &lt;/a&gt;</pre>
             </div>
             <p>No código anterior, o primeiro link é o que chamamos de link local ou link interno, já que ele leva o visitante a outra página dentro do nosso próprio site. Note que não é necessário nem indicar a URL completa nesses casos.</p>
             <p>Já o segundo link vai nos levar para um outro site, o que chamamos de link externo. Nestes casos, devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve à uma página específica, se for necessário.</p>
@@ -760,10 +760,11 @@
             navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEtu1qvfAGaqMp9MtArb2bkfqAX8fW5nQlN3BEhg9eOaug1cb" alt="pasta-zip">
             <div class="box_exemplo">
-                <pre>
-                &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" type="aplication/pdf"</strong>&gt;
-                    Baixe aqui o PDF do meu livro
-                &lt;/a&gt;</pre>
+            <pre>
+            &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" 
+            type="aplication/pdf"</strong>&gt;
+                Baixe aqui o PDF do meu livro
+            &lt;/a&gt;</pre>
             </div>
             <p>Aqui vão alguns media types bem usados no nosso dia-a-dia:</p>
             <ul type="square">
@@ -796,19 +797,20 @@
             <p>Para esse exemplo, criamos as três imagens ao lado: a menor tem 300x300px, a média tem 700x700px e a maior tem 1000x1000px. Usamos o programa <strong>GIMP</strong>, que é um editor de imagens 100%
             gratuito. Essas imagens serão carregadas pelo navegador de acordo com o tamanho da janela atual. Para isso, criamos o seguinte código base:</p>
             <div class="box_exemplo">
-                <pre>
-                <strong>&lt;picture&gt;</strong>
-                    <strong>&lt;img</strong> src="foto-g.png" alt="A imagem  flexível funciona"<strong>&gt;</strong>
-                <strong>&lt;/picture&gt;</strong></pre>
+            <pre>
+            <strong>&lt;picture&gt;</strong>
+                <strong>&lt;img</strong> src="foto-g.png" alt="A imagem  flexível funciona"<strong>&gt;</strong>
+            <strong>&lt;/picture&gt;</strong></pre>
             </div>
             <p>Note que colocamos a tag &lt;img&gt; exatamente como aprendemos no capítulo 06 do nosso material. A novidade aqui é que inserimos essa imagem dentro da tag &lt;picture&gt;, que vai concentrar as outras fontes de imagem. Por padrão, a imagem foto-g.png (1000x1000px) será carregada.</p>
             <p>O problema vai começar a surgir quando a janela do navegador chegar perto dos 1000 pixels de largura, pois a foto não vai mais caber lá. Vamos agora adicionar uma linha para resolver esse problema:</p>
             <div class="box_exemplo">
-                <pre>
-                &lt;picture&gt;
-                    <strong>&lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;</strong>
-                    &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
-                &lt;/picture&gt;</pre>
+            <pre>
+        &lt;picture&gt;
+            <strong>&lt;source media="(max-width: 1050px)" scrset="foto-m.png" 
+            type="img/png"&gt;</strong>
+            &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
+        &lt;/picture&gt;</pre>
             </div>
             <p>Note que a tag <strong>&lt;source&gt;</strong> possui três atributos:</p>
             <ul>
@@ -820,12 +822,14 @@
             diminuímos o tamanho da tela.</p>
             <p>Vamos continuar e acrescentar mais um <source> à nossa imagem:</p>
             <div class="box_exemplo">
-                <pre>
-                &lt;picture&gt;
-                    <strong>&lt;source media="(max-width: 750px)" scrset="foto-p.png" type="img/png"&gt;</strong>
-                    &lt;source media="(max-width: 1050px)" scrset="foto-m.png" type="img/png"&gt;
-                    &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
-                &lt;/picture&gt;</pre>
+            <pre>
+        &lt;picture&gt;
+            <strong>&lt;source media="(max-width: 750px)" scrset="foto-p.png" 
+            type="img/png"&gt;</strong>
+            &lt;source media="(max-width: 1050px)" scrset="foto-m.png" 
+            type="img/png"&gt;
+            &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
+        &lt;/picture&gt;</pre>
             </div>
             <p>É importante que existe uma ordem entre os &lt;source&gt;, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão.</p>
             <h4>Vamos falar sobre áudio</h4>
@@ -838,15 +842,16 @@
             </div>
             <div class="box_exemplo">
             <pre>
-            <strong>&lt;audio preload="metadata" controls autoplay loop&gt;</strong>
-                &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt;
-                &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt;
-                &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt;
-                &lt;p&gt;
-                    Seu navegador não suporta áudio 
-                    &lt;a href="midia/guanacast-33.mp3 download="guanacast-33" type="audio/mpeg"&gt;&lt;/a&gt;
-                &lt;/p&gt;
-            <strong>&lt;/audio&gt;</strong></pre>
+        <strong>&lt;audio preload="metadata" controls autoplay loop&gt;</strong>
+            &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt;
+            &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt;
+            &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt;
+            &lt;p&gt;
+                Seu navegador não suporta áudio 
+                &lt;a href="midia/guanacast-33.mp3 download="guanacast-33" 
+                type="audio/mpeg"&gt;&lt;/a&gt;
+            &lt;/p&gt;
+        <strong>&lt;/audio&gt;</strong></pre>
             </div>
             <p>Vamos analisar os principais atributos da tag &lt;audio&gt; antes de mais nada:</p>
             <ul>
@@ -873,15 +878,15 @@
                 </video>
             </div>
             <div class="box_exemplo">
-                <pre>
-                <strong>&lt;video width="600" poster="thumb.jpg controls autoplay&gt;</strong> 
-                    &lt;source src="meu-video.webm" type="video/webm"&gt; 
-                    &lt;source src="meu-video.mp4" type="video/mp4"&gt; 
-                    &lt;source smeu-video.ogv" type="audio/ogg"&gt; 
-                &lt;p&gt;
-                    Seu navegador não conseguiu carregar o vídeo.
-                &lt;/p&gt;
-                <strong>&lt;/video&gt;</strong></pre>
+            <pre>
+        <strong>&lt;video width="600" poster="thumb.jpg controls autoplay&gt;</strong> 
+            &lt;source src="meu-video.webm" type="video/webm"&gt; 
+            &lt;source src="meu-video.mp4" type="video/mp4"&gt; 
+            &lt;source smeu-video.ogv" type="audio/ogg"&gt; 
+            &lt;p&gt;
+                Seu navegador não conseguiu carregar o vídeo.
+            &lt;/p&gt;
+        <strong>&lt;/video&gt;</strong></pre>
             </div>
             <p>Antes de mais nada, vamos criar a tag &lt;video&gt; e configurar alguns atributos importantes:</p>
             <ul>
