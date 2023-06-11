@@ -23,7 +23,7 @@ section {
     width: 90%;
     max-width: 900px;
     min-width: 390px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.5em;
 }
@@ -67,12 +67,18 @@ img {
 /*-----Estilos das caixas-----*/
 
 .box {
-    display: inline-block;
+    /*display: inline-block;*/
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     border: 1px solid black;
     font-size: 0.85em;
-    align-items: center;
+    margin: auto;
+    margin-top: 5px;
     margin-bottom: 5px;
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
     box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.253);
 }
 
@@ -82,11 +88,20 @@ img {
     background-color: #6379f8bd;
     font-size: 0.85em;
     margin: auto;
-    margin-bottom: 20px;
     margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
     box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.253);
 }
 
+.video {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /*-----Estilos de tabelas-----*/
 #tabela1 {
