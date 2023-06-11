@@ -103,6 +103,18 @@ img {
     margin-bottom: 5px;
 }
 
+.img-box {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 620px;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.253);
+}
+
 /*-----Estilos de tabelas-----*/
 #tabela1 {
     border-collapse: collapse;
