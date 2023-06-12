@@ -60,8 +60,21 @@ ol, ul, li {
     margin:0px 30px;
 }
 
+
+/*-----Estilos das imagens-----*/
+
 img {
     max-width: 600px;
+}
+
+
+.container {
+    display: flex;  
+}
+
+.container img {
+    width: 300px;
+    height: 154px;
 }
 
 /*-----Estilos das caixas-----*/
