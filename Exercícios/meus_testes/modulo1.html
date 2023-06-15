@@ -439,9 +439,11 @@
             <p>As duas primeiras imagens estão compactadas no formato JPEG, mas na primeira eu coloquei o nível de compactação em qualidade 5% e ficou com 20KB e na segunda uma qualidade de 30% e ficou com 120KB. A última imagem está comprimida no formato PNG, ficou com 300KB e teve o contorno preservado por causa do fundo transparente.</p>
             <p>De forma resumida, na hora de escolher o formato de imagem para o seu site, opte sempre pelo formato JPEG com uma compactação entre 30% e 50%. O formato PNG só deverá ser usado quando precisarmos de transparência na foto. Combinado?</p>
             <h4>Faltou falar sobre tamanho das imagens</h4>
-            <p>Quando você está começando a desenvolver sites, acaba pensando que para obter o melhor resultado, sua imagem deve ter um tamanho GIGANTE para poder ter a maior qualidade.</p>
-            <p>Realmente, uma imagem com resolução grande (1920x1080) tem mais pontos que uma imagem com resolução pequena (500x280). Só que uma imagem 1920x1080 pode gerar um arquivo de até 3MB, enquanto uma 500x280 dificilmente vai passar de 500KB.</p>
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZa_unyMgw0FIJXmVNhcJ8nV9aH3A9ZzUVcm9OOJk6lCu0Knt" alt="peixe">
+            <div class="container">
+                <p>Quando você está começando a desenvolver sites, acaba pensando que para obter o melhor resultado, sua imagem deve ter um tamanho GIGANTE para poder ter a maior qualidade.</p>
+                <p>Realmente, uma imagem com resolução grande (1920x1080) tem mais pontos que uma imagem com resolução pequena (500x280). Só que uma imagem 1920x1080 pode gerar um arquivo de até 3MB, enquanto uma 500x280 dificilmente vai passar de 500KB.</p>
+                <img src="midia/midias_modulo_1/peixe.jpg" alt="peixe">
+            </div>
             <p>A regra de outro nesses casos é: <strong>use imagens do tamanho certo!</strong> Vai precisar de uma imagem que vai ter 200 pixels de largura? Gere um arquivo exatamente com esse tamanho! Nada de ficar salvando arquivos gigantes e diminuindo o tamanho da imagem com códigos.</p>
             <p>Uma imagem 1920x1080 de 3MB não vai ficar mais leve se você mudar a largura dela no seu CSS. Muito pelo contrário. Seu navegador vai levar um tempão pra carregar o arquivo do seu servidor e vai exibir a imagem minúscula na tela.</p>
             <p>E no que isso te prejudica? Os mecanismos de busca como o Google PENALIZAM sites lentos e pesados, retirando-os da primeira página de buscas. Quem aqui quer criar um site que não aparece nos resultados do Google?</p>
@@ -455,13 +457,15 @@
             <img src="midia/midias_modulo_1/adicionando-imagens.jpg" alt="adicionando-imagens">
             <p>Na linha 11, adicionamos a tag &lt;img&gt;, responsável por carregar imagens que estão
             na pasta do projeto atual ou em links externos. Essa tag tem como parâmetros básicos o src (que vem de source, origem) e alt (que vem de alternative ou texto alternativo).</p>
-            <img src="midia/midias_modulo_1/tag-img.jpg" alt="tag-img">
-            <p>Depois do código aparecer magicamente, o cursor do teclado vai aparecer dentro das aspas
-            do parâmetro src. Pressione <strong>Ctrl+Espaço</strong> e mais uma mágica vai acontecer. Como a
-            imagem ao lado mostra, o editor vai te Mostar
-            uma listagem com todos os arquivo disponíveis
-            na pasta do seu projeto. Escolha o arquivo
-            clicando em logo-html.png para que você nem precise digitar o nome dele. Isso evita muitas falhas causadas por erros de digitação!</p>
+            <div class="container">
+                <p>Depois do código aparecer magicamente, o cursor do teclado vai aparecer dentro das aspas
+                do parâmetro src. Pressione <strong>Ctrl+Espaço</strong> e mais uma mágica vai acontecer. Como a
+                imagem ao lado mostra, o editor vai te Mostar
+                uma listagem com todos os arquivo disponíveis
+                na pasta do seu projeto. Escolha o arquivo
+                clicando em logo-html.png para que você nem precise digitar o nome dele. Isso evita muitas falhas causadas por erros de digitação!</p>
+                <img src="midia/midias_modulo_1/tag-img.jpg" alt="tag-img">
+            </div>
             <p>Agora volte para a página anterior e analise as linhas 13 e 15. A <strong>linha 13</strong> vai carregar a imagem logo-css.png que está dentro da pasta fotos, como vimos anteriormente.
             Note que foi necessário colocar o nome da pasta seguido de uma barra antes de colocar o nome do arquivo. Se isso não for obedecido, simplesmente a imagem não vai carregar!</p>
             <p>Por fim, na <strong>linha 15</strong> fizemos a carga de um arquivo que não estava na pasta do
@@ -566,10 +570,12 @@
             <p>Sendo assim, em HTML5, vemos de forma bastante evidente a presença do chamado <strong>HTML semântico</strong> ou <strong>tags semânticas</strong> ou ainda o <strong>conteúdo semântico</strong>. Você quer que um endereço apareça na forma de um texto sublinhado? Use CSS para configurar isso, a HTML serve para dar sentido ao conteúdo. É assim que tudo vai funcionar.</p>
             <p>Desde a mudança de versões, a W3C - consórcio responsável por normatizar a HTML - tem dado muito valor por adicionar novas tags que tenham mais significado e a tirar algumas tags que só se focam no efeito visual (forma) de apresentação. O intuito é deixar a apresentação gráfica por conta das CSS.</p>
             <h4>Tags morrem, você sabia?</h4>
-            <p>Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags &lt;font&gt; e &lt;center&gt;. E existem outras que simplesmente foram excluídas das versões mais
-            atuais da HTML5, como é o caso do &lt;applet&gt; e &lt;blink&gt;.</p>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFoiCWknfB0bFGAjc-43tJE4KJPTVgtIPXzFUrjOa3-EMRQ64n" alt="morte">
-            <p>Isso acontece porque a linguagem evolui, e nesse processo algumas tags param de fazer sentido pois existem outras bem melhores e que fazem mais sentido.</p>
+            <div class="container">
+                <p>Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags &lt;font&gt; e &lt;center&gt;. E existem outras que simplesmente foram excluídas das versões mais
+                atuais da HTML5, como é o caso do &lt;applet&gt; e &lt;blink&gt;.</p>
+                <p>Isso acontece porque a linguagem evolui, e nesse processo algumas tags param de fazer sentido pois existem outras bem melhores e que fazem mais sentido.</p>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFoiCWknfB0bFGAjc-43tJE4KJPTVgtIPXzFUrjOa3-EMRQ64n" alt="morte">
+            </div>
             <p>Sendo assim, a própria W3C sugere que no lugar de &lt;b&gt;, que significa <strong>bold</strong> ou <strong>negrito</strong> e que seria simplesmente uma forma de apresentar um dado, passemos a usar a tag &lt;strong&gt;, que tem um significado de <strong>força</strong> ou <strong>potência</strong> dentro da frase.</p>
             <h4>Negrito e Itálico</h4>
             <p>Vamos ver agora algumas formatações bem usadas das últimas versões da linguagem, começando pelos famosos <strong>negrito</strong> e <em>itálico</em>.</p>
@@ -596,14 +602,18 @@
             <h4>Trechos de código</h4>
             <p>Nós somos (ou seremos) programadores, e por isso compartilhamos muito códigofonte em diversas linguagens. Para isso, existe a tag &lt;code&gt; da HTML onde você pode delimitar seu código. A principal vantagem no uso dessa tag é a o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador.
             Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas (monospace), o que facilita bastante a leitura do código. Analise, por exemplo, o trecho de código a seguir:</p>
-            <img src="midia/midias_modulo_1/python.jpg" alt="python">
-            <img src="midia/midias_modulo_1/ex-python.jpg" alt="ex-python">
-            <p>Você pode achar que o código vai aparecer lindamente no seu site, porém o que acontece é simplesmente uma mudança das letras, para que
-            elas fiquem mono-espaçadas (veja a imagem).</p>
+            <div class="container">
+                <img src="midia/midias_modulo_1/python.jpg" alt="python">
+                <p>Você pode achar que o código vai aparecer lindamente no seu site, porém o que acontece é simplesmente uma mudança das letras, para que
+                elas fiquem mono-espaçadas (veja a imagem).</p>
+                <img src="midia/midias_modulo_1/ex-python.jpg" alt="ex-python">
+            </div>
             <p>Para resolver esse problema, vamos usar uma outra tag HTML chamada &lt;pre&gt; , que mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.</p>
-            <img src="midia/midias_modulo_1/python2.jpg" alt="python2">
-            <img src="midia/midias_modulo_1/ex-python2.jpg" alt="ex-python2">
-            <p>Notou agora a diferença? A junção das tags &lt;pre&gt; e &lt;code&gt; em conjunto nos trouxe um resultado visual bem mais interessante.</p>
+            <div class="container">
+                <img src="midia/midias_modulo_1/python2.jpg" alt="python2">
+                <p>Notou agora a diferença? A junção das tags &lt;pre&gt; e &lt;code&gt; em conjunto nos trouxe um resultado visual bem mais interessante.</p>
+                <img src="midia/midias_modulo_1/ex-python2.jpg" alt="ex-python2">
+            </div>
             <h4>“Citações”</h4>
             <p>Se você já escreveu um texto sequer na sua vida, com certeza já teve que fazer citações. Uma citação é um trecho de texto, escrito ou dito por outra pessoa, que vai ilustrar perfeitamente algo que você quer explicar.</p>
             <p>Normalmente, uma citação aparece entre aspas ou com as margens deslocadas em relação ao texto. Confuso pra você? Pois volte na página 2 desse capítulo e lá você vai ver três citações escritas. Com certeza você vai descobrir!</p>
@@ -612,10 +622,13 @@
             <img src="midia/midias_modulo_1/blockquote.jpg" alt="blockquote">
             <h4>Abreviações</h4>
             <p>Essa é uma novidade da HTML5 e que ajuda muito em áreas como a de Tecnologia, que usa muitas siglas e abreviações. Sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag &lt;abbr&gt;.</p>
-            <img src="midia/midias_modulo_1/abbr.jpg" alt="abbr"> <img src="midia/midias_modulo_1/abreviacao.jpg" alt="abreviacao">
-            <p>Note no código acima que usamos o title para
-            indicar o significado da sigla. Ao lado, mostro
-            o funcionamento desse código no navegador.</p>
+            <img src="midia/midias_modulo_1/abbr.jpg" alt="abbr">
+            <div class="container">
+                <p>Note no código acima que usamos o title para
+                indicar o significado da sigla. Ao lado, mostro
+                o funcionamento desse código no navegador.</p>
+                 <img src="midia/midias_modulo_1/abreviacao.jpg" alt="abreviacao">
+            </div>
             <p>Quando passamos o mouse sobre a sigla
             abreviada, um pequeno texto aparece com o seu significado.</p>
             <h4>ODITREVNI OTXET</h4>
@@ -735,9 +748,11 @@
             &lt;/a&gt;</pre>   
             </div>
             <h4>Mira no Alvo 🎯</h4>
-            <p>Por padrão, sempre que um visitante clique em um hyperlink, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteúdo anterior vai deixar de ser exibido para mostrar o novo conteúdo.</p>
-            <img src="https://cdn.pixabay.com/photo/2013/03/30/00/11/windows-97883_1280.png" alt="janelas">
-            <p>Esse é um comportamento desejado quando o visitante vai continuar a visitar o nosso site, apenas mudando de um documento para outro. Mas e quando um clique leva o visitante para outro site e provavelmente ele nunca mais voltará ao nosso?</p>
+            <div class="container">
+                <p>Por padrão, sempre que um visitante clique em um hyperlink, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteúdo anterior vai deixar de ser exibido para mostrar o novo conteúdo.</p>
+                <p>Esse é um comportamento desejado quando o visitante vai continuar a visitar o nosso site, apenas mudando de um documento para outro. Mas e quando um clique leva o visitante para outro site e provavelmente ele nunca mais voltará ao nosso?</p>
+                <img src="https://cdn.pixabay.com/photo/2013/03/30/00/11/windows-97883_1280.png" alt="janelas">
+            </div>
             <p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <strong>target</strong>, que suporta os seguintes valores:</p>
             <ul>
                 <li><strong>_blank</strong> vai abrir o link em uma nova janela em branco</li>
@@ -759,9 +774,11 @@
         &lt;/a&gt;</pre>
             </div>
             <h4>Esse link é seu ou dos outros?</h4>
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIN1cXy-2odbNTMyoYvTumM5Q1G1nYA6UqSnd26Jh5Kw4QKuCL" alt="corrente">
-            <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários
-            valores, entre eles vou citar:</p>
+            <div class="container">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIN1cXy-2odbNTMyoYvTumM5Q1G1nYA6UqSnd26Jh5Kw4QKuCL" alt="corrente">
+                <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários
+                valores, entre eles vou citar:</p>
+            </div>
             <ul type="circle">
                 <li><strong>next</strong> indica que o link é para a próxima parte do documento atual</li>
                 <li><strong>prev</strong> indica que o link é para a parte anterior do documento atual</li>
@@ -782,9 +799,11 @@
             <p>No código anterior, o primeiro link é o que chamamos de link local ou link interno, já que ele leva o visitante a outra página dentro do nosso próprio site. Note que não é necessário nem indicar a URL completa nesses casos.</p>
             <p>Já o segundo link vai nos levar para um outro site, o que chamamos de link externo. Nestes casos, devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve à uma página específica, se for necessário.</p>
             <h4>E para fazer Downloads?</h4>
-            <p>Outra coisa que aparece bastante em sites são os links para efetuar download de algum material em PDF, ou de um arquivo ZIP qualquer. A partir da versão HTML5, as âncoras receberam atributos especiais para isso. Basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo download com o valor configurado para o nome do arquivo a ser baixado e o atributo type para indicar ao
-            navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEtu1qvfAGaqMp9MtArb2bkfqAX8fW5nQlN3BEhg9eOaug1cb" alt="pasta-zip">
+            <div class="container">
+                <p>Outra coisa que aparece bastante em sites são os links para efetuar download de algum material em PDF, ou de um arquivo ZIP qualquer. A partir da versão HTML5, as âncoras receberam atributos especiais para isso. Basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo download com o valor configurado para o nome do arquivo a ser baixado e o atributo type para indicar ao
+                navegador que tipo de arquivo está sendo baixado. Vamos ver um exemplo:</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScEtu1qvfAGaqMp9MtArb2bkfqAX8fW5nQlN3BEhg9eOaug1cb" alt="pasta-zip">
+            </div>
             <div class="box_exemplo">
             <pre>
             &lt;a href="arquivos/meulivro.pdf" <strong>download="meulivro.pdf" 
@@ -813,10 +832,11 @@
             <h2>Capítulo 11</h2>
             <h3>Imagens dinâmicas, áudios e vídeos.</h3>
             <h4>Seu site deve se adaptar ao tamanho da tela</h4>
-            <p>Como eu disse ali na introdução do capítulo, atualmente podemos acessar sites em todo tipo de dispositivo: smartphones, tablets, notebooks, computadores desktop, aparelhos de smart TV e muito mais. Pensando nisso, você que está começando a desenvolver sites vai precisar
-            adaptar seu conteúdo a tamanhos de tela diferentes.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_UMsDYcbTpzvwgLvJ8cHx-k0Fz82dTOZNdf07EnnQyG10X3j5" alt="dispositivos">
-            <p>A mídia que mais sofre com esse problema de tamanho de exibição são as imagens. Uma TV pode exibir imagens gigantes, mas se usarmos essa mesma foto para ser apresentada em um celular, teremos que redimensionar forçadamente a imagem com CSS.</p>
+             <div class="container">
+                <p>Como eu disse ali na introdução do capítulo, atualmente podemos acessar sites em todo tipo de dispositivo: smartphones, tablets, notebooks, computadores desktop, aparelhos de smart TV e muito mais. Pensando nisso, você que está começando a desenvolver sites vai precisar adaptar seu conteúdo a tamanhos de tela diferentes.</p>
+                <p>A mídia que mais sofre com esse problema de tamanho de exibição são as imagens. Uma TV pode exibir imagens gigantes, mas se usarmos essa mesma foto para ser apresentada em um celular, teremos que redimensionar forçadamente a imagem com CSS.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_UMsDYcbTpzvwgLvJ8cHx-k0Fz82dTOZNdf07EnnQyG10X3j5" alt="dispositivos">
+            </div>
             <p>Porém, essa prática não vai fazer com que o tamanho (em bytes) diminua também. Isso acaba aumentando o consumo de dados em dispositivos móveis e deixando seu site muito pesado, e ninguém tem paciência para acessar site lento.</p>
             <h4>Imagens Flexíveis</h4>
             <p>Nosso primeiro passo no caminho de adaptar nosso conteúdo ao tamanho da tela vai ser aprender a gerar imagens de tamanho diferentes e a fazer o navegador carregar a imagem certa para cada situação. Para isso, devemos conhecer as tags <strong>&lt;picture&gt;</strong> e <strong>&lt;source&gt;</strong>.</p>
@@ -894,8 +914,10 @@
             </ul>
             <p>Dentro da tag &lt;audio&gt;, adicionamos vários &lt;source&gt; com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.</p>
             <h4>E os vídeos?</h4>
-            <p>Para inserir um vídeo em nosso site, podemos utilizar a nova tag &lt;source&gt; da HTML5, caso o arquivo esteja hospedado no nosso próprio servidor.</p>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnri8vK4z0OwEHEvpACUXVqcZgxLY0tmr_QQnO0aY-slCdiYSo" alt="pasta-verde"><br>
+            <div class="container">
+                <p>Para inserir um vídeo em nosso site, podemos utilizar a nova tag &lt;source&gt; da HTML5, caso o arquivo esteja hospedado no nosso próprio servidor.</p>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnri8vK4z0OwEHEvpACUXVqcZgxLY0tmr_QQnO0aY-slCdiYSo" alt="pasta-verde">
+            </div>
             <div class="video">
                 <video width="200" controls>
                     <source src="meu-video.webm" type="video/webm">
@@ -924,10 +946,12 @@
                 <li><strong>autoplay</strong> diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.</li>
             </ul>
             <h4>Que formatos são esses?</h4>
-            <p>Arquivos de vídeo não são tão simples quanto imagens e áudios, onde o formato indica o padrão para abrir e reproduzir a mídia. Vídeos possuem formatos e codecs e isso pode tornar o vídeo inviável de ser reproduzido pela maioria dos navegadores na maioria dos dispositivos. É
-            preciso prestar muita atenção nesse pequeno detalhe.</p>
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD6cDiBsRuMsngn-igLrw-37MYPEgDqoIwuTrzLXWQju8Gnm4L" alt="Handbrake">
-            <p>Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente.</p>
+            <div class="container">
+                <p>Arquivos de vídeo não são tão simples quanto imagens e áudios, onde o formato indica o padrão para abrir e reproduzir a mídia. Vídeos possuem formatos e codecs e isso pode tornar o vídeo inviável de ser reproduzido pela maioria dos navegadores na maioria dos dispositivos. É
+                preciso prestar muita atenção nesse pequeno detalhe.</p>
+                <p>Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente.</p>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD6cDiBsRuMsngn-igLrw-37MYPEgDqoIwuTrzLXWQju8Gnm4L" alt="Handbrake">
+            </div>
             <table id="tabela3">
                 <thead>
                     <th>Navegador</th>
@@ -960,17 +984,21 @@
             <p>Quando colocamos vídeos no nosso próprio servidor, podemos passar por problemas
             com alto consumo de banda, site lento e incompatibilidades com alguns navegadores
             por conta dos codecs. E geralmente só percebemos esses problemas quando colocamos nosso projeto no ar e lançamos oficialmente.</p>
-            <p>Vamos fazer uma conta simples: um vídeo simples, com poucos minutos, em formato mp4 com codec padrão deve ocupar uns 150MB com facilidade. Agora imagine que você lance seu site e 200 visitantes (um número super possível) acessem seu site e reproduzam o vídeo. Pronto, você acabou de utilizar 29GB de tráfego! Imagine o quanto isso pode deixar seu site lento ou consumir sua franquia de hospedagem, caso não seja ilimitada.</p>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkl6COCQ-2RXKzkkGx8idkhQFGa0ofFVRWZxjkDSI2kg5mXSk-" alt="dinheiro">
+            <div class="container">
+                <p>Vamos fazer uma conta simples: um vídeo simples, com poucos minutos, em formato mp4 com codec padrão deve ocupar uns 150MB com facilidade. Agora imagine que você lance seu site e 200 visitantes (um número super possível) acessem seu site e reproduzam o vídeo. Pronto, você acabou de utilizar 29GB de tráfego! Imagine o quanto isso pode deixar seu site lento ou consumir sua franquia de hospedagem, caso não seja ilimitada.</p>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkl6COCQ-2RXKzkkGx8idkhQFGa0ofFVRWZxjkDSI2kg5mXSk-" alt="dinheiro">
+            </div>
             <p>E é claro que seu site possivelmente não vai ter apenas um vídeo, não vai ter apenas 200 visitantes em um dia e aí a conta só aumenta. É preciso tomar muito cuidado quando decidimos guardar nossos próprios vídeos.</p>
             <h4>E agora, quem poderá nos defender?</h4>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-veVbl_z1f79bRLFVMBgFZP10prfZMc7I-nVPGE3IWhJd94X" alt="YouTube">
-            <p>O YouTube é o serviço de hospedagem de vídeos mais popular do mundo e é gerenciado pelo Google. Sua principal vantagem é que seus servidores
-            são ultra rápidos. Por outro lado, a ideia do Google é deixar todos os vídeos públicos e disponíveis, o que pode ser uma dor de cabeça caso
-            você queira limitar quem vai ter acesso a determinado vídeo (uma escola online, por exemplo, onde queremos que apenas os alunos
-            matriculados possam assistir).</p>
-            <p>O Vimeo resolve o problema que apontamos anteriormente. Ele permite limitar quem vai poder ver o vídeo, o que é especialmente vantajoso para quem quer criar produtos em forma de vídeo, entregues por demanda dentro de um site personalizado. Como desvantagens desse serviço, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do YouTube, logo os vídeos apresentam pequenos travamentos às vezes.</p>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl_zA5yOidtdREFUJgTAP8xpwWWODbJuKnU5eH_eW5akJm0P6O" alt="Vimeo">
+            <div class="container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-veVbl_z1f79bRLFVMBgFZP10prfZMc7I-nVPGE3IWhJd94X" alt="YouTube">
+                <p>O YouTube é o serviço de hospedagem de vídeos mais popular do mundo e é gerenciado pelo Google. Sua principal vantagem é que seus servidores são ultra rápidos. Por outro lado, a ideia do Google é deixar todos os vídeos públicos e disponíveis, o que pode ser uma dor de cabeça caso você queira limitar quem vai ter acesso a determinado vídeo (uma escola online, por exemplo, onde queremos que apenas os alunos
+                matriculados possam assistir).</p>
+            </div>
+            <div class="container">
+                <p>O Vimeo resolve o problema que apontamos anteriormente. Ele permite limitar quem vai poder ver o vídeo, o que é especialmente vantajoso para quem quer criar produtos em forma de vídeo, entregues por demanda dentro de um site personalizado. Como desvantagens desse serviço, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do YouTube, logo os vídeos apresentam pequenos travamentos às vezes.</p>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl_zA5yOidtdREFUJgTAP8xpwWWODbJuKnU5eH_eW5akJm0P6O" alt="Vimeo">
+            </div>
             
             <h4>E dá pra incorporar com esses aí em HTML?</h4>
             <p>Para incorporar vídeos que você subiu no YouTube ou Vimeo, existem recursos que te dão o código pronto em HTML5.</p>
