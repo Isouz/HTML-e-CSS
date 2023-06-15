@@ -70,16 +70,16 @@ img {
 
 .container {
     display: flex; 
-    
 }
 
 .container img {
+    margin: 5px;
     width: 300px;
     height: 154px;
-    
-}
+}   
 
 
+  
 
 
 /*-----Estilos das caixas-----*/
