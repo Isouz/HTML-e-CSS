@@ -16,8 +16,43 @@
     <hr>
     <main>
         <section>
-            <h2>Capítulo 12</h2>
-            <h3></h3>
+            <h2>Capítulo 17</h2>
+            <h3>Aprendendo Git e GitHub</h3>
+            <p>Talvez o conteúdo desse capítulo seja um dos que você mais vai usar durante a sua carreira, que está começando agora. Vamos aprender agora o que são os repositórios, tanto os locais quanto os remotos e qual é a diferença entre eles.</p>
+            <h4>Você precisa de um repositório para ser feliz.</h4>
+            <div class="container">
+                <p>Talvez nesse exato momento você não faça ideia do que seja um <strong>repositório</strong> e esteja achando que minha afirmação acima foi um pouco exagerada, mas saiba que vou me esforçar para que você consiga entender o uso desse recurso e adote na sua vida de hoje em diante.
+                Repositórios não vão te ajudar apenas no
+                desenvolvimento em HTML e CSS, eles também serão úteis na criação de qualquer tipo de código em qualquer linguagem de programação que você vá decidir aprender de hoje em diante.</p>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0b4_LdMCNHDbPW6FpRTMD65wx68HD8GYPpfhc1-ObTp-PX9nS" alt="versionamento">
+            </div>
+            <p>Para explicar a utilidade de cada um dos dois tipos de repositórios que vamos usar (<strong>locais</strong> e <strong>remotos</strong>), criei três pequenas histórias que podem acontecer na sua vida.</p>
+            <h4>Situação 1: como guardar várias versões do seu site?</h4>
+            <p>Quando estamos criando um projeto, começamos aos poucos criando a sua primeira versão dentro de uma pasta local em nosso computador.</p>
+            <p>Quando atingir uma versão estável, para manter um “backup seguro”, sempre usamos ideias brilhantes como gerar uma versão compactada dessa pasta. Isso vai permitir continuar a desenvolver uma versão aprimorada sem perder a versão anterior. Se por acaso algo der errado (e acredite, geralmente dá) basta descompactar nosso arquivo de versão estável, substituir o conteúdo da pasta original e recomeçar os trabalhos da criação da próxima versão. Usando essa prática, com certeza vai acabar se deparando com vários arquivos ZIP com nomes esquisitos.</p>
+            <h4>Situação 2: seu HD foi pro saco, e agora?</h4>
+            <p>Quem nunca perdeu arquivos de trabalho, que atire o primeiro HD queimado! Os dispositivos de hardware sempre param de funcionar no momento em que mais precisamos. E se utilizamos apenas a técnica descrita na situação anteriormente, é possível que todo o trabalho seja perdido em um estalar de dedos.</p>
+            <div class="container">
+                <p>Uma das saídas utilizadas é salvar cópias de segurança em pendrives e em HDs externos, além de manter um backup em serviços de armazenamento como Dropbox, Google Drive, OneDrive, iCloud, etc.</p>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS45EW_rFij0Oj7idlVXRbbhdNYjazHJxQxOFtKEHubpj3HzwnZ" alt="hd">
+            </div>
+            <p>O problema de manter esses backups isolados é que, no momento de ligar nossa “máquina do tempo” e voltar para uma versão anterior, precisamos fazer o download do ZIP desejado e substituir manualmente a versão atual para a última estável.</p>
+            <h4>Situação 3: mostrar seu site para o mundo</h4>
+            <p>E o que acontece quando você precisar mostrar o projeto de um site que você criou para um amigo, para seu professor ou até mesmo para um possível cliente? Vai mandar o link de um arquivo ZIP para ele(a) baixar, descompactar e abrir no navegador local? É assim que as pessoas estão acostumadas a acessar sites?</p>
+            <p>Os serviços de armazenamento que eu citei na situação anterior são muito úteis para fazer backup, mas possuem uma grande limitação quando queremos praticidade. Por exemplo, salvar os arquivos de um site no Dropbox não vai garantir de forma alguma que ele vai ficar disponível para o acesso externo. Ninguém vai poder “acessar seu site”, apenas digitando uma URL no navegador. Tudo vai ficar armazenado como um grupo de arquivos, não como um site hospedado.</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Tf1c41me0m_4cpwMo1yFbGsBg4D57mV-Rxq4XhcDvxxk7T5C" alt="pessoas">
+            <h4>Os repositórios vão resolver isso</h4>
+            <p>Todas as três situações descritas podem ser resolvidas com repositórios locais/remotos de maneira muito simples. E se por acaso você já tentou aprender sobre isso, achou guias com dezenas de comandos e não conseguiu se adaptar, saiba que tudo evoluiu muito nos últimos meses e vamos ver tudo de uma maneira muito simples, sem decorar nenhum comando! Para começar, vamos aprender que existem dois tipos de repositórios: os <strong>locais</strong> e os <strong>remotos</strong>.</p>
+            <h4>Repositório Local</h4>
+            <p>Um repositório local tem esse nome porque vai estar sempre no seu computador. A função dele é facilitar a gestão de diversas versões do seu projeto de forma simples e automática.</p>
+            <div class="container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEbEBDhVHTzFIQyX9lvJMeoPt464E-9uinEw&usqp=CAU" alt="git">
+                <p>Lembra da situação 1 que descrevemos anteriormente? Pois quando instalamos um Sistema de Controle de Versões (do inglês Version Control System - VCS), deixamos a responsabilidade por gerenciar as versões dos nossos projetos nas mãos de um software especializado, que vai fazer tudo automaticamente e vai permitir que você volte a qualquer ponto no momento em que achar melhor.</p>
+            </div>
+            <div class="container">
+                <p>Um dos softwares VCS mais famosos é o Git, feito por Linus Torvalds, o mesmo criador do núcleo Linux dos sistemas operacionais. O sistema do Git foi criado no ano de 2005 em poucos dias (10 dias, para ser mais exato), por conta de uma briga entre o Linus e o criador de um software chamado BitKeeper, que era utilizado para gerenciar as versões em  desenvolvimento do Linux.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJntHGXEo9KkwkLRozBQM7wqryBbIzuEzqg&usqp=CAU" alt="linus">
+            </div>
         </section>
     </main>
 </body>
