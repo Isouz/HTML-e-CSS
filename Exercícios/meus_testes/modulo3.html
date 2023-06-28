@@ -50,8 +50,38 @@
                 <p>Lembra da situação 1 que descrevemos anteriormente? Pois quando instalamos um Sistema de Controle de Versões (do inglês Version Control System - VCS), deixamos a responsabilidade por gerenciar as versões dos nossos projetos nas mãos de um software especializado, que vai fazer tudo automaticamente e vai permitir que você volte a qualquer ponto no momento em que achar melhor.</p>
             </div>
             <div class="container">
-                <p>Um dos softwares VCS mais famosos é o Git, feito por Linus Torvalds, o mesmo criador do núcleo Linux dos sistemas operacionais. O sistema do Git foi criado no ano de 2005 em poucos dias (10 dias, para ser mais exato), por conta de uma briga entre o Linus e o criador de um software chamado BitKeeper, que era utilizado para gerenciar as versões em  desenvolvimento do Linux.</p>
+                <p>Um dos softwares VCS mais famosos é o <strong>Git</strong>, feito por <strong>Linus Torvalds</strong>, o mesmo criador do núcleo <strong>Linux</strong> dos sistemas operacionais. O sistema do Git foi criado no ano de 2005 em poucos dias (10 dias, para ser mais exato), por conta de uma briga entre o Linus e o criador de um software chamado BitKeeper, que era utilizado para gerenciar as versões em  desenvolvimento do Linux.</p>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJntHGXEo9KkwkLRozBQM7wqryBbIzuEzqg&usqp=CAU" alt="linus">
+            </div>
+            <p>O esquema de funcionamento do Git é totalmente focado no nosso computador. Analisando a imagem a seguir, vemos que o software está monitorando uma pasta chamada meu-site que tem a versão atual do projeto e uma pasta especial chamada .git com várias versões pelas quais o site passou durante sua evolução.</p>
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_V4uMwaslzaQ1uR2lXYMgF1BMXUwhqkdNkp4MKlrPfZj8Siqx" alt="local">
+            <p>A grande vantagem de usar um <strong>sistema de controle de versões</strong> como o <strong>Git</strong> é poder voltar a qualquer momento para qualquer versão anterior do projeto de forma imediata, tudo 100% transparente para o programador.</p>
+            <h4>Repositório Remoto</h4>
+            <p>Para solucionar os problemas levantados nas duas últimas situações desse capítulo,vamos precisar de um lugar na nuvem para guardar nossos repositórios locais. E é aí que entra o nosso segundo grande personagem: o <strong>GitHub</strong>.</p>
+            <img src="https://www.mmfava.com/talk/2021-08-14-git-github-rstudio/images/fig/repo_remoto.jpg" alt="remoto">
+            <p>Criado em 2008 por quatro amigos, o GitHub é um serviço que nos permite criar um repositório remoto na nuvem para guardar nossos projetos e versionamentos. Ele não é a única opção que existe no mercado (ainda temos o <strong>GitLab</strong>, o <strong>Bitbucket</strong>, e muitos outros) mas provavelmente é a mais popular, tanto que hoje pertence à gigante Microsoft, que comprou o serviço em 2018 por 7.5 bilhões de dólares.</p>
+            <div class="container">
+                <p>Com o tempo, o GitHub começou a ganhar funcionalidades extras, que foram transformando o serviço em uma grande <strong>rede social para programadores</strong>. Além de guardarmos nossos códigos nos servidores, podemos nos comunicar com outros desenvolvedores e até mesmo colaborar com outros projetos que estão disponíveis publicamente para todos.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphY_yc9y4Qh1KVi47qOa9hLqkehXfy-MzpYnqEFHYCP-s9Xvo" alt="octacat">
+            </div>
+            <p>Ao colocar nossos códigos na nuvem, automaticamente resolvemos o problema da situação 2. E um recurso chamado <strong>GitHub Pages</strong> vai permitir a hospedagem gratuita de sites simples, que usem HTML + CSS + JS e disponibilize o acesso através de uma URL.</p>
+            <h4>Como instalar e usar isso tudo?</h4>
+            <p>Para poder aproveitar todos esses maravilhosos recursos que explicamos até aqui, precisamos instalar dois softwares no nosso computador: o Git-SCM e o GitHub Desktop. Também precisamos criar um perfil gratuito no site GitHub.</p>
+            <div class="container">
+                <p>Para fazer o download e instalação do Git, acesse o site <a href="git-scm.com">git-scm.com</a> e clique sobre o botão de download da versão mais recente e instale o programa.</p>
+                <p>Nesse site, encontramos as versões para todos os sistemas: Windows, Linux e MacOS.</p>
+                <p>Para a instalação no Linux, o site mostra os comandos necessários para realizar a instalação via gerenciador de pacotes.</p>
+                <img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2013/05/git-1024x464.png" alt="git-scm.com">
+            </div>
+            <div class="container">
+                <img src="https://www.wikihow.com/images/thumb/e/e5/Create-a-Website-on-GitHub-Pages-Step-3.jpg/aid12029630-v4-728px-Create-a-Website-on-GitHub-Pages-Step-3.jpg.webp" alt="desktop.github.com">
+                <p>Para fazer o download e instalação do programa <strong>GitHub Desktop</strong>, acesse o site <a href="desktop.github.com">desktop.github.com</a> e clique sobre o botão de download da versão atual e instale.</p>
+                <p>O GitHub Desktop também existe em versões para os sistemas Windows, Linux e MacOS. A versão para Windows só existe para sistemas 64-bits. Em Linux, devemos instalar via repositório.</p>
+                <div class="container">
+                    <p>Depois de instalar as duas ferramentas acima, acesse o site github.com e crie o seu perfil clicando no botão <strong>Sign up</strong> indicado na imagem a seguir. Você só vai precisar de um nome de usuário, e-mail de contato e uma senha segura. Um email de verificação será enviado para ativar sua conta.</p>
+                    <p>Se já tiver uma conta criada, clique sobre o botão <strong>Sign in</strong> ao lado.</p>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTYudX1IPRwD7bV6QfDODAV-Hyb6SBJ2vNyTG_WM-OaV4_BLll" alt="github.com">
+                </div>
             </div>
         </section>
     </main>
