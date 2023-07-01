@@ -1,1 +1,25 @@
 @charset "UTF-8";
+
+
+
+.quadrado {
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color:lightgray;
+    border: 2px;
+    border-radius: 20px;
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+div#q3 {
+    background-image: url('../midia/midias_modulo3/pattern003.png');
+}

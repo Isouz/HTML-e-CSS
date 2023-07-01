@@ -16,7 +16,7 @@
     <hr>
     <main>
         <section>
-            <h2>Capítulo 17</h2>
+            <h2>Capítulo 18</h2>
             <h3>Aprendendo Git e GitHub</h3>
             <p>Talvez o conteúdo desse capítulo seja um dos que você mais vai usar durante a sua carreira, que está começando agora. Vamos aprender agora o que são os repositórios, tanto os locais quanto os remotos e qual é a diferença entre eles.</p>
             <h4>Você precisa de um repositório para ser feliz.</h4>
@@ -103,6 +103,63 @@
                 <li>Usaremos a <strong>área 3</strong> sempre que quisermos estabelecer uma versão estável ou submeter uma alteração importante do nosso projeto. Ao colocar uma descrição na caixa Summary (resumo) e clicar no botão <strong>Commit</strong> (pode ser entendido como compromisso ou como enviar). Fazer um commit ou “comitar” (jargão técnico em Português) vai criar uma versão local do repositório usando o Git. Depois de comitar um repositório local, podemos realizar uma operação de <strong>Push</strong> (empurrar) que vai transferir todos os códigos para o GitHub. O botão push vai aparecer na área 4 logo após um commit. Também podemos realizar uma operação dessas clicando no menu Repository > Push ou ainda pressionar Ctrl + P.</li>
                 <li>Na <strong>área 4</strong>, também vão aparecer botões muito importantes para abrir o projeto usando o Visual Studio Code ou abrir o gerenciador de arquivos do seu sistema com a pasta do projeto.</li>
             </ul>
+        </section>
+        <section>
+            <h2>Capítulo 19</h2>
+            <h3>Imagens de Fundo</h3>
+            <h4>O fundo não precisa ter só cor</h4>
+            <p>Em capítulos anteriores, aprendemos a aplicar cores sólidas ou degradê em qualquer elemento de caixa. Mas você não precisa se limitar a essa possibilidade e pode aplicar imagens ao fundo de qualquer elemento exibido visualmente em HTML. Vamos a um exemplo simples com três &lt;div&gt; no corpo de um documento:</p>
+            <div class="box_exemplo">
+                <pre>
+                    &lt;body&gt;
+                        &lt;div class="quadrado" id="1"&gt;&lt;/div&gt;
+                        &lt;div class="quadrado" id="2"&gt;&lt;/div&gt;
+                        &lt;div class="quadrado" id="3"&gt;&lt;/div&gt;
+                    &lt;/body&gt;
+                </pre>
+            </div>
+            <p>Agora vamos criar a configuração de estilo base para toda &lt;div&gt; que possui a classe quadrado:</p>
+            <div class="box_exemplo">
+                <pre>
+                    div.quadrado {
+                        display: inline-block;
+                        margin: 5px;
+                        width: 300px;
+                        height: 300px;
+                        background-color:lightgray;
+                        border: 2px;
+                        border-radius: 20px;
+                    }
+                </pre>
+            </div>
+            <p>Com esse código aplicado, temos o seguinte resultado na tela:</p>
+            <div class="box">
+                <div class="quadrado"></div>
+                <div class="quadrado"></div>
+                <div class="quadrado"></div>
+            </div>
+            <p>Agora vamos adicionar algumas configurações individualmente a cada quadrado, usando os identificadores diferentes entre eles:</p>
+            <div class="box_exemplo">
+                div#q1 {
+                    background-color: skyblue;
+                }
+
+                div#q2 {
+                    background-image: linear-gradient(to bottom, yellow, orange);
+                }
+
+                div#q3 {
+                    background-image: url('imagens/pattern03.png');
+                }
+            </div>
+            <p>Note que na definição da &lt;div&gt; que tem o id com o valor q1, usamos uma cor sólida, já para q2, usamos um preenchimento linear. Já na caixa q3, vamos aplicar uma imagem de fundo através de um endereço informado pela função url().</p>
+            <p>Ao adicionar as linhas acima ao código, o resultado já muda consideravelmente:</p>
+            <div class="box">
+                <div class="quadrado" id="q1"></div>
+                <div class="quadrado" id="q2"></div>
+                <div class="quadrado" id="q3"></div>
+            </div>
+            <p>De forma geral, essas são as três maneiras mais simples de preencher uma caixa em HTML: cor sólida, degradê ou imagem de fundo.</p>
         </section>
     </main>
 </body>
