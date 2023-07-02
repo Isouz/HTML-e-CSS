@@ -160,6 +160,23 @@
                 <div class="quadrado" id="q3"></div>
             </div>
             <p>De forma geral, essas são as três maneiras mais simples de preencher uma caixa em HTML: cor sólida, degradê ou imagem de fundo.</p>
+            <h4>E não se esqueça: o body é uma grande caixa</h4>
+            <p>Esse recurso também pode ser usado ao &lt;body&gt; do seu site e o papel de parede será aplicado. Vamos considerar um exemplo bem simples que usa uma imagem disponível no nosso repositório.</p>
+            <div class="box_exemplo">
+                &lt;style&gt;
+                    body {
+                        background-image: url('https:https://gustavoguanabara.github.io/html-css/imagens/mascote.png')
+                    }
+                &lt;/style&gt;
+            </div>
+            <p>Analisando o código acima, estamos usando uma url() externa, já que a imagem estará em outro servidor (no caso, no servidor do GitHub). A imagem em questão é razoavelmente pequena, então não vai ser suficiente para cobrir toda a tela. Sendo assim, o resultado será o seguinte:</p>
+            <img src="midia/midias_modulo3/masacote.jpg" alt="mascote">
+            <h4>Personalizando a aplicação do background</h4>
+            <p>Quando o tamanho da caixa é maior que o tamanho da imagem, por padrão, a imagem será <strong>repetida</strong> nos dois eixos (eixo x e eixo y) quantas vezes for necessário para cobrir a extensão da caixa contêiner.</p>
+            <p>É possível alterar esse comportamento usando a propriedade <strong>background-repeat</strong>, que aceita os seguintes valores:</p>
+            <img src="midia/midias_modulo3/background-repeat.jpg" alt="background-repeat">
+            <p>Note que ao usar o no-repeat, isso não obriga o navegador a aumentar ou diminuir o tamanho da imagem para caber no tamanho da caixa. Para realizar essa adaptação, devemos usar outra propriedade, que veremos mais adiante.</p>
+            <p>Além de escolher o nível de repetição do background, também podemos mudar a <strong>posição de referência</strong> de início das repetições. Por padrão, é considerado o canto squerdo superior (left top), mas podemos ter várias opções. Use a imagem abaixo como referência sempre que precisar definir a posição do fundo com a propriedade background-position no seu código.</p>
         </section>
     </main>
 </body>
