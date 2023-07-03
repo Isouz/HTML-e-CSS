@@ -227,6 +227,34 @@
                     <td>A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado.</td>
                 </tr>
             </table>
+            <h4>Simplificando as coisas</h4>
+            <p>Assim como já vimos várias vezes em nosso material, existe também a possibilidade de usar uma <strong>shorthand</strong> para simplificar o uso de propriedades que se apliquem ao fundo de uma caixa. A propriedade abreviada background pode ser declarada agrupando as seguintes configurações:</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-position</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+            </ul>
+            <p>Sendo assim, no lugar de usar:</p>
+            <div class="box_exemplo">
+                background-color: black;<br>
+                background-image: url('imagens/wallpaper002.jpg');<br>
+                background-position: center center;<br>
+                background-repeat: no-repeat;<br>
+                background-attachment: fixed;<br>
+            </div>
+            <p>Podemos reunir tudo em uma única declaração:</p>
+            <div class="box_exemplo">
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            </div>
+            <h4>Centralização vertical em contêineres</h4>
+            <div class="container">
+                <p>Antes de começar a explicar o assunto sobre o qual vamos falar, preciso desabafar: plural de contêiner é muito esquisito, não acha? A propósito, o significado de contêiner (versão do Inglês container) é simples e direto: “aquele que contém oisas”.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXKK0xAgm6tKSy375lHOAhqOW1vTmQlrEymQECzdraXVSNEzP" alt="container">
+            </div>
+            <p>Aprendemos no capítulo 16 que existem elementos que podem conter outros elementos. As &lt;div&gt; são um exemplo de elemento contêiner. Quando queremos centralizar blocos horizontalmente, aprendemos a usar o margin:auto; nas folhas de estilo. Mas como fazer a centralização vertical?</p>
+            <p>No capítulo 17, onde criamos o nosso primeiro mini-projeto, tivemos que arrumar uma maneira de centralizar e redimensionar um vídeo dentro de um contêiner. Agora vou te mostrar uma outra técnica.</p>
         </section>
     </main>
 </body>
