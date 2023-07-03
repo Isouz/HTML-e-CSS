@@ -194,6 +194,39 @@
                     <td>right <br>bottom</td>
                 </tr>
             </table>
+            <p>Outra coisa que podemos fazer é <strong>redimensionar</strong> a imagem para forçá-la a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar a propriedade <strong>background-size</strong> para alterar esse comportamento.</p>
+            <p>Os valores aceitos por essa propriedade são:</p>
+            <table id="tabela2">
+                <tr>
+                    <td class="cl1">auto</td>
+                    <td class="cl2">(padrão) a imagem de fundo será aplicada em seu tamanho original.</td>
+                </tr>
+                <tr>
+                    <td class="cl1">[length]px <br>
+                        [length]%</td>
+                    <td class="cl2">Redimensiona a largura da imagem e faz a altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.</td>
+                </tr>
+                <tr>
+                    <td>cover</td>
+                    <td>Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</td>
+                </tr>
+                <tr>
+                    <td>contain</td>
+                    <td>Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</td>
+                </tr>
+            </table>
+            <p>A última propriedade que podemos configurar é o vínculo (attachment) da imagem de fundo com o resto do documento, principalmente se o conteúdo for maior do que a altura da página e seja necessário vazar uma rolagem vertical.</p>
+            <p>A propriedade <strong>background-attachment</strong> aceita os valores:</p>
+            <table id="tabela2">
+                <tr>
+                    <td>scroll</td>
+                    <td>(padrão) a imagem de fundo vai rolar junto com o conteúdo.</td>
+                </tr>
+                <tr>
+                    <td>fixed</td>
+                    <td>A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado.</td>
+                </tr>
+            </table>
         </section>
     </main>
 </body>
