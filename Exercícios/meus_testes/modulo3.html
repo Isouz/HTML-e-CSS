@@ -255,6 +255,35 @@
             </div>
             <p>Aprendemos no capítulo 16 que existem elementos que podem conter outros elementos. As &lt;div&gt; são um exemplo de elemento contêiner. Quando queremos centralizar blocos horizontalmente, aprendemos a usar o margin:auto; nas folhas de estilo. Mas como fazer a centralização vertical?</p>
             <p>No capítulo 17, onde criamos o nosso primeiro mini-projeto, tivemos que arrumar uma maneira de centralizar e redimensionar um vídeo dentro de um contêiner. Agora vou te mostrar uma outra técnica.</p>
+            <p>Vamos começar criando uma hierarquia simples entre dois blocos:</p>
+            <div class="box_exemplo">
+            <pre>
+                &lt;div id="fora"&gt;
+                    &lt;div id="dentro"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</pre>
+            </div>
+            <p>Agora vamos criar as configurações personalizadas para cada &lt;div&gt; dentro da área de &lt;style&gt; na área da cabeça &lt;head&gt; do código:</p>
+            <div class="box_exemplo">
+            <pre>
+                div#fora {
+                    height: 96vh;
+                    background-color: purple;
+                }
+
+                div#dentro {
+                    height: 200px;
+                    width: 300px
+                    background-color: yellow;
+                }</pre>
+            </div>
+            <p>O resultado disso será algo como:</p>
+            <div class="box">
+                <div id="fora">
+                    <div id="dentro"></div>
+                </div>
+            </div>
+            <p>O nosso objetivo aqui é deixar o retângulo interno exatamente no meio do retângulo externo. Vamos começar configurando o posicionamento de cada uma. O retângulo externo terá posicionamento <strong>relativo</strong>, enquanto o interno terá posicionamento <strong>absoluto</strong>.</p>
         </section>
     </main>
 </body>

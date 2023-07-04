@@ -46,3 +46,15 @@ div#q3 {
     max-width: 710px;
     padding: 7px;
 }
+
+.box #fora{
+    background-color: purple;
+    height: 30vw;
+    width: 45vw;
+}
+
+.box #dentro{
+    background-color: yellow;
+    height: 13vw;
+    width: 20vw;
+}
