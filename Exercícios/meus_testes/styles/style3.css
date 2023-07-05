@@ -58,3 +58,44 @@ div#q3 {
     height: 13vw;
     width: 20vw;
 }
+
+.box #fora2{
+    position: relative;
+    background-color: purple;
+    height: 30vw;
+    width: 45vw;
+}
+
+.box #dentro2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: yellow;
+    height: 13vw;
+    width: 20vw;
+}
+
+.box #linha {
+    border: 2px dotted black;
+    position: absolute;
+    top: 50%;
+    width: 98%;
+    z-index: 1;
+}
+
+.box #fora3{
+    position: relative;
+    background-color: purple;
+    height: 30vw;
+    width: 45vw;
+}
+
+.box #dentro3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    height: 13vw;
+    width: 20vw;
+}

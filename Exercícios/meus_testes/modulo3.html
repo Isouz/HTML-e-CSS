@@ -284,6 +284,52 @@
                 </div>
             </div>
             <p>O nosso objetivo aqui é deixar o retângulo interno exatamente no meio do retângulo externo. Vamos começar configurando o posicionamento de cada uma. O retângulo externo terá posicionamento <strong>relativo</strong>, enquanto o interno terá posicionamento <strong>absoluto</strong>.</p>
+            <div class="box_exemplo">
+            <pre>
+                div#fora {
+                    <strong>position: relative;</strong>
+                    ...
+                }
+
+                div#dentro {
+                    <strong>position: absolute;</strong>
+                    ...
+                }</pre>
+            </div>
+            <p>Não crie um novo seletor, apenas adicione as declarações que estou indicando. Qualquer dúvida, assista o último vídeo relativo ao capítulo 19 do curso.</p>
+            <p>Quando definimos um bloco com posicionamento absoluto, podemos personalizar a sua posição exata através das propriedades <strong>left</strong> e <strong>top</strong>. Como queremos posicionamento centralizado, vamos configurar os dois na metade do contêiner:</p>
+            <div class="box_exemplo">
+            <pre>
+                div#dentro {
+                    position: absolute;
+
+                    <strong>left: 50%;
+                    top: 50%;</strong>
+                    ...
+                }</pre>
+            </div>
+            <p>Porém, infelizmente, o resultado não será exatamente o que esperamos. Mas não se desespere! Nem tudo está perdido!</p>
+            <div class="box">
+                <div id="fora2">
+                    <div id="linha"></div>
+                    <div id="dentro2"></div>
+                </div>
+            </div>
+            <p>Note que, pelas linhas pontilhadas, o retângulo interno foi realmente posicionado a 50% da tela, mas pelo canto superior esquerdo da caixa. Vamos realizar uma transformação e mover o retângulo interno para a esquerda e para cima, para que ele fique efetivamente centralizado.</p>
+            <div class="box_exemplo">
+            <pre>
+                div#dentro {
+                    ...
+                    <strong>transform: translate(-50%, -50%);</strong>
+                    ...
+                }</pre>
+            </div>
+            <div class="box">
+                <div id="fora3">
+                    <div id="dentro3"></div>
+                </div>
+            </div>
+            <p>E está feito! Essa é apenas uma das técnicas de centralização de conteúdo, mas as outras requerem aprender outros conceitos mais aprofundados das folhas de estilo, como as caixas flexíveis (Flexbox).</p>
         </section>
     </main>
 </body>
